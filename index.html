@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Maven Masters – Academic & Career Excellence</title>
+<meta name="description" content="Maven Masters offers academic writing, research support, study abroad counselling, and career guidance with a premium experience.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Maven Masters – Academic & Career Excellence">
+<meta property="og:description" content="Premium academic writing, research support & study abroad counselling.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-image.jpg">
+
+<!-- CSP -->
+<meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+img-src 'self' https:;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+font-src https://fonts.gstatic.com;
+script-src 'self' 'unsafe-inline';
+">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/icons/favicon.ico">
+
+<!-- Fonts: Lighthouse Optimized -->
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      as="style">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      media="print"
+      onload="this.media='all'">
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap">
+</noscript>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationalOrganization",
+  "name":"Maven Masters",
+  "url":"https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/",
+  "email":"mastersmaven@gmail.com",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Bhopal",
+    "addressRegion":"MP",
+    "addressCountry":"IN"
+  }
+}
+</script>
+
+<style>
+/* =====================
+   VARIABLES
+   ===================== */
+:root{
+  --bg:#FAFAF8;
+  --card:#FFFFFF;
+  --text:#1F2A44;
+  --muted:#6B7280;
+
+  --blue-1:#0A1A50;
+  --blue-2:#143C8A;
+
+  --gold:#C9A227;
+  --gold-bright:#F5C542;
+  --gold-metal:#D4AF37;
+
+  --radius:14px;
+  --ease:cubic-bezier(.2,.9,.3,1);
+  --shadow-sm:0 6px 18px rgba(15,23,42,.08);
+  --shadow-lg:0 18px 40px rgba(15,23,42,.12);
+}
+
+/* Dark mode */
+html[data-theme="dark"]{
+  --bg:#0B1020;
+  --card:#121833;
+  --text:#EAEAF2;
+  --muted:#9AA4BF;
+}
+
+/* =====================
+   BASE
+   ===================== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  font-size:16px;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{width:min(1200px,94%);margin:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;margin:0 0 .5rem}
+p{margin:0 0 1rem;color:var(--muted)}
+a{text-decoration:none;color:inherit}
+
+/* =====================
+   HEADER
+   ===================== */
+header{
+  position:sticky;
+  top:10px;
+  z-index:1000;
+}
+.nav{
+  background:var(--card);
+  padding:12px 18px;
+  border-radius:12px;
+  box-shadow:var(--shadow-sm);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--blue-1),var(--blue-2));
+  color:var(--gold);
+  border-radius:10px;
+  font-weight:700;
+}
+nav a{font-weight:600;margin-left:16px}
+.cta{
+  background:linear-gradient(135deg,var(--gold-bright),var(--gold-metal));
+  color:#08102a;
+  padding:10px 16px;
+  border-radius:999px;
+  font-weight:700;
+  min-height:44px;
+}
+
+/* =====================
+   HERO
+   ===================== */
+.hero{
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  padding:60px 0;
+}
+.hero-card{
+  background:var(--card);
+  border-radius:20px;
+  box-shadow:var(--shadow-lg);
+  padding:36px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:24px;
+}
+.hero h1{color:var(--blue-1)}
+.hero aside{
+  background:rgba(0,0,0,.02);
+  border-radius:14px;
+  padding:18px;
+}
+.feature{margin-bottom:12px}
+
+/* =====================
+   SECTIONS
+   ===================== */
+section{padding:70px 0}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:var(--shadow-sm);
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer{
+  border-top:1px solid rgba(0,0,0,.1);
+  padding:40px 0;
+  text-align:center;
+}
+.social{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  margin-top:14px;
+}
+.social a{
+  width:42px;height:42px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--blue-1),var(--blue-2));
+  color:var(--gold);
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media(max-width:900px){
+  .hero-card{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header class="container">
+  <div class="nav">
+    <div class="brand">
+      <div class="logo">MM</div>
+      <div>
+        <strong>Maven Masters</strong><br>
+        <small class="muted">Academic & Career Solutions</small>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#apply" class="cta">Apply</a>
+      <button id="themeToggle"
+              type="button"
+              aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-card">
+      <div>
+        <h1>Unlock Your Academic & Career Potential</h1>
+        <p>Premium academic writing, research support, study abroad counselling, and career guidance.</p>
+        <a href="#apply" class="cta">Get Started</a>
+      </div>
+      <aside>
+        <div class="feature">✍️ PhD-level Academic Writing</div>
+        <div class="feature">🌍 Study Abroad Guidance</div>
+        <div class="feature">🔬 Research & Publication Support</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Academic Writing</div>
+      <div class="card">Study Abroad Counselling</div>
+      <div class="card">Research & Data Analysis</div>
+      <div class="card">Career Guidance</div>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="container">
+    <h2>Start Your Journey</h2>
+    <p>Fill our intake form for personalised consultation.</p>
+    <a class="cta"
+       href="https://docs.google.com/forms/"
+       target="_blank"
+       rel="noopener">Open Intake Form</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>Maven Masters</strong><br>
+  <small>Bhopal, Madhya Pradesh</small><br>
+  <small>mastersmaven@gmail.com</small>
+
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100074800625140" aria-label="Facebook">📘</a>
+    <a href="https://www.instagram.com/mavenmasters/" aria-label="Instagram">📸</a>
+    <a href="https://www.youtube.com/@Maven.Masters" aria-label="YouTube"></a>
+    <a href="https://wa.me/919893314761" aria-label="WhatsApp">💬</a>
+  </div>
+
+  <p class="muted">© 2025 Maven Masters. All rights reserved.</p>
+</footer>
+
+<script defer>
+const toggle=document.getElementById('themeToggle');
+toggle.addEventListener('click',()=>{
+  const html=document.documentElement;
+  const theme=html.getAttribute('data-theme')==='dark'?'light':'dark';
+  html.setAttribute('data-theme',theme);
+  toggle.textContent=theme==='dark'?'🌙':'☀️';
+});
+</script>
+
+</body>
+</html>
