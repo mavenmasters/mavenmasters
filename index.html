@@ -56,6 +56,26 @@ script-src 'self' 'unsafe-inline';
   }
 }
 </script>
+.social a{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background: linear-gradient(135deg, #0A1A50, #143C8A);
+  box-shadow: 0 6px 18px rgba(15,23,42,.18);
+  transition: transform .2s ease;
+}
+
+.social a:hover{
+  transform: translateY(-4px);
+}
+
+.social svg{
+  width:20px;
+  height:20px;
+  fill:#D4AF37; /* gold */
+}
 
 <style>
 /* =====================
@@ -355,6 +375,7 @@ toggle.addEventListener('click',()=>{
 
 </body>
 </html>
+
 
 
 
