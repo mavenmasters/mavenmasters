@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Maven Masters – Academic & Career Excellence</title>
-<meta name="description" content="Maven Masters offers academic writing, research support, study abroad counselling, and career guidance.">
+<meta name="description" content="Maven Masters offers academic writing, research support, study abroad counselling, and career guidance with a premium experience.">
 
 <link rel="icon" href="assets/icons/favicon.ico">
 
-<!-- Google Fonts -->
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,15 @@
   --blue-2:#143C8A;
 
   --gold:#D4AF37;
+  --radius:14px;
   --shadow-sm:0 6px 18px rgba(15,23,42,.08);
+}
+
+html[data-theme="dark"]{
+  --bg:#0B1020;
+  --card:#121833;
+  --text:#EAEAF2;
+  --muted:#9AA4BF;
 }
 
 *{box-sizing:border-box}
@@ -81,12 +89,12 @@ footer{
   text-align:center;
 }
 
-/* Social icons base */
+/* Social icons */
 .social{
   display:flex;
   justify-content:center;
   gap:14px;
-  margin:18px 0;
+  margin:14px 0;
 }
 .social a{
   width:42px;
@@ -94,36 +102,18 @@ footer{
   display:grid;
   place-items:center;
   border-radius:50%;
+  background:linear-gradient(135deg,var(--blue-1),var(--blue-2));
   box-shadow:0 6px 18px rgba(15,23,42,.18);
   transition:transform .2s ease;
 }
 .social a:hover{transform:translateY(-4px)}
-.social svg{width:20px;height:20px;fill:#fff}
-
-/* Brand colors */
-/* Facebook */
-.social a.facebook{
-  background:#1877F2;
-}
-
-/* Instagram */
-.social a.instagram{
-  background:linear-gradient(45deg,
-    #F58529,
-    #DD2A7B,
-    #8134AF,
-    #515BD4);
-}
-
-/* YouTube */
-.social a.youtube{
-  background:#FF0000;
-}
+.social svg{width:20px;height:20px;fill:var(--gold)}
 
 /* WhatsApp */
 .social a.whatsapp{
   background:linear-gradient(135deg,#25D366,#128C7E);
 }
+.social a.whatsapp svg{fill:#fff}
 </style>
 </head>
 
@@ -160,17 +150,17 @@ footer{
 <footer>
   <div class="social">
     <!-- Facebook -->
-    <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank" class="facebook">
+    <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/></svg>
     </a>
 
     <!-- Instagram -->
-    <a href="https://www.instagram.com/mavenmasters/" target="_blank" class="instagram">
+    <a href="https://www.instagram.com/mavenmasters/" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/></svg>
     </a>
 
     <!-- YouTube -->
-    <a href="https://www.youtube.com/@Maven.Masters" target="_blank" class="youtube">
+    <a href="https://www.youtube.com/@Maven.Masters" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12z"/></svg>
     </a>
 
