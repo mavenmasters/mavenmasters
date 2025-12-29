@@ -6,61 +6,15 @@
 
 <title>Maven Masters – Academic & Career Excellence</title>
 <meta name="description" content="Maven Masters offers academic writing, research support, study abroad counselling, and career guidance with a premium experience.">
-<meta name="robots" content="index, follow">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Maven Masters – Academic & Career Excellence">
-<meta property="og:description" content="Premium academic writing, research support & study abroad counselling.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/images/og-image.jpg">
-
-<!-- CSP -->
-<meta http-equiv="Content-Security-Policy"
-content="
-default-src 'self';
-img-src 'self' https:;
-style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-font-src https://fonts.gstatic.com;
-script-src 'self' 'unsafe-inline';
-">
-
-<!-- Favicon -->
 <link rel="icon" href="assets/icons/favicon.ico">
 
-<!-- Fonts: Lighthouse Optimized -->
-<link rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
-      as="style">
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
-      media="print"
-      onload="this.media='all'">
-<noscript>
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap">
-</noscript>
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"EducationalOrganization",
-  "name":"Maven Masters",
-  "url":"https://mavenmasters.github.io/mavenmasters//",
-  "email":"mastersmaven@gmail.com",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Bhopal",
-    "addressRegion":"MP",
-    "addressCountry":"IN"
-  }
-}
-</script>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
-/* =====================
-   VARIABLES
-   ===================== */
 :root{
   --bg:#FAFAF8;
   --card:#FFFFFF;
@@ -70,17 +24,11 @@ script-src 'self' 'unsafe-inline';
   --blue-1:#0A1A50;
   --blue-2:#143C8A;
 
-  --gold:#C9A227;
-  --gold-bright:#F5C542;
-  --gold-metal:#D4AF37;
-
+  --gold:#D4AF37;
   --radius:14px;
-  --ease:cubic-bezier(.2,.9,.3,1);
   --shadow-sm:0 6px 18px rgba(15,23,42,.08);
-  --shadow-lg:0 18px 40px rgba(15,23,42,.12);
 }
 
-/* Dark mode */
 html[data-theme="dark"]{
   --bg:#0B1020;
   --card:#121833;
@@ -88,31 +36,18 @@ html[data-theme="dark"]{
   --muted:#9AA4BF;
 }
 
-/* =====================
-   BASE
-   ===================== */
 *{box-sizing:border-box}
-html,body{margin:0;padding:0}
 body{
-  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
-  font-size:16px;
+  margin:0;
+  font-family:Inter,system-ui,Arial;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
 }
 .container{width:min(1200px,94%);margin:auto}
-h1,h2,h3{font-family:'Playfair Display',serif;margin:0 0 .5rem}
-p{margin:0 0 1rem;color:var(--muted)}
 a{text-decoration:none;color:inherit}
 
-/* =====================
-   HEADER
-   ===================== */
-header{
-  position:sticky;
-  top:10px;
-  z-index:1000;
-}
+/* Header */
+header{position:sticky;top:10px;z-index:1000}
 .nav{
   background:var(--card);
   padding:12px 18px;
@@ -131,86 +66,54 @@ header{
   border-radius:10px;
   font-weight:700;
 }
-nav a{font-weight:600;margin-left:16px}
 .cta{
-  background:linear-gradient(135deg,var(--gold-bright),var(--gold-metal));
-  color:#08102a;
+  background:linear-gradient(135deg,#F5C542,#D4AF37);
   padding:10px 16px;
   border-radius:999px;
   font-weight:700;
-  min-height:44px;
 }
 
-/* =====================
-   HERO
-   ===================== */
-.hero{
-  min-height:70vh;
-  display:flex;
-  align-items:center;
-  padding:60px 0;
-}
+/* Hero */
+.hero{padding:70px 0}
 .hero-card{
   background:var(--card);
   border-radius:20px;
-  box-shadow:var(--shadow-lg);
-  padding:36px;
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:24px;
-}
-.hero h1{color:var(--blue-1)}
-.hero aside{
-  background:rgba(0,0,0,.02);
-  border-radius:14px;
-  padding:18px;
-}
-.feature{margin-bottom:12px}
-
-/* =====================
-   SECTIONS
-   ===================== */
-section{padding:70px 0}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
-}
-.card{
-  background:var(--card);
-  border-radius:12px;
-  padding:20px;
   box-shadow:var(--shadow-sm);
+  padding:36px;
 }
 
-/* =====================
-   FOOTER
-   ===================== */
+/* Footer */
 footer{
   border-top:1px solid rgba(0,0,0,.1);
   padding:40px 0;
   text-align:center;
 }
+
+/* Social icons */
 .social{
   display:flex;
   justify-content:center;
   gap:14px;
-  margin-top:14px;
+  margin:14px 0;
 }
 .social a{
-  width:42px;height:42px;
-  display:grid;place-items:center;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
   border-radius:50%;
-  background:linear-gradient(135deg,var(--gold-1),var(--blue-2));
-  color:var(--gold);
+  background:linear-gradient(135deg,var(--blue-1),var(--blue-2));
+  box-shadow:0 6px 18px rgba(15,23,42,.18);
+  transition:transform .2s ease;
 }
+.social a:hover{transform:translateY(-4px)}
+.social svg{width:20px;height:20px;fill:var(--gold)}
 
-/* =====================
-   RESPONSIVE
-   ===================== */
-@media(max-width:900px){
-  .hero-card{grid-template-columns:1fr}
+/* WhatsApp */
+.social a.whatsapp{
+  background:linear-gradient(135deg,#25D366,#128C7E);
 }
+.social a.whatsapp svg{fill:#fff}
 </style>
 </head>
 
@@ -222,17 +125,10 @@ footer{
       <div class="logo">MM</div>
       <div>
         <strong>Maven Masters</strong><br>
-        <small class="muted">Academic & Career Solutions</small>
+        <small>Academic & Career Solutions</small>
       </div>
     </div>
-
-    <nav aria-label="Primary navigation">
-      <a href="#services">Services</a>
-      <a href="#apply" class="cta">Apply</a>
-      <button id="themeToggle"
-              type="button"
-              aria-label="Toggle dark mode">🌙</button>
-    </nav>
+    <a href="#apply" class="cta">Apply</a>
   </div>
 </header>
 
@@ -241,122 +137,44 @@ footer{
 <section class="hero">
   <div class="container">
     <div class="hero-card">
-      <div>
-        <h1>Unlock Your Academic & Career Potential</h1>
-        <p>Premium academic writing, research support, study abroad counselling, and career guidance.</p>
-        <a href="#apply" class="cta">Get Started</a>
-      </div>
-      <aside>
-        <div class="feature">✍️ PhD-level Academic Writing</div>
-        <div class="feature">🌍 Study Abroad Guidance</div>
-        <div class="feature">🔬 Research & Publication Support</div>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">Academic Writing</div>
-      <div class="card">Study Abroad Counselling</div>
-      <div class="card">Research & Data Analysis</div>
-      <div class="card">Career Guidance</div>
-    </div>
-  </div>
-</section>
-
-<section id="apply">
-  <div class="container">
-    <h2>Start Your Journey</h2>
-    <p>Fill the intake form for personalised consultation.</p>
-
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="cta"
-         href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform"
-         target="_blank"
-         rel="noopener">
-         Abroad Intake
-      </a>
-
-      <a class="cta"
-         href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform"
-         target="_blank"
-         rel="noopener">
-         Academic Intake
-      </a>
+      <h1>Start Your Journey</h1>
+      <p>Fill the intake form for personalised consultation.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank">Abroad Intake</a>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank">Academic Intake</a>
     </div>
   </div>
 </section>
 
 </main>
+
 <footer>
-   <div class="social">
-    <div class="social">
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=100074800625140"
-     target="_blank" aria-label="Facebook">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7
-      1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/>
-    </svg>
-  </a>
+  <div class="social">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/></svg>
+    </a>
 
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/mavenmasters/"
-     target="_blank" aria-label="Instagram">
-    <svg viewBox="0 0 24 24">
-      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5
-      A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3a2.8 2.8 0 1 1 2.8-2.8A2.8 2.8 0 0 1 12 14.8zM17.8 6.2a1
-      1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
-    </svg>
-  </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mavenmasters/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/></svg>
+    </a>
 
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/@Maven.Masters"
-     target="_blank" aria-label="YouTube">
-    <svg viewBox="0 0 24 24">
-      <path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3
-      0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12s0 4.3.5 6.3a3 3
-      0 0 0 2.1 2.1c2.1.6 8.4.6 8.4.6s6.3 0 8.4-.6a3 3 0 0 0
-      2.1-2.1c.5-2 .5-6.3.5-6.3zM10 15.5v-7l6 3.5-6 3.5z"/>
-    </svg>
-  </a>
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@Maven.Masters" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12z"/></svg>
+    </a>
 
-  <!-- WhatsApp -->
-  <a href="https://wa.me/919893314761"
-     target="_blank" class="WhatsApp">
-    <svg viewBox="0 0 24 24">
-      <path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8
-      11.8 0 1 0 20.5 3.5zm-8.7 17a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9.2
-      9.2 0 1 1 7.2 3.8zm5-6.9c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1
-      1.1-.4.2-.7.1a7.6 7.6 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.7.1-.2 0-.4
-      0-.5s-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4
-      3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.4 3.4
-      14.6 14.6 0 0 0 5.6 5.2 6.5 6.5 0 0 0 3.9.5
-      3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/>
-    </svg>
-  </a>
-</div>
-      <strong>Maven Masters</strong><br>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919893314761" target="_blank" class="whatsapp">
+      <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8 11.8 0 1 0 20.5 3.5z"/></svg>
+    </a>
+  </div>
+
+  <strong>Maven Masters</strong><br>
   <small>Bhopal, Madhya Pradesh</small><br>
   <small>mastersmaven@gmail.com</small>
-  <p class="muted">© 2025 Maven Masters. All rights reserved.</p>
+  <p>© 2025 Maven Masters. All rights reserved.</p>
 </footer>
-
-<script defer>
-const toggle=document.getElementById('themeToggle');
-toggle.addEventListener('click',()=>{
-  const html=document.documentElement;
-  const theme=html.getAttribute('data-theme')==='dark'?'light':'dark';
-  html.setAttribute('data-theme',theme);
-  toggle.textContent=theme==='dark'?'🌙':'☀️';
-});
-</script>
 
 </body>
 </html>
-
-
-
