@@ -136,6 +136,9 @@ nav.primary a:hover{ color: var(--accent-2); transform: translateY(-2px); }
   color: inherit;
 }
 
+/* -------------------------
+   CTA Buttons - Enhanced Hierarchy
+   ------------------------- */
 .cta{
   background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
   color:#08102a;
@@ -150,6 +153,129 @@ nav.primary a:hover{ color: var(--accent-2); transform: translateY(-2px); }
   transition: transform 200ms var(--ease), box-shadow 200ms var(--ease);
 }
 .cta:hover{ transform: translateY(-2px); box-shadow: 0 14px 34px rgba(212,175,55,0.22); }
+
+/* ✅ ADD NEW CTA STYLES HERE - Primary CTA for hero sections */
+.cta-primary {
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
+  color: #08102a;
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(197, 162, 39, 0.3);
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(197, 162, 39, 0.4);
+}
+
+.cta-primary small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* Secondary CTA for service cards */
+.cta-secondary {
+  background: transparent;
+  color: var(--accent-2);
+  border: 2px solid var(--accent-2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.2s var(--ease);
+}
+
+.cta-secondary:hover {
+  background: var(--accent-2);
+  color: white;
+}
+
+/* Hero CTA - Large prominent button */
+.cta-hero {
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
+  color: #08102a;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 14px;
+  font-weight: 700;
+  box-shadow: 0 12px 32px rgba(197, 162, 39, 0.4);
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s var(--ease);
+}
+
+.cta-hero:hover {
+  transform: scale(1.05);
+}
+
+.cta-hero small {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+/* CTA Group container */
+.cta-group {
+  margin-top: 24px;
+  text-align: left;
+}
+
+/* Trust badge styling */
+.trust-badge {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--gold-metal);
+  font-weight: 600;
+}
+
+/* Urgency/scarcity indicators */
+.urgency {
+  color: #DC2626;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 24px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Social proof testimonial box */
+.social-proof {
+  margin-top: 32px;
+  padding: 24px;
+  background: rgba(197, 162, 39, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid var(--gold-metal);
+}
+
+.social-proof p {
+  font-style: italic;
+  color: var(--text-main);
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Result badges for service cards */
+.result {
+  display: inline-block;
+  color: #059669;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 0;
+}
 
 .hamburger{ display:none; }
 
@@ -319,6 +445,16 @@ section{ padding:72px 0; }
 }
 .card:hover{ transform: translateY(-6px); }
 
+.card h3 {
+  color: var(--accent-1);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
 .alt-bg{ background: rgba(255,255,255,0.02); }
 html[data-theme="dark"] .alt-bg{ background: rgba(255,255,255,0.03); }
 
@@ -454,18 +590,27 @@ footer{
 @media (max-width:700px){
   .footer-grid{ grid-template-columns: 1fr; }
   .social-links{ justify-content:flex-start; }
+  
+  /* Adjust CTA sizes for mobile */
+  .cta-primary, .cta-hero {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
 }
 @media (max-width:560px){
   .nav-wrap{ padding:10px; }
   .brand h4{ font-size:0.95rem; }
   .floating-cta{ right:12px; bottom:12px; }
+  
+  /* Further adjust for small screens */
+  .cta-primary small, .cta-hero small {
+    font-size: 12px;
+  }
 }
 
 /* accessibility: prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce){
   .aura{ animation:none; }
   .glass-card, .floating-cta, .hero-bg, nav.primary a, .cta, .card{ transition:none; }
+  .urgency{ animation:none; }
 }
-
-
-
