@@ -233,8 +233,8 @@ nav.primary a:hover{
   
   .cta-secondary {
     background: transparent;
-    color: var(--blue-2);
-    border: 2px solid var(--blue-2);
+    color: var(--accent-2);
+    border: 2px solid var(--accent-2);
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 600;
@@ -243,7 +243,7 @@ nav.primary a:hover{
   }
   
   .cta-secondary:hover {
-    background: var(--blue-2);
+    background: var(--accent-2);
     color: white;
   }
   
@@ -307,7 +307,7 @@ nav.primary a:hover{
   
   .social-proof p {
     font-style: italic;
-    color: var(--text);
+    color: var(--text-main);
     margin: 0;
     font-size: 15px;
   }
@@ -338,7 +338,7 @@ nav.primary a:hover{
     grid-template-columns: 2fr 1fr;
     gap: 24px;
   }
-  .hero h1 { color: var(--blue-1); }
+  .hero h1 { color: var(--accent-1); }
   .hero aside {
     background: rgba(0,0,0,.02);
     border-radius: 14px;
@@ -363,13 +363,126 @@ nav.primary a:hover{
   }
   
   .card h3 {
-    color: var(--blue-1);
+    color: var(--accent-1);
     margin-bottom: 12px;
   }
   
   .card p {
     font-size: 14px;
     margin-bottom: 12px;
+  }
+
+  /* =====================
+     FAQ SECTION
+     ===================== */
+  .faq-section {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 40px;
+  }
+
+  .faq-section h2 {
+    color: var(--accent-1);
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .faq-section > p {
+    color: var(--muted);
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+  }
+
+  .faq-category {
+    margin-bottom: 40px;
+  }
+
+  .faq-category h3 {
+    color: var(--gold-metal);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold-soft);
+  }
+
+  .faq-item {
+    background: var(--bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: all 0.3s var(--ease);
+  }
+
+  .faq-item:hover {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    background: transparent;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.2s var(--ease);
+  }
+
+  .faq-question:hover {
+    color: var(--accent-2);
+  }
+
+  .faq-icon {
+    font-size: 20px;
+    color: var(--gold-metal);
+    transition: transform 0.3s var(--ease);
+    flex-shrink: 0;
+  }
+
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease), padding 0.3s var(--ease);
+    padding: 0 20px;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 20px 18px 20px;
+  }
+
+  .faq-answer p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .faq-cta {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--glass-border);
+  }
+
+  .faq-cta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-main);
   }
   
   /* =====================
@@ -392,7 +505,7 @@ nav.primary a:hover{
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--gold-bright), var(--blue-2));
+    background: linear-gradient(135deg, var(--gold-bright), var(--accent-2));
     color: white;
   }
   
@@ -407,13 +520,15 @@ nav.primary a:hover{
      ===================== */
   @media(max-width: 900px) {
     .hero-card { grid-template-columns: 1fr; }
+    .faq-section { padding: 24px; }
+    .faq-question { font-size: 15px; padding: 15px; }
   }
   </style>
 </head>
 
 <body>
   <header class="container">
-        <div class="nav-wrap">
+    <div class="nav-wrap">
       <a href="#" class="brand">
         <!-- ✅ MAVEN MASTERS LOGO SVG -->
         <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -468,13 +583,14 @@ nav.primary a:hover{
           <!-- MM Letters -->
           <text x="100" y="110" font-family="Playfair Display, serif" font-size="32" font-weight="700" fill="#0A1A50" text-anchor="middle" dominant-baseline="middle">MM</text>
         </svg>
-         <div class="brand-text">
+        <div class="brand-text">
           <h4>Maven Masters</h4>
           <small class="muted">Academic & Career Solutions</small>
         </div>
-      </div>
-      <nav aria-label="Primary navigation">
+      </a>
+      <nav class="primary" aria-label="Primary navigation">
         <a href="#services">Services</a>
+        <a href="#faqs">FAQs</a>
         <a href="#apply" class="cta">Apply</a>
         <button id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
       </nav>
@@ -482,7 +598,7 @@ nav.primary a:hover{
   </header>
 
   <main>
-    <!-- HERO SECTION - CTA GROUP ADDED HERE -->
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="container">
         <div class="hero-card">
@@ -490,7 +606,6 @@ nav.primary a:hover{
             <h1>Unlock Your Academic & Career Potential</h1>
             <p>Premium academic writing, research support, study abroad counselling, and career guidance.</p>
             
-            <!-- ✅ HERO CTA GROUP ADDED HERE -->
             <div class="cta-group">
               <a href="#apply" class="cta cta-primary">
                 📚 Book Free Consultation
@@ -510,12 +625,11 @@ nav.primary a:hover{
       </div>
     </section>
 
-    <!-- SERVICES SECTION - ENHANCED CARDS ADDED HERE -->
+    <!-- SERVICES SECTION -->
     <section id="services">
       <div class="container">
         <h2>Our Services</h2>
         <div class="cards">
-          <!-- ✅ ENHANCED SERVICE CARDS WITH CTAs -->
           <div class="card">
             <h3>Academic Writing</h3>
             <p>PhD-level research papers, dissertations & thesis support</p>
@@ -547,19 +661,196 @@ nav.primary a:hover{
       </div>
     </section>
 
-    <!-- APPLY SECTION - COMPLETELY REDESIGNED -->
+    <!-- ✅ FAQ SECTION -->
+    <section id="faqs">
+      <div class="container">
+        <div class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <p>Get answers to common questions about our services</p>
+
+          <!-- Study Abroad FAQs -->
+          <div class="faq-category">
+            <h3>🌍 Study Abroad Counselling</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>When should I start planning to study abroad?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. For fall intake, start planning in the previous year's January-March period.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is your success rate for university admissions?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Maven Masters has an 87% admission success rate across top universities in the USA, UK, Canada, Australia, and Europe. Our personalized approach, expert SOP writing, and strategic university selection significantly improve your chances of acceptance and scholarship awards.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much does studying abroad typically cost?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Costs vary by country and program. USA: ₹25-60 lakhs/year, UK: ₹20-40 lakhs/year, Canada: ₹15-35 lakhs/year, Australia: ₹20-45 lakhs/year. We help identify scholarships, part-time work opportunities, and cost-effective universities to match your budget while maintaining quality education.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you help with scholarship applications?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We provide comprehensive scholarship guidance including merit-based, need-based, and country-specific scholarships. Our team assists with application essays, documentation, and interview preparation to maximize your chances of securing financial aid worth ₹5-30 lakhs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What documents do I need for study abroad applications?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Essential documents include: academic transcripts, standardized test scores (GRE/GMAT, IELTS/TOEFL), Statement of Purpose (SOP), Letters of Recommendation (LORs), resume/CV, passport copy, financial documents, and portfolio (for specific programs). We guide you through the complete documentation process.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you assist with visa applications?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Our visa support includes DS-160/visa application form filling, financial document preparation, mock visa interviews, appointment scheduling guidance, and post-visa approval support. We have extensive experience with F-1 (USA), Tier 4 (UK), Study Permit (Canada), and Subclass 500 (Australia) visas.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I work while studying abroad?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Most countries allow international students to work part-time. USA: 20 hrs/week on-campus, UK: 20 hrs/week during term, Canada: 20-40 hrs/week, Australia: 48 hrs/fortnight. We provide guidance on finding part-time jobs, CPT/OPT programs, and post-study work visa options.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Support FAQs -->
+          <div class="faq-category">
+            <h3>📚 Academic Writing & Research Support</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What academic writing services do you offer?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>We provide comprehensive support for research papers, dissertations, thesis writing, literature reviews, research proposals, data analysis, statistical consulting, manuscript editing, publication support, and coursework assistance across all academic disciplines including sciences, humanities, and business.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Are your writers qualified for PhD-level work?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! Our team consists of PhD holders and subject matter experts from top universities with 5-15 years of research experience. All writers hold advanced degrees in their respective fields and have published in peer-reviewed journals, ensuring highest quality academic support.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you ensure plagiarism-free work?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Every document is written from scratch based on your requirements. We use premium plagiarism detection tools (Turnitin, iThenticate) and provide detailed originality reports with similarity index below 10%. We guarantee 100% original, properly cited academic work with complete referencing.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is your typical turnaround time?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Standard projects: 7-14 days, Urgent requests: 3-5 days (with additional charges), Dissertation chapters: 2-3 weeks per chapter, Complete thesis: 6-12 weeks. Rush services available for emergency deadlines. We prioritize quality while meeting your submission timelines.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much do your academic writing services cost?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you provide revisions if needed?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I communicate directly with my assigned writer?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We facilitate direct communication through our secure platform via email or WhatsApp. You can discuss requirements, share feedback, and track progress throughout the project. Our coordinators are available 24/7 to address queries and ensure smooth collaboration.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you protect my confidentiality?</span>
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>We maintain strict confidentiality through NDAs, encrypted communication, secure file transfers, and data protection protocols. Your personal information, academic work, and payment details are never shared with third parties. All projects are handled with complete discretion and privacy.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA at end of FAQs -->
+          <div class="faq-cta">
+            <p><strong>Still have questions? We're here to help!</strong></p>
+            <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
+              💬 Chat with Our Counsellor
+              <small>Get instant answers via WhatsApp</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY SECTION -->
     <section id="apply">
       <div class="container" style="text-align: center;">
         <h2>Get Your Personalized Roadmap</h2>
         <p class="urgency">⏰ Next batch starts Jan 15th - Only 8 spots available</p>
         
-        <!-- ✅ SINGLE HERO CTA WITH BENEFITS -->
         <a class="cta cta-hero" href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener">
           🎯 Claim Your Free Assessment
           <small>No credit card • 15-min response time</small>
         </a>
         
-        <!-- ✅ TRUST SIGNALS / SOCIAL PROOF -->
         <div class="social-proof">
           <p>"Got into MIT with Maven Masters' guidance. Their personalized approach made all the difference!" <br><strong>- Priya S., Computer Science</strong></p>
         </div>
@@ -614,6 +905,7 @@ nav.primary a:hover{
   </footer>
 
   <script defer>
+    // Theme Toggle
     const toggle = document.getElementById('themeToggle');
     toggle.addEventListener('click', () => {
       const html = document.documentElement;
@@ -621,10 +913,51 @@ nav.primary a:hover{
       html.setAttribute('data-theme', theme);
       toggle.textContent = theme === 'dark' ? '🌙' : '☀️';
     });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current item
+        if (isActive) {
+          item.classList.remove('active');
+          question.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('active');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>
-
-
-
-
