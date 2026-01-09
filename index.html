@@ -219,10 +219,10 @@ header{
 
 .nav-wrap{
   width:min(var(--max-width), 94%);
-  display:flex;
+  display:grid;
+  grid-template-columns: auto 1fr auto;
   align-items:center;
-  justify-content:space-between;
-  gap:12px;
+  gap:24px;
   padding:12px 18px;
   border-radius:12px;
   background: rgba(255, 255, 255, 0.1);
@@ -236,8 +236,13 @@ header{
   gap:12px; 
   align-items:center;
   text-decoration: none;
+  justify-self: start;  /* NEW */
 }
 
+.brand-center {  /* NEW CLASS - Add this */
+  text-align: center;
+  justify-self: center;
+}
 .logo-svg{
   width: 52px;
   height: 52px;
@@ -245,17 +250,17 @@ header{
 }
 
 .brand-text h1{ 
-  font-size: 1.05rem; 
+  font-size: 1.75rem;  /* Changed from 1.05rem */
   margin:0; 
-  letter-spacing:0.2px;
+  letter-spacing:0.3px;  /* Changed from 0.2px */
   color: var(--text-main);
   font-weight: 700;
 }
 .brand-text small{
-  font-size: 0.75rem;
+  font-size: 0.95rem;  /* Changed from 0.75rem */
   color: var(--muted);
   display: block;
-  margin-top: 2px;
+  margin-top: 4px;  /* Changed from 2px */
 }
 
 nav.primary{ 
@@ -841,7 +846,7 @@ footer a:hover {
           <line x1="163" y1="65" x2="167" y2="65" stroke="#D4AF37" stroke-width="1.5"/>
           <line x1="163" y1="67" x2="167" y2="67" stroke="#D4AF37" stroke-width="1.5"/>
         </svg>
-        <div class="brand-text"> <invoke name="artifacts">
+        <div class="brand-center"> <invoke name="artifacts">
 </parameter>
 <parameter name="new_str">        <div class="brand-text">
           <h1>Maven Masters</h1>
@@ -1252,5 +1257,6 @@ footer a:hover {
   </script>
 </body>
 </html></parameter>
+
 
 
