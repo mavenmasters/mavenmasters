@@ -597,20 +597,30 @@ footer{
     padding: 14px 24px;
   }
 }
-@media (max-width:560px){
-  .nav-wrap{ padding:10px; }
-  .brand h4{ font-size:0.95rem; }
-  .floating-cta{ right:12px; bottom:12px; }
-  
-  /* Further adjust for small screens */
-  .cta-primary small, .cta-hero small {
-    font-size: 12px;
-  }
+.nav-wrap {
+  grid-template-columns: auto auto;
+  gap: 16px;
 }
 
+.brand-center {
+  display: none;
+}
+
+.brand .brand-text {
+  display: block;
+}
+
+.brand .brand-text h1 {
+  font-size: 1.1rem;
+}
+
+.brand .brand-text small {
+  font-size: 0.8rem;
+}
 /* accessibility: prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce){
   .aura{ animation:none; }
   .glass-card, .floating-cta, .hero-bg, nav.primary a, .cta, .card{ transition:none; }
   .urgency{ animation:none; }
 }
+
