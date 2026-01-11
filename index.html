@@ -219,9 +219,9 @@ header{
 
 .nav-wrap{
   width:min(var(--max-width), 94%);
-  display:grid;
-  grid-template-columns: auto 1fr auto;
+  display:flex;
   align-items:center;
+  justify-content:space-between;
   gap:24px;
   padding:12px 18px;
   border-radius:12px;
@@ -236,13 +236,13 @@ header{
   gap:12px; 
   align-items:center;
   text-decoration: none;
-  justify-self: start;  /* NEW */
 }
 
-.brand-center {  /* NEW CLASS - Add this */
+.brand-center {
   text-align: center;
-  justify-self: center;
+  flex: 1;
 }
+
 .logo-svg{
   width: 52px;
   height: 52px;
@@ -250,17 +250,17 @@ header{
 }
 
 .brand-text h1{ 
-  font-size: 1.75rem;  /* Changed from 1.05rem */
+  font-size: 1.75rem;
   margin:0; 
-  letter-spacing:0.3px;  /* Changed from 0.2px */
+  letter-spacing:0.3px;
   color: var(--text-main);
   font-weight: 700;
 }
 .brand-text small{
-  font-size: 0.95rem;  /* Changed from 0.75rem */
+  font-size: 0.95rem;
   color: var(--muted);
   display: block;
-  margin-top: 4px;  /* Changed from 2px */
+  margin-top: 4px;
 }
 
 nav.primary{ 
@@ -282,7 +282,12 @@ nav.primary a:hover{
   transform: translateY(-2px); 
 }
 
-.nav-actions{ display:flex; gap:10px; align-items:center; }
+.nav-actions{ 
+  display:flex; 
+  gap:10px; 
+  align-items:center;
+  flex-shrink: 0;
+}
 
 #themeToggle{
   background: transparent;
@@ -752,13 +757,30 @@ footer a:hover {
     padding: 16px;
   }
   
+  .nav-wrap {
+    gap: 16px;
+  }
+  
+  .brand-center h1 {
+    font-size: 1.3rem;
+  }
+  
+  .brand-center small {
+    font-size: 0.85rem;
+  }
+  
+  .logo-svg {
+    width: 44px;
+    height: 44px;
+  }
+  
   nav.primary {
-    gap: 12px;
+    gap: 10px;
   }
   
   nav.primary a {
     font-size: 0.85rem;
-    padding: 6px 8px;
+    padding: 6px 10px;
   }
   
   .cta-hero {
@@ -775,12 +797,8 @@ footer a:hover {
 }
 
 @media(max-width: 600px) {
-  .brand-text h1 {
-    font-size: 0.95rem;
-  }
-  
-  .brand-text small {
-    font-size: 0.7rem;
+  .brand-center {
+    display: none;
   }
   
   .logo-svg {
@@ -846,27 +864,33 @@ footer a:hover {
           <line x1="163" y1="65" x2="167" y2="65" stroke="#D4AF37" stroke-width="1.5"/>
           <line x1="163" y1="67" x2="167" y2="67" stroke="#D4AF37" stroke-width="1.5"/>
         </svg>
-        <div class="brand-center"> <invoke name="artifacts">
-</parameter>
-<parameter name="new_str">        <div class="brand-text">
+      </a>
+      
+      <div class="brand-center">
+        <div class="brand-text">
           <h1>Maven Masters</h1>
           <small>Academic & Career Solutions</small>
         </div>
-      </a>
-      <nav class="primary" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#apply" class="cta-nav">Get Started</a>
+      </div>
+      
+      <div class="nav-actions">
+        <nav class="primary" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#apply" class="cta-nav">Get Started</a>
+        </nav>
         <button id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
-      </nav>
+      </div>
     </div>
   </header>
+  
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/919893314761" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8 11.8 0 1 0 20.5 3.5zm-8.7 17a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9.2 9.2 0 1 1 7.2 3.8zm5-6.9c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 1.1-.4.2-.7.1a7.6 7.6 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5s-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 5.2 6.5 6.5 0 0 0 3.9.5 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/>
     </svg>
   </a>
+  
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -875,266 +899,268 @@ footer a:hover {
           <div>
             <h1>Transform Your Academic & Career Journey</h1>
             <p class="lead">Expert study abroad counselling, PhD-level academic writing, and comprehensive research support from Bhopal's leading education consultants.</p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-primary">
-          📚 Get Your Free Consultation
-          <small>Limited: 5 slots left this week</small>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-primary">
+              📚 Get Your Free Consultation
+              <small>Limited: 5 slots left this week</small>
+            </a>
+            
+            <div class="trust-badge">
+              ⭐ 500+ students placed | 98% satisfaction | 87% admission success
+            </div>
+          </div>
+          
+          <aside class="hero-features">
+            <div class="feature">PhD-level Academic Writing</div>
+            <div class="feature">Study Abroad Guidance USA, UK, Canada</div>
+            <div class="feature">Research & Publication Support</div>
+            <div class="feature">Career Counselling & Placement</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2>Our Premium Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Academic Writing Services</h3>
+            <p>Professional PhD-level research papers, dissertations, thesis writing, and manuscript editing for publications.</p>
+            <span class="result">✓ 95% acceptance rate in journals</span><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Writing Help →</a>
+          </article>
+          
+          <article class="card">
+            <h3>Study Abroad Counselling</h3>
+            <p>Complete university admission guidance for USA, UK, Canada, Australia with visa support and scholarship assistance.</p>
+            <span class="result">✓ 87% admission success rate</span><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">Start Your Journey →</a>
+          </article>
+          
+          <article class="card">
+            <h3>Research & Data Analysis</h3>
+            <p>Expert statistical analysis, SPSS, R, Python data processing, literature reviews, and research methodology design.</p>
+            <span class="result">✓ Published in top-tier journals</span><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Research Support →</a>
+          </article>
+          
+          <article class="card">
+            <h3>Career Development</h3>
+            <p>Professional resume building, LinkedIn optimization, interview preparation, and career strategy planning.</p>
+            <span class="result">✓ 92% placement success rate</span><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Boost Your Career →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="apply">
+      <div class="container">
+        <h2>Ready to Achieve Your Goals?</h2>
+        <p class="urgency">⏰ Next batch begins January 15th - Only 8 spots remaining</p>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-hero">
+          🎯 Claim Your Free Strategy Session
+          <small>No credit card required • 15-minute response time</small>
         </a>
         
-        <div class="trust-badge">
-          ⭐ 500+ students placed | 98% satisfaction | 87% admission success
+        <div class="cta-buttons">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">
+            🌍 Apply for Study Abroad
+          </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">
+            📝 Request Academic Support
+          </a>
+          <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-secondary">
+            💬 Chat on WhatsApp
+          </a>
         </div>
       </div>
-      
-      <aside class="hero-features">
-        <div class="feature">PhD-level Academic Writing</div>
-        <div class="feature">Study Abroad Guidance USA, UK, Canada</div>
-        <div class="feature">Research & Publication Support</div>
-        <div class="feature">Career Counselling & Placement</div>
-      </aside>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Services Section -->
-<section id="services">
-  <div class="container">
-    <h2>Our Premium Services</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Academic Writing Services</h3>
-        <p>Professional PhD-level research papers, dissertations, thesis writing, and manuscript editing for publications.</p>
-        <span class="result">✓ 95% acceptance rate in journals</span><br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Writing Help →</a>
-      </article>
-      
-      <article class="card">
-        <h3>Study Abroad Counselling</h3>
-        <p>Complete university admission guidance for USA, UK, Canada, Australia with visa support and scholarship assistance.</p>
-        <span class="result">✓ 87% admission success rate</span><br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">Start Your Journey →</a>
-      </article>
-      
-      <article class="card">
-        <h3>Research & Data Analysis</h3>
-        <p>Expert statistical analysis, SPSS, R, Python data processing, literature reviews, and research methodology design.</p>
-        <span class="result">✓ Published in top-tier journals</span><br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Research Support →</a>
-      </article>
-      
-      <article class="card">
-        <h3>Career Development</h3>
-        <p>Professional resume building, LinkedIn optimization, interview preparation, and career strategy planning.</p>
-        <span class="result">✓ 92% placement success rate</span><br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Boost Your Career →</a>
-      </article>
-    </div>
-  </div>
-</section>
+    <!-- FAQ Section -->
+    <section id="faqs">
+      <div class="container">
+        <div class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about our academic and study abroad services</p>
 
-<!-- CTA Section -->
-<section id="apply">
-  <div class="container">
-    <h2>Ready to Achieve Your Goals?</h2>
-    <p class="urgency">⏰ Next batch begins January 15th - Only 8 spots remaining</p>
-    
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-hero">
-      🎯 Claim Your Free Strategy Session
-      <small>No credit card required • 15-minute response time</small>
-    </a>
-    
-    <div class="cta-buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">
-        🌍 Apply for Study Abroad
-      </a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">
-        📝 Request Academic Support
-      </a>
-      <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-secondary">
-        💬 Chat on WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
+          <!-- Study Abroad FAQs -->
+          <div class="faq-category">
+            <h3>🌍 Study Abroad Counselling</h3>
 
-<!-- FAQ Section -->
-<section id="faqs">
-  <div class="container">
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-      <p>Find answers to common questions about our academic and study abroad services</p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>When should I start planning to study abroad?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. For fall intake, start planning in the previous year's January-March period.</p>
+              </div>
+            </div>
 
-      <!-- Study Abroad FAQs -->
-      <div class="faq-category">
-        <h3>🌍 Study Abroad Counselling</h3>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is your success rate for university admissions?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Maven Masters has an 87% admission success rate across top universities in the USA, UK, Canada, Australia, and Europe. Our personalized approach, expert SOP writing, and strategic university selection significantly improve your chances of acceptance and scholarship awards.</p>
+              </div>
+            </div>
 
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>When should I start planning to study abroad?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. For fall intake, start planning in the previous year's January-March period.</p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much does studying abroad typically cost?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Costs vary by country and program. USA: ₹25-60 lakhs/year, UK: ₹20-40 lakhs/year, Canada: ₹15-35 lakhs/year, Australia: ₹20-45 lakhs/year. We help identify scholarships, part-time work opportunities, and cost-effective universities to match your budget while maintaining quality education.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you help with scholarship applications?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We provide comprehensive scholarship guidance including merit-based, need-based, and country-specific scholarships. Our team assists with application essays, documentation, and interview preparation to maximize your chances of securing financial aid worth ₹5-30 lakhs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What documents do I need for study abroad applications?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Essential documents include: academic transcripts, standardized test scores (GRE/GMAT, IELTS/TOEFL), Statement of Purpose (SOP), Letters of Recommendation (LORs), resume/CV, passport copy, financial documents, and portfolio (for specific programs). We guide you through the complete documentation process.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you assist with visa applications?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Our visa support includes DS-160/visa application form filling, financial document preparation, mock visa interviews, appointment scheduling guidance, and post-visa approval support. We have extensive experience with F-1 (USA), Tier 4 (UK), Study Permit (Canada), and Subclass 500 (Australia) visas.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I work while studying abroad?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Most countries allow international students to work part-time. USA: 20 hrs/week on-campus, UK: 20 hrs/week during term, Canada: 20-40 hrs/week, Australia: 48 hrs/fortnight. We provide guidance on finding part-time jobs, CPT/OPT programs, and post-study work visa options.</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>What is your success rate for university admissions?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Maven Masters has an 87% admission success rate across top universities in the USA, UK, Canada, Australia, and Europe. Our personalized approach, expert SOP writing, and strategic university selection significantly improve your chances of acceptance and scholarship awards.</p>
+          <!-- Academic Support FAQs -->
+          <div class="faq-category">
+            <h3>📚 Academic Writing & Research Support</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What academic writing services do you offer?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>We provide comprehensive support for research papers, dissertations, thesis writing, literature reviews, research proposals, data analysis, statistical consulting, manuscript editing, publication support, and coursework assistance across all academic disciplines including sciences, humanities, and business.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Are your writers qualified for PhD-level work?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! Our team consists of PhD holders and subject matter experts from top universities with 5-15 years of research experience. All writers hold advanced degrees in their respective fields and have published in peer-reviewed journals, ensuring highest quality academic support.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you ensure plagiarism-free work?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Every document is written from scratch based on your requirements. We use premium plagiarism detection tools (Turnitin, iThenticate) and provide detailed originality reports with similarity index below 10%. We guarantee 100% original, properly cited academic work with complete referencing.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is your typical turnaround time?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Standard projects: 7-14 days, Urgent requests: 3-5 days (with additional charges), Dissertation chapters: 2-3 weeks per chapter, Complete thesis: 6-12 weeks. Rush services available for emergency deadlines. We prioritize quality while meeting your submission timelines.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much do your academic writing services cost?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you provide revisions if needed?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I communicate directly with my assigned writer?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We facilitate direct communication through our secure platform via email or WhatsApp. You can discuss requirements, share feedback, and track progress throughout the project. Our coordinators are available 24/7 to address queries and ensure smooth collaboration.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you protect my confidentiality?</span>
+                <span class="faq-icon" aria-hidden="true">▼</span>
+              </button>
+              <div class="faq-answer">
+                <p>We maintain strict confidentiality through NDAs, encrypted communication, secure file transfers, and data protection protocols. Your personal information, academic work, and payment details are never shared with third parties. All projects are handled with complete discretion and privacy.</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>How much does studying abroad typically cost?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Costs vary by country and program. USA: ₹25-60 lakhs/year, UK: ₹20-40 lakhs/year, Canada: ₹15-35 lakhs/year, Australia: ₹20-45 lakhs/year. We help identify scholarships, part-time work opportunities, and cost-effective universities to match your budget while maintaining quality education.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>Do you help with scholarship applications?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We provide comprehensive scholarship guidance including merit-based, need-based, and country-specific scholarships. Our team assists with application essays, documentation, and interview preparation to maximize your chances of securing financial aid worth ₹5-30 lakhs.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>What documents do I need for study abroad applications?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Essential documents include: academic transcripts, standardized test scores (GRE/GMAT, IELTS/TOEFL), Statement of Purpose (SOP), Letters of Recommendation (LORs), resume/CV, passport copy, financial documents, and portfolio (for specific programs). We guide you through the complete documentation process.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>How do you assist with visa applications?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Our visa support includes DS-160/visa application form filling, financial document preparation, mock visa interviews, appointment scheduling guidance, and post-visa approval support. We have extensive experience with F-1 (USA), Tier 4 (UK), Study Permit (Canada), and Subclass 500 (Australia) visas.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>Can I work while studying abroad?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! Most countries allow international students to work part-time. USA: 20 hrs/week on-campus, UK: 20 hrs/week during term, Canada: 20-40 hrs/week, Australia: 48 hrs/fortnight. We provide guidance on finding part-time jobs, CPT/OPT programs, and post-study work visa options.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Academic Support FAQs -->
-      <div class="faq-category">
-        <h3>📚 Academic Writing & Research Support</h3>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>What academic writing services do you offer?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>We provide comprehensive support for research papers, dissertations, thesis writing, literature reviews, research proposals, data analysis, statistical consulting, manuscript editing, publication support, and coursework assistance across all academic disciplines including sciences, humanities, and business.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>Are your writers qualified for PhD-level work?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely! Our team consists of PhD holders and subject matter experts from top universities with 5-15 years of research experience. All writers hold advanced degrees in their respective fields and have published in peer-reviewed journals, ensuring highest quality academic support.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>How do you ensure plagiarism-free work?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Every document is written from scratch based on your requirements. We use premium plagiarism detection tools (Turnitin, iThenticate) and provide detailed originality reports with similarity index below 10%. We guarantee 100% original, properly cited academic work with complete referencing.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>What is your typical turnaround time?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Standard projects: 7-14 days, Urgent requests: 3-5 days (with additional charges), Dissertation chapters: 2-3 weeks per chapter, Complete thesis: 6-12 weeks. Rush services available for emergency deadlines. We prioritize quality while meeting your submission timelines.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>How much do your academic writing services cost?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>Do you provide revisions if needed?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>Can I communicate directly with my assigned writer?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We facilitate direct communication through our secure platform via email or WhatsApp. You can discuss requirements, share feedback, and track progress throughout the project. Our coordinators are available 24/7 to address queries and ensure smooth collaboration.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" aria-expanded="false">
-            <span>How do you protect my confidentiality?</span>
-            <span class="faq-icon" aria-hidden="true">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>We maintain strict confidentiality through NDAs, encrypted communication, secure file transfers, and data protection protocols. Your personal information, academic work, and payment details are never shared with third parties. All projects are handled with complete discretion and privacy.</p>
+          <!-- CTA at end of FAQs -->
+          <div class="faq-cta">
+            <p>Still have questions? We're here to help!</p>
+            <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
+              💬 Chat with Our Counsellor
+              <small>Get instant answers via WhatsApp</small>
+            </a>
           </div>
         </div>
       </div>
-
-      <!-- CTA at end of FAQs -->
-      <div class="faq-cta">
-        <p>Still have questions? We're here to help!</p>
-        <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
-          💬 Chat with Our Counsellor
-          <small>Get instant answers via WhatsApp</small>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
+  </main>
+  
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1143,35 +1169,38 @@ footer a:hover {
       <p>Bhopal, Madhya Pradesh, India</p>
       <p>📧 <a href="mailto:mastersmaven@gmail.com">mastersmaven@gmail.com</a></p>
       <p>📱 <a href="tel:+919893314761">+91-9893314761</a></p>
-<div class="social">
-    <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/>
-      </svg>
-    </a>
-    
-    <a href="https://www.instagram.com/mavenmasters" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3a2.8 2.8 0 1 1 2.8-2.8A2.8 2.8 0 0 1 12 14.8zM17.8 6.2a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
-      </svg>
-    </a>
-    
-    <a href="https://www.youtube.com/@Maven.Masters" target="_blank" rel="noopener" aria-label="YouTube">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12s0 4.3.5 6.3a3 3 0 0 0 2.1 2.1c2.1.6 8.4.6 8.4.6s6.3 0 8.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-6.3.5-6.3zM10 15.5v-7l6 3.5-6 3.5z"/>
-      </svg>
-    </a>
-    
-    <a href="https://wa.me/919893314761" target="_blank" rel="noopener" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8 11.8 0 1 0 20.5 3.5zm-8.7 17a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9.2 9.2 0 1 1 7.2 3.8zm5-6.9c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 1.1-.4.2-.7.1a7.6 7.6 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5s-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 5.2 6.5 6.5 0 0 0 3.9.5 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/>
-      </svg>
-    </a>
-  </div>
+      
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        
+        <a href="https://www.instagram.com/mavenmasters" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3a2.8 2.8 0 1 1 2.8-2.8A2.8 2.8 0 0 1 12 14.8zM17.8 6.2a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+          </svg>
+        </a>
+        
+        <a href="https://www.youtube.com/@Maven.Masters" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12s0 4.3.5 6.3a3 3 0 0 0 2.1 2.1c2.1.6 8.4.6 8.4.6s6.3 0 8.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-6.3.5-6.3zM10 15.5v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+        
+        <a href="https://wa.me/919893314761" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8 11.8 0 1 0 20.5 3.5zm-8.7 17a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9.2 9.2 0 1 1 7.2 3.8zm5-6.9c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 1.1-.4.2-.7.1a7.6 7.6 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5s-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 5.2 6.5 6.5 0 0 0 3.9.5 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <p class="muted" style="margin-top: 24px;">© 2025 Maven Masters. All rights reserved.</p>
+      <p class="muted" style="font-size: 0.85rem;">Study Abroad Consultant | Academic Writing | Research Support | Bhopal</p>
+    </div>
+  </footer>
   
-  <p class="muted" style="margin-top: 24px;">© 2025 Maven Masters. All rights reserved.</p>
-  <p class="muted" style="font-size: 0.85rem;">Study Abroad Consultant | Academic Writing | Research Support | Bhopal</p>
-</div></footer>
   <script>
     // Theme Toggle
     const toggle = document.getElementById('themeToggle');
@@ -1256,8 +1285,4 @@ footer a:hover {
     });
   </script>
 </body>
-</html></parameter>
-
-
-
-
+</html>
