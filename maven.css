@@ -79,7 +79,7 @@ p{ margin:0 0 1rem 0; color: var(--muted); }
 .subline{ font-size:12px; }
 .sr-only{
   position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  overflow:visible; clip:rect(0,0,0,0); white-space:nowrap; border:0;
 }
 
 /* -------------------------
@@ -296,7 +296,7 @@ nav.primary a:hover{ color: var(--accent-2); transform: translateY(-2px); }
    ------------------------- */
 .hero{
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   min-height: 72vh;
   display:flex;
   align-items:center;
@@ -643,6 +643,7 @@ footer{
   .glass-card, .floating-cta, .hero-bg, nav.primary a, .cta, .card{ transition:none; }
   .urgency{ animation:none; }
 }
+
 
 
 
