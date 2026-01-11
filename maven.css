@@ -68,7 +68,7 @@ a:hover{ text-decoration:none; }
 .container{ width:min(var(--max-width), 94%); margin:0 auto; }
 
 h1,h2,h3,h4{
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat Display", serif;
   margin:0 0 .5rem 0;
   color:inherit;
 }
@@ -643,5 +643,6 @@ footer{
   .glass-card, .floating-cta, .hero-bg, nav.primary a, .cta, .card{ transition:none; }
   .urgency{ animation:none; }
 }
+
 
 
