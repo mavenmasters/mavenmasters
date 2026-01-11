@@ -100,7 +100,7 @@ header{
   align-items:center;
   justify-content:space-between;
   gap:12px;
-  padding:12px 18px;
+  padding:20px 40px;
   border-radius:12px;
   background: var(--glass-2);
   border: 1px solid var(--glass-border);
@@ -132,7 +132,7 @@ nav.primary a:hover{ color: var(--accent-2); transform: translateY(-2px); }
   align-items:center;
   justify-content:space-between;  /* ADD this */
   gap:24px;
-  padding:12px 18px;
+  padding:20px 40px;
   border-radius:12px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -643,6 +643,7 @@ footer{
   .glass-card, .floating-cta, .hero-bg, nav.primary a, .cta, .card{ transition:none; }
   .urgency{ animation:none; }
 }
+
 
 
 
