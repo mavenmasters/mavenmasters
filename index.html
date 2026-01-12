@@ -242,19 +242,13 @@ header{
   min-height: 75px;
 }
 
-.brand-center {
-  text-align: center;
-  flex: 1;
-}
-
-.logo-svg{
-  width: 75px;
-  height: 75px;
-  flex-shrink: 0;
-  overflow: visible !important;
-  display: block;
+.logo-img{
+  height: 96px;         
+  width: auto;
+  max-width: 140px;
   object-fit: contain;
-  margin: -8px 0;
+  display: block;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
 }
 
 .brand-text h1{ 
@@ -846,8 +840,14 @@ footer a:hover {
   <header>
     <div class="nav-wrap">
       <a href="#" class="brand" aria-label="Maven Masters Home">
-        <img src="assets/logo.svg" alt="Maven Masters Logo" class="logo-svg">
-      </a>
+  <img src="assets/images/logo.png"
+       alt="Maven Masters Logo"
+       class="logo-img">
+  <div class="brand-text">
+    <h1>Maven Masters</h1>
+    <small>Academic & Career Solutions</small>
+  </div>
+</a>
       
       <div class="brand-center">
         <div class="brand-text">
@@ -1269,6 +1269,7 @@ footer a:hover {
   </script>
 </body>
 </html>
+
 
 
 
