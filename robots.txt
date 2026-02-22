@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mavenmasters.github.io/mavenmasters/sitemap.xml
