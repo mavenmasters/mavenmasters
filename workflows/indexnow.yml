@@ -1,0 +1,25 @@
+name: IndexNow Submission
+on:
+  push:
+    branches:
+    jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Submit URLs to IndexNow
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "host": "mavenmasters.github.io",
+            "key": "YOUR_API_KEY",
+            "keyLocation": "https://mavenmasters.github.io/mavenmasters/key.txt",
+            "urlList": [
+              "https://mavenmasters.github.io/mavenmasters/",
+              "https://mavenmasters.github.io/mavenmasters/about.html",
+              "https://mavenmasters.github.io/mavenmasters/contact.html"
+            ]
+          }'
