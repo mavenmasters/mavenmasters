@@ -1,17 +1,19 @@
-<!doctype html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="Ghrij1d6E97SQoBP_n0P8cqQnecfKUZ5H6Lff_XIQyc" />
   <meta name="msvalidate.01" content="779FE63A8104C797D0A2CA2C9FF29D75" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- SEO Meta Tags -->
-  <title> Maven Masters | Study Abroad Consultant & Academic Writing Services </title>
+  <title>Maven Masters | Study Abroad Consultant & Academic Writing Services</title>
   <meta name="description" content="Top study abroad consultant in India offering academic writing, research support, dissertation help & university admissions guidance. 87% admission success rate. Contact us today!">
   <meta name="keywords" content="study abroad consultant in India, academic writing services India, dissertation help, thesis writing, research support, university admission counselling, SOP writing, student visa guidance">
   <meta name="author" content="Maven Masters">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mavenmasters.github.io/mavenmasters">
+  
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Maven Masters | Study Abroad & Academic Writing Services">
   <meta property="og:description" content="Expert study abroad counselling & PhD-level academic writing. 87% admission success | 200+ students placed. Book free consultation today!">
@@ -19,25 +21,33 @@
   <meta property="og:url" content="https://mavenmasters.github.io/mavenmasters/">
   <meta property="og:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
   <meta property="og:locale" content="en_IN">
+  
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Maven Masters | Study Abroad & Academic Services">
   <meta name="twitter:description" content="Expert study abroad counselling & PhD-level academic writing services in Bhopal.">
   <meta name="twitter:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
+  
   <!-- Geo Tags -->
   <meta name="geo.region" content="IN-MP">
   <meta name="geo.placename" content="Bhopal">
   <meta name="geo.position" content="23.2599;77.4126">
   <meta name="ICBM" content="23.2599, 77.4126">
-  <!-- Favicon -->
+  
+  <!-- PWA & Icons -->
+  <meta name="theme-color" content="#08306a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
   
-  <!-- Fonts - Optimized Loading -->
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Structured Data - Enhanced -->
+  <!-- Chart.js for Analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+  <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -121,1015 +131,1484 @@
     ]
   }
   </script>
-  
+
   <style>
-/* -------------------------
-   Variables & Base
-   ------------------------- */
-:root{
-  --bg: #f5f7fb;
-  --card: #ffffff;
-  --text-main: #0f172a;
-  --muted: #54607a;
-
-  --accent-1: #08306a;
-  --accent-2: #0f4fd8;
-
-  --gold: #D4AF37;
-  --gold-soft: #E6C45A;
-  --gold-bright: #F5C542;
-  --gold-metal: #D4AF37;
-
-  --success: #059669;
-  --danger: #DC2626;
-
-  --radius: 14px;
-  --ease: cubic-bezier(.2,.9,.3,1);
-  --max-width: 1200px;
-
-  --glass: rgba(255,255,255,0.75);
-  --glass-2: rgba(255,255,255,0.9);
-  --glass-border: rgba(15,23,42,0.10);
-
-  --shadow-lg: 0 18px 40px rgba(16,24,40,0.10);
-  --shadow-sm: 0 6px 18px rgba(16,24,40,0.08);
-
-  --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-}
-
-html[data-theme="dark"]{
-  --bg: #070b16;
-  --card: rgba(255,255,255,0.06);
-  --text-main: #e9eefc;
-  --muted: rgba(233,238,252,0.68);
-
-  --glass: rgba(255,255,255,0.06);
-  --glass-2: rgba(255,255,255,0.10);
-  --glass-border: rgba(255,255,255,0.10);
-
-  --shadow-lg: 0 18px 40px rgba(0,0,0,0.35);
-  --shadow-sm: 0 8px 20px rgba(0,0,0,0.22);
-}
-
-*{ box-sizing:border-box; margin:0; padding:0; }
-html{ scroll-behavior: smooth; }
-html,body{ height:100%; }
-
-body{
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  background:
-    radial-gradient(900px 500px at 10% 5%, rgba(20,60,138,0.12), transparent),
-    radial-gradient(800px 400px at 90% 90%, rgba(212,175,55,0.10), transparent),
-    var(--bg);
-  color: var(--text-main);
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
-  transition: background 300ms var(--ease), color 300ms var(--ease);
-}
-
-a{ color:inherit; text-decoration:none; }
-.container{ width:min(var(--max-width), 94%); margin:0 auto; }
-
-h1,h2,h3,h4,h5,h6{
-  font-family: "Montserrat Display", serif;
-  margin:0 0 .75rem 0;
-  color:inherit;
-  line-height: 1.2;
-}
-h1{ font-size: clamp(2rem, 5vw, 3rem); }
-h2{ font-size: clamp(1.75rem, 4vw, 2.5rem); }
-h3{ font-size: clamp(1.25rem, 3vw, 1.75rem); }
-
-p{ margin:0 0 1rem 0; color: var(--muted); line-height: 1.7; }
-.muted{ color: var(--muted); }
-
-/* -------------------------
-   Header with Logo
-   ------------------------- */
-header{
-  position: sticky;
-  top: 10px;
-  z-index: 1200;
-  width: 100%;
-  display:flex;
-  justify-content:center;
-  overflow: visible;
-}
-
-.nav-wrap{
-  width:min(var(--max-width), 94%);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-  padding:16px 18px;
-  border-radius:12px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(16px) saturate(1.3);
-  overflow: visible;
-}
-
-.brand{ 
-  display:flex; 
-  gap:12px; 
-  align-items:center;
-  text-decoration: none;
-  overflow: visible;
-  min-height: 75px;
-}
-
-.logo-img{
-  height: 96px;         
-  width: auto;
-  max-width: 140px;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
-}
-
-.brand-text h1{ 
-  font-size: 1.75rem;
-  margin:0; 
-  letter-spacing:0.3px;
-  color: var(--text-main);
-  font-weight: 700;
-}
-.brand-text small{
-  font-size: 0.95rem;
-  color: var(--muted);
-  display: block;
-  margin-top: 4px;
-}
-
-nav.primary{ 
-  display:flex; 
-  gap:18px; 
-  align-items:center; 
-}
-
-nav.primary a{ 
-  color: var(--text-main); 
-  font-weight:600; 
-  font-size: 0.95rem;
-  transition: transform 200ms var(--ease), color 200ms var(--ease); 
-  padding: 8px 12px;
-}
-
-nav.primary a:hover{ 
-  color: var(--accent-2); 
-  transform: translateY(-2px); 
-}
-
-.nav-actions{ 
-  display:flex; 
-  gap:10px; 
-  align-items:center;
-  flex-shrink: 0;
-}
-
-#themeToggle{
-  background: transparent;
-  border: 1px solid var(--glass-border);
-  border-radius: 10px;
-  padding: 8px 10px;
-  cursor: pointer;
-  color: inherit;
-  font-size: 20px;
-  transition: transform 0.2s var(--ease);
-}
-
-#themeToggle:hover{
-  transform: scale(1.1);
-}
-
-/* CTA Buttons */
-.cta-primary {
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
-  color: #08102a;
-  font-size: 1.05rem;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-weight: 700;
-  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
-  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
-  display: inline-block;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-}
-
-.cta-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
-}
-
-.cta-primary small {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 400;
-  margin-top: 4px;
-  opacity: 0.9;
-}
-
-.cta-secondary {
-  background: transparent;
-  color: var(--accent-2);
-  border: 2px solid var(--accent-2);
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  display: inline-block;
-  transition: all 0.2s var(--ease);
-  font-size: 0.95rem;
-}
-
-.cta-secondary:hover {
-  background: var(--accent-2);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.cta-hero {
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
-  color: #08102a;
-  font-size: 1.25rem;
-  padding: 20px 40px;
-  border-radius: 14px;
-  font-weight: 700;
-  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.4);
-  display: inline-block;
-  text-align: center;
-  transition: transform 0.3s var(--ease);
-}
-
-.cta-hero:hover {
-  transform: scale(1.05);
-}
-
-.cta-hero small {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 400;
-  margin-top: 6px;
-  opacity: 0.85;
-}
-
-.cta-nav{
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-metal));
-  color: #08102a;
-  padding: 8px 18px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-/* Trust Indicators */
-.trust-badge {
-  margin-top: 16px;
-  font-size: 0.95rem;
-  color: var(--gold-metal);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.urgency {
-  color: var(--danger);
-  font-weight: 600;
-  font-size: 1.05rem;
-  margin-bottom: 24px;
-  animation: pulse 2s infinite;
-  display: inline-block;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.75; }
-}
-
-.result {
-  display: inline-block;
-  color: var(--success);
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin: 8px 0;
-}
-
-/* -------------------------
-   Hero Section
-   ------------------------- */
-.hero {
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
-  padding: 80px 0 60px 0;
-}
-
-.hero-card {
-  background: var(--card);
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  padding: 48px;
-  display: grid;
-  grid-template-columns: 1.8fr 1.2fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero h1 { 
-  color: var(--accent-1); 
-  margin-bottom: 16px;
-}
-
-.hero p.lead {
-  font-size: 1.15rem;
-  color: var(--muted);
-  margin-bottom: 32px;
-  line-height: 1.6;
-}
-
-.hero-features {
-  background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(15,79,216,0.08));
-  border-radius: 16px;
-  padding: 28px;
-  border: 1px solid var(--glass-border);
-}
-
-.feature {
-  padding: 12px 0;
-  font-size: 1rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.feature::before{
-  content: "✓";
-  color: var(--success);
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-/* -------------------------
-   Services Section
-   ------------------------- */
-section {
-  padding: 80px 0;
-}
-
-section h2 {
-  text-align: center;
-  color: var(--accent-1);
-  margin-bottom: 48px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
-  border: 1px solid var(--glass-border);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-}
-
-.card h3 {
-  color: var(--accent-1);
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-/* -------------------------
-   CTA Section
-   ------------------------- */
-#apply {
-  background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(15,79,216,0.1));
-  text-align: center;
-  padding: 80px 0;
-}
-
-#apply h2 {
-  margin-bottom: 20px;
-}
-
-.cta-buttons {
-  margin-top: 40px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* -------------------------
-   FAQ Section
-   ------------------------- */
-.faq-section {
-  background: var(--card);
-  border-radius: 20px;
-  padding: 48px;
-  box-shadow: var(--shadow-lg);
-  margin-bottom: 40px;
-}
-
-.faq-section h2 {
-  color: var(--accent-1);
-  margin-bottom: 12px;
-  font-size: 2.25rem;
-  text-align: left;
-}
-
-.faq-section > p {
-  color: var(--muted);
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-}
-
-.faq-category {
-  margin-bottom: 48px;
-}
-
-.faq-category h3 {
-  color: var(--gold-metal);
-  font-size: 1.6rem;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--gold-soft);
-}
-
-.faq-item {
-  background: var(--bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-  margin-bottom: 14px;
-  overflow: hidden;
-  transition: all 0.3s var(--ease);
-}
-
-.faq-item:hover {
-  box-shadow: var(--shadow-sm);
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding: 20px 24px;
-  background: transparent;
-  border: none;
-  font-family: Inter, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  transition: color 0.2s var(--ease);
-}
-
-.faq-question:hover {
-  color: var(--accent-2);
-}
-
-.faq-icon {
-  font-size: 1.2rem;
-  color: var(--gold-metal);
-  transition: transform 0.3s var(--ease);
-  flex-shrink: 0;
-}
-
-.faq-item.active .faq-icon {
-  transform: rotate(180deg);
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s var(--ease), padding 0.3s var(--ease);
-  padding: 0 24px;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 600px;
-  padding: 0 24px 20px 24px;
-}
-
-.faq-answer p {
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.faq-cta {
-  text-align: center;
-  margin-top: 48px;
-  padding-top: 40px;
-  border-top: 2px solid var(--glass-border);
-}
-
-.faq-cta p {
-  font-size: 1.1rem;
-  margin-bottom: 24px;
-  color: var(--text-main);
-  font-weight: 600;
-}
-
-/* -------------------------
-   Footer
-   ------------------------- */
-footer {
-  border-top: 1px solid var(--glass-border);
-  padding: 60px 0 40px 0;
-  text-align: center;
-  background: var(--card);
-}
-
-footer h4 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-}
-
-footer p {
-  margin: 6px 0;
-}
-
-footer a:hover {
-  color: var(--accent-2);
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin: 28px 0;
-}
-
-.social a {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-bright), var(--accent-2));
-  color: white;
-  transition: transform 0.2s var(--ease);
-}
-
-.social a:hover {
-  transform: scale(1.15);
-}
-
-.social svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
-}
-
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
-  z-index: 1100;
-  transition: transform 0.3s var(--ease);
-  animation: bounce 2s infinite;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-float svg {
-  width: 32px;
-  height: 32px;
-  fill: white;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-/* -------------------------
-   Responsive Design
-   ------------------------- */
-@media(max-width: 900px) {
-  .hero-card {
-    grid-template-columns: 1fr;
-    padding: 32px;
-  }
-  
-  .faq-section {
-    padding: 28px;
-  }
-  
-  .faq-question {
-    font-size: 0.95rem;
-    padding: 16px;
-  }
-  
-  .nav-wrap {
-    gap: 16px;
-  }
-  
-  .brand-center h1 {
-    font-size: 1.3rem;
-  }
-  
-  .brand-center small {
-    font-size: 0.85rem;
-  }
-  
-  .logo-svg {
-    width: 90px;
-    height: 90px;
-  }
-  
-  nav.primary {
-    gap: 10px;
-  }
-  
-  nav.primary a {
-    font-size: 0.85rem;
-    padding: 6px 10px;
-  }
-  
-  .cta-hero {
-    font-size: 1.1rem;
-    padding: 16px 32px;
-  }
-  
-  .whatsapp-float {
-    width: 56px;
-    height: 56px;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-
-@media(max-width: 600px){
-  .logo-img{
-    height: 72px;
-    max-width: 120px;
-  }
-  
-  .nav-wrap {
-    padding: 10px 14px;
-  }
-  
-  nav.primary a:not(.cta-nav) {
-    display: none;
-  }
-  
-  .hero {
-    padding: 40px 0;
-  }
-  
-  .hero-card {
-    padding: 24px;
-  }
-  
-  section {
-    padding: 50px 0;
-  }
-  
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
+    /* ----- BASE & VARIABLES ----- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text-main: #0f172a;
+      --muted: #54607a;
+      --accent-1: #08306a;
+      --accent-2: #0f4fd8;
+      --gold: #D4AF37;
+      --gold-bright: #F5C542;
+      --gold-soft: #E6C45A;
+      --gold-metal: #D4AF37;
+      --success: #059669;
+      --danger: #DC2626;
+      --radius: 14px;
+      --radius-sm: 8px;
+      --glass: rgba(255,255,255,0.75);
+      --glass-2: rgba(255,255,255,0.9);
+      --glass-border: rgba(15,23,42,0.10);
+      --shadow-lg: 0 18px 40px rgba(16,24,40,0.10);
+      --shadow-sm: 0 6px 18px rgba(16,24,40,0.08);
+      --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      --ease: cubic-bezier(.2,.9,.3,1);
+      --max-width: 1200px;
+    }
+    
+    [data-theme="dark"] {
+      --bg: #070b16;
+      --card: rgba(255,255,255,0.06);
+      --text-main: #e9eefc;
+      --muted: rgba(233,238,252,0.68);
+      --glass: rgba(255,255,255,0.06);
+      --glass-2: rgba(255,255,255,0.10);
+      --glass-border: rgba(255,255,255,0.10);
+      --shadow-lg: 0 18px 40px rgba(0,0,0,0.35);
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.22);
+      --gold-soft: #C9A82E;
+    }
+    
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background 0.2s, color 0.2s;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      width: min(var(--max-width), 94%);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    h1, h2, h3 { 
+      font-family: "Montserrat Display", serif; 
+      font-weight: 700; 
+      line-height: 1.2;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+    h2 { 
+      font-size: clamp(1.75rem, 4vw, 2.5rem); 
+      text-align: center; 
+      margin-bottom: 2rem; 
+      color: var(--accent-1); 
+    }
+    h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+    
+    p { margin-bottom: 1rem; }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    .muted { 
+      color: var(--muted); 
+      font-size: 0.95rem;
+    }
+    
+    /* ----- HEADER & NAVIGATION ----- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      transition: all 0.3s var(--ease);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      gap: 2rem;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-1);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+    
+    .nav-links a:hover {
+      background: var(--glass-2);
+      color: var(--accent-2);
+      transform: translateY(-2px);
+    }
+    
+    .theme-toggle {
+      background: var(--card);
+      border: 1px solid var(--glass-border);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+    }
+    
+    .theme-toggle:hover {
+      transform: scale(1.1) rotate(15deg);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    /* ----- HERO SECTION ----- */
+    .hero {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+      opacity: 0.3;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero h1 {
+      margin-bottom: 1.5rem;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-value {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold-bright);
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    
+    /* ----- BUTTONS ----- */
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s var(--ease);
+      font-size: 1rem;
+    }
+    
+    .btn-primary {
+      background: var(--gold);
+      color: white;
+      box-shadow: 0 4px 14px rgba(212,175,55,0.3);
+    }
+    
+    .btn-primary:hover {
+      background: var(--gold-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212,175,55,0.4);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: var(--accent-1);
+      border: 2px solid white;
+    }
+    
+    .btn-secondary:hover {
+      background: transparent;
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--accent-1);
+      border: 2px solid var(--accent-1);
+    }
+    
+    .btn-outline:hover {
+      background: var(--accent-1);
+      color: white;
+    }
+    
+    .cta-primary {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: white;
+      padding: 1.25rem 2.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+      transition: all 0.3s var(--ease);
+    }
+    
+    .cta-primary:hover {
+      background: var(--gold-bright);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(212,175,55,0.4);
+    }
+    
+    .cta-primary small {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+    
+    /* ----- SECTIONS ----- */
+    section {
+      padding: 5rem 0;
+    }
+    
+    .section-alt {
+      background: var(--card);
+    }
+    
+    /* ----- CARDS & GRID ----- */
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease);
+      border: 1px solid var(--glass-border);
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .service-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease);
+      border: 1px solid var(--glass-border);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold-soft);
+    }
+    
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    
+    .service-card h3 {
+      color: var(--accent-1);
+      margin-bottom: 1rem;
+    }
+    
+    .service-card p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-features {
+      list-style: none;
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+    
+    .service-features li {
+      padding: 0.5rem 0;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .service-features li::before {
+      content: '✓';
+      color: var(--success);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    
+    /* ----- BLOG SECTION ----- */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .blog-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease);
+      border: 1px solid var(--glass-border);
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      background: var(--accent-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    
+    .blog-content {
+      padding: 1.5rem;
+    }
+    
+    .blog-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    
+    .blog-tag {
+      background: var(--gold);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .blog-card h3 {
+      color: var(--accent-1);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+    
+    .blog-excerpt {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    
+    .blog-link {
+      color: var(--accent-2);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    
+    .blog-link:hover {
+      gap: 1rem;
+    }
+    
+    /* ----- FREE RESOURCES ----- */
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .resource-card {
+      background: linear-gradient(135deg, rgba(212,175,55,0.05), rgba(15,79,216,0.05));
+      border: 2px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s var(--ease);
+    }
+    
+    .resource-card:hover {
+      border-color: var(--gold-soft);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .resource-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .resource-card h3 {
+      color: var(--accent-1);
+      margin-bottom: 1rem;
+    }
+    
+    .resource-card p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    
+    /* ----- FAQ SECTION ----- */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      background: var(--card);
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+      border: 1px solid var(--glass-border);
+      overflow: hidden;
+      transition: all 0.3s var(--ease);
+    }
+    
+    .faq-item.active {
+      box-shadow: var(--shadow-sm);
+      border-color: var(--gold-soft);
+    }
+    
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.5rem;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+    
+    .faq-question:hover {
+      color: var(--accent-2);
+    }
+    
+    .faq-icon {
+      transition: transform 0.3s var(--ease);
+      color: var(--gold);
+    }
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s var(--ease);
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+    
+    .faq-answer p {
+      padding: 0 1.5rem 1.5rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    
+    .faq-cta {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(15,79,216,0.08));
+      border-radius: var(--radius);
+    }
+    
+    .faq-cta p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--accent-1);
+    }
+    
+    /* ----- MODALS ----- */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(5px);
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .modal-content {
+      background: var(--card);
+      margin: 5% auto;
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+      animation: slideDown 0.3s var(--ease);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .modal-close {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all 0.2s ease;
+    }
+    
+    .modal-close:hover {
+      color: var(--danger);
+      transform: rotate(90deg);
+    }
+    
+    .modal h3 {
+      color: var(--accent-1);
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.875rem;
+      border: 2px solid var(--glass-border);
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--bg);
+      color: var(--text-main);
+      transition: all 0.2s ease;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
+    }
+    
+    .form-group textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    /* ----- EXIT POPUP ----- */
+    .exit-popup {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(8px);
+    }
+    
+    .exit-popup.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .exit-popup-content {
+      background: var(--card);
+      padding: 3rem;
+      border-radius: var(--radius);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+      animation: scaleIn 0.3s var(--ease);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    
+    .exit-popup-close {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all 0.2s ease;
+    }
+    
+    .exit-popup-close:hover {
+      color: var(--danger);
+      transform: rotate(90deg);
+    }
+    
+    .exit-popup h2 {
+      color: var(--accent-1);
+      margin-bottom: 1rem;
+    }
+    
+    .exit-popup .highlight {
+      color: var(--gold);
+      font-weight: 700;
+    }
+    
+    /* ----- CHAT WIDGETS ----- */
+    .chat-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    
+    .chat-bubble {
+      display: none;
+      flex-direction: column;
+      width: 350px;
+      height: 500px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      animation: slideUp 0.3s var(--ease);
+    }
+    
+    .chat-header {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .chat-header h4 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    
+    .chat-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .chat-close:hover {
+      transform: scale(1.2);
+    }
+    
+    .chat-messages {
+      flex: 1;
+      padding: 1.5rem;
+      overflow-y: auto;
+      background: var(--bg);
+    }
+    
+    .chat-message {
+      margin-bottom: 1rem;
+      padding: 0.875rem;
+      border-radius: var(--radius-sm);
+      max-width: 80%;
+    }
+    
+    .chat-message.bot {
+      background: var(--card);
+      border: 1px solid var(--glass-border);
+    }
+    
+    .chat-message.user {
+      background: var(--accent-2);
+      color: white;
+      margin-left: auto;
+    }
+    
+    .chat-input-area {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1rem;
+      border-top: 1px solid var(--glass-border);
+      background: var(--card);
+    }
+    
+    .chat-input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 2px solid var(--glass-border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: inherit;
+    }
+    
+    .chat-input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    
+    .chat-send {
+      background: var(--gold);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    
+    .chat-send:hover {
+      background: var(--gold-bright);
+    }
+    
+    .chat-fab {
+      background: var(--gold);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(212,175,55,0.4);
+      transition: all 0.3s ease;
+      border: none;
+    }
+    
+    .chat-fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(212,175,55,0.5);
+    }
+    
+    /* ----- ADMIN DASHBOARD ----- */
+    .admin-dashboard {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 3000;
+      overflow-y: auto;
+      padding: 2rem;
+    }
+    
+    .admin-content {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--glass-border);
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .stat-card {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    
+    .stat-card h4 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .leads-table-container {
+      overflow-x: auto;
+      margin-top: 2rem;
+    }
+    
+    .leads-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .leads-table th,
+    .leads-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .leads-table th {
+      background: var(--bg);
+      font-weight: 600;
+      color: var(--accent-1);
+    }
+    
+    .leads-table select {
+      padding: 0.5rem;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      color: var(--text-main);
+    }
+    
+    .leads-table button {
+      padding: 0.5rem 1rem;
+      margin: 0 0.25rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: all 0.2s ease;
+    }
+    
+    /* ----- SOCIAL SHARE ----- */
+    .social-share {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    
+    .social-share-label {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    
+    .social-share-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .social-share-btn:hover {
+      transform: translateY(-3px) scale(1.1);
+    }
+    
+    .facebook-btn { background: #1877F2; }
+    .twitter-btn { background: #1DA1F2; }
+    .linkedin-btn { background: #0A66C2; }
+    .whatsapp-btn { background: #25D366; }
+    
+    /* ----- FOOTER ----- */
+    footer {
+      background: var(--accent-1);
+      color: rgba(255,255,255,0.9);
+      padding: 3rem 0 2rem;
+      text-align: center;
+    }
+    
+    footer h4 {
+      color: var(--gold-bright);
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+    
+    footer a {
+      color: rgba(255,255,255,0.9);
+      transition: all 0.2s ease;
+    }
+    
+    footer a:hover {
+      color: var(--gold-bright);
+    }
+    
+    .social {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    
+    .social a {
+      width: 48px;
+      height: 48px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .social a:hover {
+      background: var(--gold);
+      transform: translateY(-5px);
+    }
+    
+    .social svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+    
+    /* ----- ANIMATIONS ----- */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    /* ----- NOTIFICATIONS ----- */
+    .notification {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      background: var(--accent-1);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      animation: slideUp 0.3s var(--ease);
+      z-index: 9999;
+    }
+    
+    /* ----- LOADING SPINNER ----- */
+    .loading-spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 0.6s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    /* ----- CTA SECTION ----- */
+    .cta-section {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+    
+    .cta-badges {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .cta-badge {
+      background: rgba(255,255,255,0.15);
+      padding: 1rem 2rem;
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+      font-weight: 600;
+    }
+    
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.75rem; }
+      
+      .services-grid,
+      .blog-grid,
+      .resources-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .chat-bubble {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+      
+      .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 2rem 1.5rem;
+      }
+      
+      .exit-popup-content {
+        padding: 2rem 1.5rem;
+      }
+    }
   </style>
 </head>
-
 <body>
   <!-- Header -->
   <header>
-    <div class="nav-wrap">
-      <a href="#" class="brand" aria-label="Maven Masters Home">
-  <img src="assets/images/logo.svg"
-       alt="Maven Masters Logo"
-       class="logo-img">
- <div class="brand-center"
-   <div class="brand-text">
-    <h1 style="color: #1a365d;" style="font-size: 42px;">Maven Masters</h1>
-    <h3 style="color: #6B7280;" style="font-size: 10px;">Academic & Career Solutions</h3>
- </div>
-      <div class="nav-actions">
-        <nav class="primary" aria-label="Main navigation">
-          <a href="#services">Services</a>
-          <a href="#faqs">FAQs</a>
-          <a href="#apply" class="cta-nav">Get Started</a>
-        </nav>
-        <button id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+    <nav class="container">
+      <div class="logo">
+        🎓 Maven Masters
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="https://wa.me/919893314761" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Get Started</a></li>
+        <li><button id="adminToggle" onclick="toggleAdmin()" style="background: var(--card); border: 1px solid var(--glass-border); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s ease;">🔐 Admin</button></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Academic & Career Journey</h1>
+        <p>Expert study abroad counselling & PhD-level academic writing services trusted by 200+ students across India</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919893314761" class="btn btn-primary">Book Free Consultation</a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+        
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-value">87%</span>
+            <span class="stat-label">Admission Success Rate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">200+</span>
+            <span class="stat-label">Students Placed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">₹5Cr+</span>
+            <span class="stat-label">Scholarships Secured</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4.9⭐</span>
+            <span class="stat-label">Client Rating</span>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-  
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/919893314761" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.5 3.5A11.8 11.8 0 0 0 3.3 20.6L2 23l2.5-.7A11.8 11.8 0 1 0 20.5 3.5zm-8.7 17a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9.2 9.2 0 1 1 7.2 3.8zm5-6.9c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 1.1-.4.2-.7.1a7.6 7.6 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5s-.7-1.7-1-2.3-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 5.2 6.5 6.5 0 0 0 3.9.5 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/>
-    </svg>
-  </a>
-  
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <div>
-            <h1>Transform Your Academic & Career Journey</h1>
-            <p class="lead">Expert study abroad counselling, PhD-level academic writing, and comprehensive research support from Central India's leading education consultants.</p>
-            
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-primary">
-              📚 Get Your Free Consultation
-              <small>Limited: 5 slots left this week</small>
-            </a>
-            
-            <div class="trust-badge">
-              ⭐ 200+ students placed | 98% satisfaction | 87% admission success
-            </div>
-          </div>
-          
-          <aside class="hero-features">
-            <div class="feature">PhD-level Academic Writing</div>
-            <div class="feature">Study Abroad Guidance USA, Europe, Australia, and Asia </div>
-            <div class="feature">Research & Publication Support</div>
-            <div class="feature">Career Counselling & Placement</div>
-          </aside>
-        </div>
-      </div>
-    </section>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <h2>Our Premium Services</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Academic Writing Services</h3>
-            <p>Professional PhD-level research papers, dissertations, thesis writing, and manuscript editing for publications.</p>
-            <span class="result">✓ 95% acceptance rate in journals</span><br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Writing Help →</a>
-          </article>
-          
-          <article class="card">
-            <h3>Study Abroad Counselling</h3>
-            <p>Complete university admission guidance for USA, Europe, Australia, and Asia with visa support and scholarship assistance.</p>
-            <span class="result">✓ 87% admission success rate</span><br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">Start Your Journey →</a>
-          </article>
-          
-          <article class="card">
-            <h3>Research & Data Analysis</h3>
-            <p>Expert statistical analysis, literature reviews, and research methodology design.</p>
-            <span class="result">✓ Published in top-tier journals</span><br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Get Research Support →</a>
-          </article>
-          
-          <article class="card">
-            <h3>Career Development</h3>
-            <p>Professional resume building, LinkedIn optimization, interview preparation, and career strategy planning.</p>
-            <span class="result">✓ 92% placement success rate</span><br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">Boost Your Career →</a>
-          </article>
+  <!-- Our Premium Services -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Premium Services</h2>
+      <div class="services-grid">
+        <!-- Study Abroad -->
+        <div class="service-card">
+          <span class="service-icon">🌍</span>
+          <h3>Study Abroad Counselling</h3>
+          <p>End-to-end guidance for USA, Europe, Australia, and Asia universities</p>
+          <ul class="service-features">
+            <li>University Selection & Shortlisting</li>
+            <li>Application Strategy & Timeline</li>
+            <li>SOP/LOR Writing & Review</li>
+            <li>Visa Guidance & Interview Prep</li>
+            <li>Scholarship & Funding Support</li>
+          </ul>
+           <button onclick="openLeadForm('Study Abroad')" class="btn btn-outline" style="margin-top: 1rem;">Get Started →</button>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="apply">
-      <div class="container">
-        <h2>Ready to Achieve Your Goals?</h2>
-        <p class="urgency">⏰ Next batch beginning soon - Only 8 spots remaining</p>
         
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-hero">
-          🎯 Claim Your Free Strategy Session
-          <small>No credit card required • 15-minute response time</small>
+        <!-- Academic Writing -->
+        <div class="service-card">
+          <span class="service-icon">📝</span>
+          <h3>Academic Writing</h3>
+          <p>PhD-level research papers, dissertations, and thesis support</p>
+          <ul class="service-features">
+            <li>Research Papers & Journals</li>
+            <li>Dissertation & Thesis Writing</li>
+            <li>Literature Review</li>
+            <li>Data Analysis (SPSS, R, Python)</li>
+            <li>Editing & Proofreading</li>
+          </ul>
+          <button onclick="openLeadForm('Thesis/Dissertation')" class="btn btn-outline" style="margin-top: 1rem;">Get Started →</button>
+        </div>
+
+        <!-- Career Development -->
+        <div class="service-card">
+          <span class="service-icon">🚀</span>
+          <h3>Career Development</h3>
+          <p>Resume building, LinkedIn optimization, and interview coaching</p>
+          <ul class="service-features">
+            <li>Resume/CV Writing</li>
+            <li>LinkedIn Profile Optimization</li>
+            <li>Interview Preparation</li>
+            <li>Career Counselling</li>
+            <li>Personal Branding</li>
+          </ul>
+          <button onclick="openLeadForm('Career Development')" class="btn btn-outline" style="margin-top: 1rem;">Boost Your Career →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Resources Section -->
+  <section id="resources" class="section-alt">
+    <div class="container">
+      <h2>Free Resources</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 3rem;">Download our expert guides and templates to kickstart your journey</p>
+      
+      <div class="resources-grid">
+        <div class="resource-card">
+          <span class="resource-icon">📄</span>
+          <h3>SOP Writing Template</h3>
+          <p>Professional SOP template with examples and tips from admission experts</p>
+          <button onclick="openResourceDownload('sop', 'SOP Writing Template')" class="btn btn-primary">Download Free</button>
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-icon">💰</span>
+          <h3>Scholarship Guide 2026</h3>
+          <p>Complete list of scholarships for Indian students with deadlines and eligibility</p>
+          <button onclick="openResourceDownload('scholarship', 'Scholarship Guide 2026')" class="btn btn-primary">Download Free</button>
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-icon">🎯</span>
+          <h3>University Comparison Tool</h3>
+          <p>Compare top universities based on fees, rankings, scholarships, and visa success</p>
+          <button onclick="openResourceDownload('Comparison Tool', 'University Comparison Tool')" class="btn btn-primary">Download Free</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Insights & Updates (Blog Section) -->
+  <section id="blog">
+    <div class="container">
+      <h2>Latest Insights & Updates</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 3rem;">Expert tips, guides, and news to help you succeed</p>
+      
+      <div class="blog-grid">
+        <!-- Blog 1: Visa Guidance -->
+        <div class="blog-card">
+          <div class="blog-image">🛂</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Visa Guidance</span>
+              <span>📅 March 10, 2026</span>
+            </div>
+            <h3>USA Student Visa Interview: 25 Most Asked Questions & Answers</h3>
+            <p class="blog-excerpt">Expert tips and sample answers to crack your F-1 visa interview with confidence. Learn how to handle tough questions about your academic plans, financial status, and post-graduation intentions.</p>
+            <a href="#" onclick="openBlogArticle('visa'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <!-- Blog 2: Funding -->
+        <div class="blog-card">
+          <div class="blog-image">💰</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Funding</span>
+              <span>📅 March 8, 2026</span>
+            </div>
+            <h3>₹50 Lakhs in Scholarships: Complete Guide for Indian Students 2026</h3>
+            <p class="blog-excerpt">Comprehensive list of fully-funded scholarships, deadlines, and application tips. Discover merit-based, need-based, and diversity scholarships from top universities worldwide.</p>
+            <a href="#" onclick="openBlogArticle('funding'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <!-- Blog 3: Research -->
+        <div class="blog-card">
+          <div class="blog-image">📚</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Research</span>
+              <span>📅 March 5, 2026</span>
+            </div>
+            <h3>How to Write a PhD Thesis in 6 Months: Step-by-Step Plan</h3>
+            <p class="blog-excerpt">Proven methodology, tools, and time management strategies for rapid thesis completion. From literature review to final defense preparation.</p>
+            <a href="#" onclick="openBlogArticle('research'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <!-- Blog 4: Featured - Top Universities -->
+        <div class="blog-card" style="grid-column: span 2;">
+          <div class="blog-image" style="height: 250px;">🎓</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Study Abroad</span>
+              <span>📅 March 12, 2026</span>
+            </div>
+            <h3>Top 10 Universities in USA for Indian Students 2026: Complete Guide</h3>
+            <p class="blog-excerpt">Detailed analysis of admission requirements, fees, scholarships, visa success rates, and Indian student communities at leading American universities including MIT, Stanford, Harvard, and more.</p>
+            <a href="#" onclick="openBlogArticle('universities'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Share -->
+      <div class="social-share">
+        <span class="social-share-label">Share this page:</span>
+        <div class="social-share-btn facebook-btn" onclick="shareOnFB()" title="Share on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="social-share-btn twitter-btn" onclick="shareOnTwitter()" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="social-share-btn linkedin-btn" onclick="shareOnLI()" title="Share on LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="social-share-btn whatsapp-btn" onclick="shareOnWA()" title="Share on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-alt">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>When should I start planning to study abroad?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. Early planning also increases your chances of securing scholarships and finding suitable accommodation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What is your success rate for university admissions?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Maven Masters has an 87% admission success rate across top universities in the USA, Europe, Australia, and Asia. Our team of expert counsellors provides personalized guidance, helping you identify the right universities, craft compelling applications, and prepare for interviews to maximize your chances of acceptance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How much do your academic writing services cost?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Do you provide revisions if needed?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Can I communicate directly with my assigned writer?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We facilitate direct communication through our secure platform via email or WhatsApp. You can discuss requirements, share feedback, and track progress throughout the project. Our coordinators are available 24/7 to address queries and ensure smooth collaboration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How do you protect my confidentiality?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>We maintain strict confidentiality through NDAs, encrypted communication, secure file transfers, and data protection protocols. Your personal information, academic work, and payment details are never shared with third parties. All projects are handled with complete discretion and privacy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA at end of FAQs -->
+      <div class="faq-cta">
+        <p>Still have questions? We're here to help!</p>
+        <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
+          💬 Chat with Our Counsellor
+          <small>Get instant answers via WhatsApp</small>
         </a>
-        
-        <div class="cta-buttons">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUchAIb8dy2M-gtDDkQSegCxkF3P5nitUCCNTHDrp6ofyYfA/viewform" target="_blank" rel="noopener" class="cta-secondary">
-            🌍 Apply for Study Abroad
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScxzm-7QewJVSIsyKRmYFkZ7rWsFDssTmb0gKDA4o8ExgO9sA/viewform" target="_blank" rel="noopener" class="cta-secondary">
-            📝 Request Academic Support
-          </a>
-          <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-secondary">
-            💬 Chat on WhatsApp
-          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Achieve Your Goals CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Achieve Your Goals?</h2>
+      <p>⏰ Next batch beginning soon - Only 8 spots remaining</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+        <button onclick="openLeadForm('Study Abroad')" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+          🎯 Claim Your Free Strategy Session
+        </button>
+      </div>
+      <div class="cta-badges">
+        <div class="cta-badge">🌍 Apply for Study Abroad</div>
+        <div class="cta-badge">📝 Request Academic Support</div>
+        <div class="cta-badge">
+          <a href="https://wa.me/919893314761" style="color: white; display: block;">💬 Chat on WhatsApp</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FAQ Section -->
-    <section id="faqs">
-      <div class="container">
-        <div class="faq-section">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find answers to common questions about our academic and study abroad services</p>
-
-          <!-- Study Abroad FAQs -->
-          <div class="faq-category">
-            <h3>🌍 Study Abroad Counselling</h3>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>When should I start planning to study abroad?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. For fall intake, start planning in the previous year's January-March period.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>What is your success rate for university admissions?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Maven Masters has an 87% admission success rate across top universities in the USA, Europe, Australia, and Asia. Our personalized approach, expert SOP writing, and strategic university selection significantly improve your chances of acceptance and scholarship awards.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>How much does studying abroad typically cost?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Costs vary by country and program. USA: ₹25-60 lakhs/year, UK: ₹20-40 lakhs/year, Canada: ₹15-35 lakhs/year, Australia: ₹20-45 lakhs/year. We help identify scholarships, part-time work opportunities, and cost-effective universities to match your budget while maintaining quality education.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Do you help with scholarship applications?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes! We provide comprehensive scholarship guidance including merit-based, need-based, and country-specific scholarships. Our team assists with application essays, documentation, and interview preparation to maximize your chances of securing financial aid worth ₹5-30 lakhs.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>What documents do I need for study abroad applications?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Essential documents include: academic transcripts, standardized test scores (GRE/GMAT, IELTS/TOEFL), Statement of Purpose (SOP), Letters of Recommendation (LORs), resume/CV, passport copy, financial documents, and portfolio (for specific programs). We guide you through the complete documentation process.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>How do you assist with visa applications?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Our visa support includes DS-160/visa application form filling, financial document preparation, mock visa interviews, appointment scheduling guidance, and post-visa approval support. We have extensive experience with F-1 (USA), Tier 4 (UK), Study Permit (Canada), and Subclass 500 (Australia) visas.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can I work while studying abroad?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes! Most countries allow international students to work part-time. USA: 20 hrs/week on-campus, UK: 20 hrs/week during term, Canada: 20-40 hrs/week, Australia: 48 hrs/fortnight. We provide guidance on finding part-time jobs, CPT/OPT programs, and post-study work visa options.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Academic Support FAQs -->
-          <div class="faq-category">
-            <h3>📚 Academic Writing & Research Support</h3>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>What academic writing services do you offer?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>We provide comprehensive support for research papers, dissertations, thesis writing, literature reviews, research proposals, data analysis, statistical consulting, manuscript editing, publication support, and coursework assistance across all academic disciplines including sciences, humanities, and business.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Are your writers qualified for PhD-level work?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Absolutely! Our team consists of PhD holders and subject matter experts from top universities with 5-15 years of research experience. All writers hold advanced degrees in their respective fields and have published in peer-reviewed journals, ensuring highest quality academic support.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>How do you ensure plagiarism-free work?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Every document is written from scratch based on your requirements. We use premium plagiarism detection tools (Turnitin, iThenticate) and provide detailed originality reports with similarity index below 10%. We guarantee 100% original, properly cited academic work with complete referencing.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>What is your typical turnaround time?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Standard projects: 7-14 days, Urgent requests: 3-5 days (with additional charges), Dissertation chapters: 2-3 weeks per chapter, Complete thesis: 6-12 weeks. Rush services available for emergency deadlines. We prioritize quality while meeting your submission timelines.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>How much do your academic writing services cost?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Do you provide revisions if needed?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can I communicate directly with my assigned writer?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes! We facilitate direct communication through our secure platform via email or WhatsApp. You can discuss requirements, share feedback, and track progress throughout the project. Our coordinators are available 24/7 to address queries and ensure smooth collaboration.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>How do you protect my confidentiality?</span>
-                <span class="faq-icon" aria-hidden="true">▼</span>
-              </button>
-              <div class="faq-answer">
-                <p>We maintain strict confidentiality through NDAs, encrypted communication, secure file transfers, and data protection protocols. Your personal information, academic work, and payment details are never shared with third parties. All projects are handled with complete discretion and privacy.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA at end of FAQs -->
-          <div class="faq-cta">
-            <p>Still have questions? We're here to help!</p>
-            <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
-              💬 Chat with Our Counsellor
-              <small>Get instant answers via WhatsApp</small>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1165,75 +1644,1005 @@ footer a:hover {
         </a>
       </div>
       
-      <p class="muted" style="margin-top: 24px;">© 2025 Maven Masters. All rights reserved.</p>
+      <p class="muted" style="margin-top: 24px;">© 2026 Maven Masters. All rights reserved.</p>
       <p class="muted" style="font-size: 0.85rem;">Study Abroad Consultant | Academic Writing | Research Support | Bhopal</p>
     </div>
   </footer>
-  
+
+  <!-- Free Consultation Modal -->
+  <div id="leadModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLeadForm()">×</span>
+      <h3>Free Consultation Form</h3>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="leadName">Your Name *</label>
+          <input type="text" id="leadName" required placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" required placeholder="your.email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="leadPhone">Phone Number *</label>
+          <input type="tel" id="leadPhone" required placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label for="leadService">Select Service *</label>
+          <select id="leadService" required>
+            <option value="">-- Choose a service --</option>
+            <option value="Study Abroad">Study Abroad</option>
+            <option value="Thesis/Dissertation">Thesis/Dissertation</option>
+            <option value="Research Support">Research Support</option>
+            <option value="Career Development">Career Development</option>
+            <option value="SOP/LOR Writing">SOP/LOR Writing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="leadMsg">Your Message (Optional)</label>
+          <textarea id="leadMsg" placeholder="Tell us about your requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit & Get Consultation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content" style="text-align: center;">
+      <span class="modal-close" onclick="closeSuccessModal()">×</span>
+      <h3 style="color: var(--success);">🎉 Thank You!</h3>
+      <p>Your consultation request has been received. Our team will contact you within 24 hours.</p>
+      <p style="margin-top: 1.5rem;">
+        <a href="https://wa.me/919893314761" class="btn btn-primary">
+          💬 Chat on WhatsApp Now
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Resource Download Modal -->
+  <div id="downloadModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeDownloadModal()">×</span>
+      <h3 id="downloadModalTitle">Download Resource</h3>
+      <form id="downloadForm">
+        <input type="hidden" id="downloadResourceName">
+        <div class="form-group">
+          <label for="downloadEmail">Enter your email to receive the download link</label>
+          <input type="email" id="downloadEmail" required placeholder="your.email@example.com">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">📥 Download Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Exit Intent Popup -->
+  <div id="exitPopup" class="exit-popup">
+    <div class="exit-popup-content">
+      <span class="exit-popup-close" onclick="closePopup()">×</span>
+      <h2>Wait! Before You Go...</h2>
+      <p>Get a <span class="highlight">FREE study abroad consultation</span> worth ₹2,500</p>
+      <p style="font-size: 1.1rem; margin: 1.5rem 0;">⏰ Limited time offer - Only 3 slots left this week!</p>
+      <button onclick="openLeadForm('Study Abroad'); closePopup();" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.25rem 2.5rem;">
+        Claim Your Free Session Now
+      </button>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted);">
+        Join 500+ students who transformed their future with Maven Masters
+      </p>
+    </div>
+  </div>
+
+  <!-- AI Chat Widget -->
+  <div class="chat-widget">
+    <div id="aiChatBubble" class="chat-bubble">
+      <div class="chat-header">
+        <div>
+          <h4>Chat with an Expert</h4>
+          <p style="font-size: 0.85rem; margin: 0; opacity: 0.9;">Hello! I'm your study abroad advisor. Ask me anything!</p>
+        </div>
+        <button class="chat-close" onclick="toggleAIChat()">×</button>
+      </div>
+      <div class="chat-messages" id="aiMessages">
+        <div class="chat-message bot">
+          👋 Hi! I'm here to help with:
+          <br>• Study abroad guidance
+          <br>• Academic writing
+          <br>• Visa applications
+          <br>• Scholarship information
+          <br><br>What can I help you with today?
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="aiInput" class="chat-input" placeholder="Type your question..." onkeypress="if(event.key==='Enter') sendAIMessage()">
+        <button class="chat-send" onclick="sendAIMessage()">Send</button>
+      </div>
+    </div>
+    <button class="chat-fab" onclick="toggleAIChat()" title="Chat with Expert">💬</button>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="adminDashboard" class="admin-dashboard">
+    <div class="admin-content">
+      <div class="admin-header">
+        <h2>📊 Admin Dashboard</h2>
+        <button onclick="toggleAdmin()" class="btn btn-danger">Close</button>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4 id="totalLeadsCount">0</h4>
+          <p>Total Leads</p>
+        </div>
+        <div class="stat-card">
+          <h4 id="convertedCount">0</h4>
+          <p>Converted</p>
+        </div>
+        <div class="stat-card">
+          <h4 id="conversionRate">0%</h4>
+          <p>Conversion Rate</p>
+        </div>
+        <div class="stat-card">
+          <h4 id="hotLeadsCount">0</h4>
+          <p>Hot Leads (Score &gt; 60)</p>
+        </div>
+      </div>
+
+      <div style="margin: 2rem 0;">
+        <canvas id="leadsChart" style="max-height: 300px;"></canvas>
+      </div>
+
+      <div class="leads-table-container">
+        <h3>Recent Leads</h3>
+        <table class="leads-table" id="leadsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Service</th>
+              <th>Score</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+        <button onclick="exportToExcel()" class="btn btn-primary">📊 Export to Excel</button>
+        <button onclick="clearAllLeads()" class="btn btn-danger">🗑️ Clear All Data</button>
+      </div>
+    </div>
+  </div>
+
   <script>
-    // Theme Toggle
+    // ----- LEAD MANAGEMENT SYSTEM -----
+    let leads = JSON.parse(localStorage.getItem('leads') || '[]');
+    
+    function saveLeads() {
+      localStorage.setItem('leads', JSON.stringify(leads));
+      updateDashboard();
+    }
+    
+    function calculateLeadScore(lead) {
+      let score = 10;
+      if (lead.service?.toLowerCase().includes('study')) score += 25;
+      if (lead.message?.length > 20) score += 15;
+      if (lead.email?.includes('@')) score += 10;
+      if (lead.phone?.length > 8) score += 10;
+      return Math.min(100, score);
+    }
+    
+    function addLead(lead) {
+      lead.id = Date.now();
+      lead.createdAt = new Date().toISOString();
+      lead.status = lead.status || 'NEW';
+      lead.leadScore = calculateLeadScore(lead);
+      leads.unshift(lead);
+      saveLeads();
+      showNotification(`New lead: ${lead.name} (Score: ${lead.leadScore})`);
+      if (lead.leadScore > 60) showNotification("🔥 HOT LEAD! High priority.");
+      return lead;
+    }
+    
+    function updateDashboard() {
+      if (!document.getElementById('totalLeadsCount')) return;
+      
+      document.getElementById('totalLeadsCount').innerText = leads.length;
+      let converted = leads.filter(l => l.status === 'CONVERTED').length;
+      document.getElementById('convertedCount').innerText = converted;
+      
+      let rate = leads.length ? ((converted / leads.length) * 100).toFixed(1) : 0;
+      document.getElementById('conversionRate').innerText = rate + '%';
+      
+      document.getElementById('hotLeadsCount').innerText = leads.filter(l => l.leadScore > 60).length;
+      
+      let tbody = document.querySelector('#leadsTable tbody');
+      if (tbody) {
+        tbody.innerHTML = '';
+        leads.slice(0, 30).forEach(l => {
+          let row = tbody.insertRow();
+          row.insertCell(0).innerText = l.name;
+          row.insertCell(1).innerText = l.email;
+          row.insertCell(2).innerText = l.phone;
+          row.insertCell(3).innerText = l.service;
+          row.insertCell(4).innerText = l.leadScore;
+          row.insertCell(5).innerHTML = `<select onchange="updateLeadStatus(${l.id}, this.value)">
+            <option ${l.status === 'NEW' ? 'selected' : ''}>NEW</option>
+            <option ${l.status === 'CONTACTED' ? 'selected' : ''}>CONTACTED</option>
+            <option ${l.status === 'CONVERTED' ? 'selected' : ''}>CONVERTED</option>
+            <option ${l.status === 'LOST' ? 'selected' : ''}>LOST</option>
+          </select>`;
+          let act = row.insertCell(6);
+          act.innerHTML = `<button onclick="openWhatsappChat('${l.phone}')">💬 WA</button> <button onclick="markConverted(${l.id})">✅ Convert</button>`;
+        });
+      }
+      
+      if (window.chartInstance) window.chartInstance.destroy();
+      let ctx = document.getElementById('leadsChart')?.getContext('2d');
+      if (ctx) {
+        let counts = {};
+        leads.forEach(l => {
+          counts[l.service] = (counts[l.service] || 0) + 1;
+        });
+        window.chartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: Object.keys(counts),
+            datasets: [{
+              label: 'Leads by Service',
+              data: Object.values(counts),
+              backgroundColor: '#d4af37'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true
+          }
+        });
+      }
+    }
+    
+    window.updateLeadStatus = (id, newStatus) => {
+      let l = leads.find(x => x.id == id);
+      if (l) {
+        l.status = newStatus;
+        saveLeads();
+        showNotification(`Lead ${l.name} marked ${newStatus}`);
+      }
+    };
+    
+    window.markConverted = (id) => {
+      updateLeadStatus(id, 'CONVERTED');
+    };
+    
+    function clearAllLeads() {
+      if (confirm('Delete all leads?')) {
+        leads = [];
+        saveLeads();
+        showNotification('All data cleared');
+      }
+    }
+    
+    function exportToExcel() {
+      let csv = "Name,Email,Phone,Service,Score,Status,Created\n";
+      leads.forEach(l => {
+        csv += `"${l.name}","${l.email}","${l.phone}","${l.service}",${l.leadScore},${l.status},${l.createdAt}\n`;
+      });
+      let blob = new Blob([csv], { type: 'text/csv' });
+      let a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'leads.csv';
+      a.click();
+    }
+    
+    function openWhatsappChat(phone) {
+      window.open(`https://wa.me/${phone}?text=Hi%20from%20Maven%20Masters`, '_blank');
+    }
+    
+    // ----- FORM HANDLING -----
+    const leadForm = document.getElementById('leadForm');
+    if (leadForm) {
+      leadForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = leadForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Submitting... <span class="loading-spinner"></span>';
+        submitBtn.disabled = true;
+        
+        let lead = {
+          name: document.getElementById('leadName').value,
+          email: document.getElementById('leadEmail').value,
+          phone: document.getElementById('leadPhone').value,
+          service: document.getElementById('leadService').value,
+          message: document.getElementById('leadMsg').value
+        };
+        addLead(lead);
+        closeLeadForm();
+        document.getElementById('successModal').style.display = 'block';
+        leadForm.reset();
+        
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      });
+    }
+    
+    window.openLeadForm = (service = '') => {
+      document.getElementById('leadModal').style.display = 'block';
+      if (service) document.getElementById('leadService').value = service;
+    };
+    
+    window.closeLeadForm = () => document.getElementById('leadModal').style.display = 'none';
+    window.closeSuccessModal = () => document.getElementById('successModal').style.display = 'none';
+    
+    // ----- RESOURCE DOWNLOAD -----
+    let currentResource = '';
+    
+    function openResourceDownload(resourceId, title) {
+      currentResource = resourceId;
+      document.getElementById('downloadModalTitle').innerText = `Download: ${title}`;
+      document.getElementById('downloadResourceName').value = resourceId;
+      document.getElementById('downloadModal').style.display = 'block';
+    }
+    
+    function closeDownloadModal() {
+      document.getElementById('downloadModal').style.display = 'none';
+    }
+    
+    document.getElementById('downloadForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('downloadEmail').value.trim();
+      if (!email) return;
+      
+      addLead({
+        name: 'Download User',
+        email: email,
+        phone: 'N/A',
+        service: `Resource: ${currentResource}`,
+        message: `Downloaded ${currentResource}`
+      });
+      
+      const content = `Thank you for downloading the ${currentResource === 'sop' ? 'SOP Writing Template' : 'Scholarship Guide 2026'} from Maven Masters!\n\nThis is a sample resource. In a live system, you would receive the actual PDF.`;
+      const blob = new Blob([content], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = currentResource === 'sop' ? 'SOP_Template.txt' : 'Scholarship_Guide_2026.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      
+      closeDownloadModal();
+      showNotification(`📥 Download started! Check your browser.`);
+    });
+    
+    // ----- AI CHATBOT with Enhanced Intelligence -----
+    function aiReply(msg) {
+      let m = msg.toLowerCase();
+      
+      // Study Abroad queries
+      if (m.includes('sop') || m.includes('statement of purpose')) {
+        return "We offer expert SOP writing services with unlimited revisions. Our writers have helped 500+ students get into top universities. Would you like a free sample?";
+      }
+      if (m.includes('scholarship') || m.includes('funding')) {
+        return "We've helped students secure ₹5Cr+ in scholarships! Fill the consultation form to check your eligibility for merit-based and need-based scholarships.";
+      }
+      if (m.includes('visa') || m.includes('f1') || m.includes('interview')) {
+        return "Our visa guidance covers USA F1, UK Tier 4, Canada, and Australia visas. We provide mock interviews and document preparation. Book a free session!";
+      }
+      if (m.includes('usa') || m.includes('america') || m.includes('united states')) {
+        return "Popular USA destinations: MIT, Stanford, Harvard, CMU, Berkeley. We have 87% success rate for US admissions. Want to know your chances?";
+      }
+      if (m.includes('uk') || m.includes('britain') || m.includes('england')) {
+        return "Top UK universities: Oxford, Cambridge, Imperial, UCL, LSE. We help with UCAS applications and visa guidance. Interested?";
+      }
+      
+      // Academic Writing queries
+      if (m.includes('thesis') || m.includes('dissertation') || m.includes('phd')) {
+        return "We provide PhD-level thesis and dissertation support including research design, literature review, data analysis, and writing. Pricing: ₹80,000-2,50,000 based on scope.";
+      }
+      if (m.includes('research') || m.includes('paper') || m.includes('journal')) {
+        return "Our research support includes paper writing, statistical analysis (SPSS, R, Python), and journal publication assistance. Pricing: ₹5,000-15,000 per paper.";
+      }
+      
+      // Cost queries
+      if (m.includes('cost') || m.includes('fee') || m.includes('price') || m.includes('charge')) {
+        return "Consultation is FREE! Our services range from ₹5,000 for SOP writing to ₹2,50,000 for complete thesis. Let's discuss your specific needs in a call.";
+      }
+      
+      // Test prep
+      if (m.includes('ielts') || m.includes('toefl') || m.includes('gre') || m.includes('gmat')) {
+        return "Minimum scores for top universities: IELTS 7.0, TOEFL 100, GRE 320, GMAT 700. We can recommend test prep partners. Need guidance?";
+      }
+      
+      // Timeline queries
+      if (m.includes('how long') || m.includes('duration') || m.includes('time')) {
+        return "Application process: 12-18 months for full preparation. Thesis writing: 3-6 months depending on scope. Want a detailed timeline?";
+      }
+      
+      // Default response
+      return "I'd be happy to help! Please share your target country and course, or ask about our services. You can also click 'Free Consult' above to speak with our team directly.";
+    }
+    
+    window.sendAIMessage = () => {
+      let inp = document.getElementById('aiInput');
+      let msg = inp.value.trim();
+      if (!msg) return;
+      
+      let chat = document.getElementById('aiMessages');
+      chat.innerHTML += `<div class="chat-message user">${msg}</div>`;
+      
+      let reply = aiReply(msg);
+      setTimeout(() => {
+        chat.innerHTML += `<div class="chat-message bot"><strong>🤖 Expert:</strong><br>${reply}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+      }, 300);
+      
+      inp.value = '';
+      
+      // Track AI interactions as leads
+      addLead({
+        name: 'AI Chat User',
+        email: 'ai@user.com',
+        phone: 'N/A',
+        service: 'AI Chat Inquiry',
+        message: msg
+      });
+    };
+    
+    window.toggleAIChat = () => {
+      let b = document.getElementById('aiChatBubble');
+      b.style.display = b.style.display === 'flex' ? 'none' : 'flex';
+    };
+    
+    window.toggleAdmin = () => {
+      let dash = document.getElementById('adminDashboard');
+      dash.style.display = dash.style.display === 'flex' ? 'none' : 'flex';
+      updateDashboard();
+    };
+    
+    function showNotification(msg) {
+      let n = document.createElement('div');
+      n.className = 'notification';
+      n.innerText = msg;
+      document.body.appendChild(n);
+      setTimeout(() => n.remove(), 4000);
+    }
+    
+    // ----- EXIT INTENT POPUP -----
+    let popupShown = false;
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY < 0 && !popupShown) {
+        document.getElementById('exitPopup').classList.add('active');
+        popupShown = true;
+      }
+    });
+    
+    window.closePopup = () => {
+      document.getElementById('exitPopup').classList.remove('active');
+    };
+    
+    // ----- BLOG ARTICLE MODAL -----
+    function openBlogArticle(type) {
+      let content = '';
+      
+      if (type === 'visa') {
+        content = `
+          <h2>USA Student Visa Interview: 25 Most Asked Questions & Answers</h2>
+          <p><strong>Category:</strong> Visa Guidance | <strong>Date:</strong> March 10, 2026</p>
+          
+          <h3>Introduction</h3>
+          <p>The F-1 student visa interview is a crucial step in your study abroad journey. While it may seem intimidating, proper preparation can significantly increase your chances of success. This comprehensive guide covers the 25 most frequently asked questions during F-1 visa interviews, along with expert tips and sample answers.</p>
+          
+          <h3>Top 25 F-1 Visa Interview Questions</h3>
+          
+          <h4>1. Why do you want to study in the USA?</h4>
+          <p><strong>Sample Answer:</strong> "I want to study in the USA because it offers world-class education in my field of Computer Science. Universities like MIT and Stanford provide cutting-edge research opportunities and industry connections that aren't available in India. The practical, hands-on approach to learning will help me become a better software engineer."</p>
+          
+          <h4>2. Why this particular university?</h4>
+          <p><strong>Sample Answer:</strong> "I chose [University Name] because of its strong Computer Science program ranked #5 nationally, excellent faculty-to-student ratio, and research opportunities in AI/ML. The university's ties with tech companies in Silicon Valley align perfectly with my career goals."</p>
+          
+          <h4>3. What will you study?</h4>
+          <p><strong>Sample Answer:</strong> "I will be pursuing a Master's in Computer Science with a specialization in Artificial Intelligence and Machine Learning. The program includes courses in deep learning, natural language processing, and computer vision."</p>
+          
+          <h4>4. Why not study in India?</h4>
+          <p><strong>Sample Answer:</strong> "While India has good institutions, the USA offers specialized programs and research facilities in AI that are unmatched. The opportunity to learn from leading experts and work on cutting-edge projects will give me a competitive advantage in the global job market."</p>
+          
+          <h4>5. How will you fund your education?</h4>
+          <p><strong>Sample Answer:</strong> "My education will be funded through a combination of family savings (₹40 lakhs), a partial scholarship from the university ($10,000), and an education loan of ₹20 lakhs from [Bank Name]. I have all the financial documents ready for your review."</p>
+          
+          <h3>Tips for Success</h3>
+          <ul>
+            <li><strong>Be Honest:</strong> Never lie or provide false information</li>
+            <li><strong>Be Confident:</strong> Maintain eye contact and speak clearly</li>
+            <li><strong>Be Brief:</strong> Answer directly without over-explaining</li>
+            <li><strong>Carry All Documents:</strong> I-20, admission letter, financial proof, test scores</li>
+            <li><strong>Show Strong Ties to India:</strong> Demonstrate your intention to return</li>
+          </ul>
+          
+          <h3>Common Mistakes to Avoid</h3>
+          <ul>
+            <li>Memorizing answers word-for-word (sounds robotic)</li>
+            <li>Showing immigration intent (wanting to settle in USA)</li>
+            <li>Being unprepared about your university/program</li>
+            <li>Providing inconsistent financial information</li>
+            <li>Getting defensive or argumentative</li>
+          </ul>
+          
+          <p style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(15,79,216,0.1)); border-radius: 12px;">
+            <strong>Need personalized visa guidance?</strong> Our experts have helped 500+ students successfully obtain F-1 visas. Book a free consultation to review your profile and practice mock interviews.
+          </p>
+        `;
+      } else if (type === 'funding') {
+        content = `
+          <h2>₹50 Lakhs in Scholarships: Complete Guide for Indian Students 2026</h2>
+          <p><strong>Category:</strong> Funding | <strong>Date:</strong> March 8, 2026</p>
+          
+          <h3>Introduction</h3>
+          <p>Studying abroad doesn't have to break the bank. Every year, thousands of Indian students secure substantial scholarships ranging from ₹5 lakhs to ₹50 lakhs to fund their education. This comprehensive guide lists the best fully-funded and partial scholarships available for Indian students in 2026.</p>
+          
+          <h3>Fully-Funded Scholarships</h3>
+          
+          <h4>1. Fulbright-Nehru Master's Fellowships</h4>
+          <ul>
+            <li><strong>Coverage:</strong> Full tuition + living expenses + airfare</li>
+            <li><strong>Value:</strong> ₹40-50 lakhs</li>
+            <li><strong>Deadline:</strong> May 15, 2026</li>
+            <li><strong>Eligibility:</strong> Indian citizens, minimum 3 years work experience, TOEFL 90+</li>
+            <li><strong>Application:</strong> www.usief.org.in</li>
+          </ul>
+          
+          <h4>2. Commonwealth Scholarships (UK)</h4>
+          <ul>
+            <li><strong>Coverage:</strong> Full tuition + monthly stipend £1,347 + airfare</li>
+            <li><strong>Value:</strong> ₹35-45 lakhs</li>
+            <li><strong>Deadline:</strong> December 14, 2025</li>
+            <li><strong>Eligibility:</strong> Master's/PhD in development-related fields</li>
+            <li><strong>Application:</strong> cscuk.fcdo.gov.uk</li>
+          </ul>
+          
+          <h4>3. DAAD Scholarships (Germany)</h4>
+          <ul>
+            <li><strong>Coverage:</strong> €861/month + health insurance + travel</li>
+            <li><strong>Value:</strong> ₹25-30 lakhs</li>
+            <li><strong>Deadline:</strong> October 31, 2025</li>
+            <li><strong>Eligibility:</strong> Bachelor's degree, 2 years work experience</li>
+            <li><strong>Application:</strong> www.daad.de</li>
+          </ul>
+          
+          <h3>University-Specific Scholarships</h3>
+          
+          <h4>Stanford University</h4>
+          <ul>
+            <li><strong>Knight-Hennessy Scholars:</strong> Full funding up to ₹1 crore</li>
+            <li><strong>Deadline:</strong> October 6, 2025</li>
+          </ul>
+          
+          <h4>University of Toronto</h4>
+          <ul>
+            <li><strong>Lester B. Pearson Scholarship:</strong> Full tuition + living expenses</li>
+            <li><strong>Value:</strong> ₹45 lakhs</li>
+            <li><strong>Deadline:</strong> November 2025</li>
+          </ul>
+          
+          <h3>How to Increase Your Chances</h3>
+          <ul>
+            <li><strong>Start Early:</strong> Begin 18-24 months before enrollment</li>
+            <li><strong>Target CGPA:</strong> Aim for 8.5+ for competitive scholarships</li>
+            <li><strong>Strong Test Scores:</strong> GRE 320+, TOEFL 100+</li>
+            <li><strong>Research Experience:</strong> Publications, projects, internships</li>
+            <li><strong>Compelling SOP:</strong> Show impact, not just achievements</li>
+            <li><strong>Strong LORs:</strong> From professors who know you well</li>
+          </ul>
+          
+          <h3>Application Timeline</h3>
+          <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+            <tr style="background: var(--bg);">
+              <th style="padding: 1rem; border: 1px solid var(--glass-border);">Timeline</th>
+              <th style="padding: 1rem; border: 1px solid var(--glass-border);">Action Items</th>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">18 months before</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Research scholarships, start GRE/TOEFL prep</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">12 months before</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Take tests, shortlist universities, build research portfolio</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">6 months before</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Draft SOPs, request LORs, apply to scholarships</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">3 months before</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Follow up on applications, prepare for interviews</td>
+            </tr>
+          </table>
+          
+          <p style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(15,79,216,0.1)); border-radius: 12px;">
+            <strong>Want expert help with scholarship applications?</strong> Our team has helped students secure ₹5Cr+ in scholarships. Get a free profile evaluation and personalized scholarship strategy.
+          </p>
+        `;
+      } else if (type === 'research') {
+        content = `
+          <h2>How to Write a PhD Thesis in 6 Months: Step-by-Step Plan</h2>
+          <p><strong>Category:</strong> Research | <strong>Date:</strong> March 5, 2026</p>
+          
+          <h3>Introduction</h3>
+          <p>Writing a PhD thesis in 6 months is challenging but achievable with proper planning, discipline, and the right strategies. This guide provides a proven methodology used by successful PhD candidates to complete high-quality theses within tight deadlines.</p>
+          
+          <h3>Month 1: Foundation & Planning</h3>
+          
+          <h4>Week 1-2: Structure & Outline</h4>
+          <ul>
+            <li>Meet with your supervisor to finalize thesis scope</li>
+            <li>Create detailed chapter outline (typically 6-8 chapters)</li>
+            <li>Set up reference management (Mendeley, Zotero, EndNote)</li>
+            <li>Establish writing schedule: 4-6 hours daily</li>
+          </ul>
+          
+          <h4>Week 3-4: Literature Review</h4>
+          <ul>
+            <li>Conduct comprehensive literature search (200-300 papers)</li>
+            <li>Create annotated bibliography</li>
+            <li>Identify research gaps and contribution</li>
+            <li>Draft literature review chapter (25-30 pages)</li>
+          </ul>
+          
+          <h3>Month 2-3: Core Research & Methodology</h3>
+          
+          <h4>Methodology Chapter</h4>
+          <ul>
+            <li>Document research design and approach</li>
+            <li>Describe data collection methods</li>
+            <li>Explain analysis techniques (statistical tests, software used)</li>
+            <li>Target: 20-25 pages</li>
+          </ul>
+          
+          <h4>Data Analysis</h4>
+          <ul>
+            <li>Complete all statistical analysis (SPSS, R, Python)</li>
+            <li>Generate tables, graphs, visualizations</li>
+            <li>Run validity and reliability tests</li>
+            <li>Document all assumptions and limitations</li>
+          </ul>
+          
+          <h3>Month 4-5: Results & Discussion</h3>
+          
+          <h4>Results Chapter</h4>
+          <ul>
+            <li>Present findings objectively</li>
+            <li>Use clear tables and figures</li>
+            <li>Organize by research questions/hypotheses</li>
+            <li>Target: 30-40 pages</li>
+          </ul>
+          
+          <h4>Discussion Chapter</h4>
+          <ul>
+            <li>Interpret results in context of existing literature</li>
+            <li>Compare with previous studies</li>
+            <li>Address research questions explicitly</li>
+            <li>Discuss implications and contributions</li>
+            <li>Target: 25-30 pages</li>
+          </ul>
+          
+          <h3>Month 6: Finalization</h3>
+          
+          <h4>Week 1-2: Introduction & Conclusion</h4>
+          <ul>
+            <li>Write compelling introduction (15-20 pages)</li>
+            <li>Summarize key findings in conclusion (10-15 pages)</li>
+            <li>State contributions and future research directions</li>
+          </ul>
+          
+          <h4>Week 3-4: Editing & Formatting</h4>
+          <ul>
+            <li>Professional proofreading and editing</li>
+            <li>Check formatting guidelines (margins, fonts, spacing)</li>
+            <li>Verify all citations and references</li>
+            <li>Create table of contents, list of figures/tables</li>
+            <li>Write abstract (250-300 words)</li>
+            <li>Final submission</li>
+          </ul>
+          
+          <h3>Essential Tools & Resources</h3>
+          
+          <h4>Writing Tools</h4>
+          <ul>
+            <li><strong>LaTeX/Overleaf:</strong> Professional typesetting</li>
+            <li><strong>Scrivener:</strong> Long-form writing management</li>
+            <li><strong>Grammarly Premium:</strong> Grammar and style checking</li>
+          </ul>
+          
+          <h4>Analysis Software</h4>
+          <ul>
+            <li><strong>SPSS:</strong> Statistical analysis</li>
+            <li><strong>R/Python:</strong> Advanced analytics</li>
+            <li><strong>NVivo:</strong> Qualitative data analysis</li>
+            <li><strong>MATLAB:</strong> Mathematical modeling</li>
+          </ul>
+          
+          <h3>Daily Writing Schedule</h3>
+          <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+            <tr style="background: var(--bg);">
+              <th style="padding: 1rem; border: 1px solid var(--glass-border);">Time</th>
+              <th style="padding: 1rem; border: 1px solid var(--glass-border);">Activity</th>
+              <th style="padding: 1rem; border: 1px solid var(--glass-border);">Target</th>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">6:00-7:00 AM</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Reading & Research</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Review 5-7 papers</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">9:00-12:00 PM</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Writing Sprint</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">1000-1500 words</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">2:00-5:00 PM</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Data Analysis/Editing</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Complete 1 analysis task</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">8:00-9:00 PM</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Review & Planning</td>
+              <td style="padding: 1rem; border: 1px solid var(--glass-border);">Next day's outline</td>
+            </tr>
+          </table>
+          
+          <h3>Common Pitfalls to Avoid</h3>
+          <ul>
+            <li><strong>Perfectionism:</strong> Don't edit while writing; finish first draft</li>
+            <li><strong>Scope Creep:</strong> Stick to defined research questions</li>
+            <li><strong>Isolation:</strong> Regular check-ins with supervisor</li>
+            <li><strong>Burnout:</strong> Take scheduled breaks, maintain health</li>
+            <li><strong>Late Formatting:</strong> Format as you write to save time</li>
+          </ul>
+          
+          <p style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(15,79,216,0.1)); border-radius: 12px;">
+            <strong>Need professional thesis support?</strong> Our PhD-level experts can help with research design, data analysis, writing, and editing. Get a free consultation to discuss your timeline and requirements.
+          </p>
+        `;
+      } else if (type === 'universities') {
+        content = `
+          <h2>Top 10 Universities in USA for Indian Students 2026: Complete Guide</h2>
+          <p><strong>Category:</strong> Study Abroad | <strong>Date:</strong> March 12, 2026</p>
+          
+          <h3>Introduction</h3>
+          <p>Choosing the right university is crucial for your study abroad journey. This comprehensive guide ranks the top 10 US universities for Indian students based on academic excellence, admission rates, financial aid, Indian student population, and post-graduation outcomes.</p>
+          
+          <h3>1. Massachusetts Institute of Technology (MIT)</h3>
+          <p><strong>Location:</strong> Cambridge, Massachusetts<br>
+          <strong>QS World Ranking:</strong> #1<br>
+          <strong>Indian Students:</strong> 1,200+ (12% of international students)</p>
+          
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Tuition:</strong> $59,750/year (₹50 lakhs)</li>
+            <li><strong>Acceptance Rate:</strong> 3.9% (highly selective)</li>
+            <li><strong>Average GRE:</strong> Quant 168+, Verbal 160+</li>
+            <li><strong>TOEFL Requirement:</strong> 100+ (minimum 23 each section)</li>
+            <li><strong>Financial Aid:</strong> Need-blind for all applicants, 100% demonstrated need met</li>
+            <li><strong>Popular Programs:</strong> Computer Science, Electrical Engineering, Mechanical Engineering, Data Science</li>
+            <li><strong>Average Starting Salary:</strong> $120,000+</li>
+          </ul>
+          
+          <h4>Indian Student Community</h4>
+          <p>Strong MIT India community with active WhatsApp groups, cultural events during Diwali/Holi, mentorship programs, and networking opportunities. MIT Indian Students Association organizes regular meetups.</p>
+          
+          <h4>Visa Success Rate</h4>
+          <p>95%+ F-1 visa approval rate for MIT admits due to strong university reputation and comprehensive I-20 documentation.</p>
+          
+          <h3>2. Stanford University</h3>
+          <p><strong>Location:</strong> Stanford, California<br>
+          <strong>QS World Ranking:</strong> #3<br>
+          <strong>Indian Students:</strong> 900+</p>
+          
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Tuition:</strong> $61,731/year (₹52 lakhs)</li>
+            <li><strong>Acceptance Rate:</strong> 4.3%</li>
+            <li><strong>Average GRE:</strong> Quant 169, Verbal 163</li>
+            <li><strong>TOEFL Requirement:</strong> 100+</li>
+            <li><strong>Financial Aid:</strong> Knight-Hennessy Scholars Program (full funding), need-based aid available</li>
+            <li><strong>Popular Programs:</strong> MBA, Computer Science, AI/ML, Business Analytics</li>
+            <li><strong>Average Starting Salary:</strong> $125,000+</li>
+          </ul>
+          
+          <h4>Silicon Valley Advantage</h4>
+          <p>Direct access to tech giants (Google, Apple, Facebook, Tesla) for internships and placements. 80%+ placement rate in FAANG companies.</p>
+          
+          <h3>3. Carnegie Mellon University (CMU)</h3>
+          <p><strong>Location:</strong> Pittsburgh, Pennsylvania<br>
+          <strong>QS World Ranking:</strong> #52<br>
+          <strong>Indian Students:</strong> 2,500+ (largest Indian student body)</p>
+          
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Tuition:</strong> $61,344/year (₹51 lakhs)</li>
+            <li><strong>Acceptance Rate:</strong> 14% (Computer Science 7%)</li>
+            <li><strong>Average GRE:</strong> Quant 167+, Verbal 155+</li>
+            <li><strong>TOEFL Requirement:</strong> 100+ (84 minimum)</li>
+            <li><strong>Financial Aid:</strong> Limited merit-based scholarships ($5,000-15,000)</li>
+            <li><strong>Popular Programs:</strong> Computer Science (ranked #1), Software Engineering, Robotics</li>
+            <li><strong>Average Starting Salary:</strong> $115,000+</li>
+          </ul>
+          
+          <h3>4. University of California, Berkeley</h3>
+          <p><strong>Location:</strong> Berkeley, California<br>
+          <strong>QS World Ranking:</strong> #10<br>
+          <strong>Indian Students:</strong> 1,800+</p>
+          
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Tuition:</strong> $48,018/year for out-of-state (₹40 lakhs)</li>
+            <li><strong>Acceptance Rate:</strong> 11%</li>
+            <li><strong>Average GRE:</strong> Quant 166+, Verbal 158+</li>
+            <li><strong>TOEFL Requirement:</strong> 90+</li>
+            <li><strong>Financial Aid:</strong> Graduate fellowships, GSI/GSR positions</li>
+            <li><strong>Popular Programs:</strong> EECS, Business, Data Science, Public Policy</li>
+          </ul>
+          
+          <h3>5. University of Illinois Urbana-Champaign (UIUC)</h3>
+          <p><strong>Location:</strong> Urbana-Champaign, Illinois<br>
+          <strong>Indian Students:</strong> 3,500+ (highest in USA)</p>
+          
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Tuition:</strong> $36,068/year (₹30 lakhs)</li>
+            <li><strong>Acceptance Rate:</strong> 45% overall, 20% for CS</li>
+            <li><strong>Average GRE:</strong> Quant 165+, Verbal 152+</li>
+            <li><strong>Popular Programs:</strong> Computer Science (#5 ranked), ECE, Mechanical Engineering</li>
+            <li><strong>Indian Community:</strong> Very active Indian Students Association, regular cultural events</li>
+          </ul>
+          
+          <h3>Comparison Table</h3>
+          <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem;">
+            <tr style="background: var(--bg);">
+              <th style="padding: 0.75rem; border: 1px solid var(--glass-border);">University</th>
+              <th style="padding: 0.75rem; border: 1px solid var(--glass-border);">Tuition (yearly)</th>
+              <th style="padding: 0.75rem; border: 1px solid var(--glass-border);">GRE (Avg)</th>
+              <th style="padding: 0.75rem; border: 1px solid var(--glass-border);">Acceptance Rate</th>
+              <th style="padding: 0.75rem; border: 1px solid var(--glass-border);">Indian Students</th>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">MIT</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">₹50 lakhs</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">328+</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">3.9%</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">1,200+</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">Stanford</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">₹52 lakhs</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">332</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">4.3%</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">900+</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">CMU</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">₹51 lakhs</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">322+</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">14%</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">2,500+</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">UC Berkeley</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">₹40 lakhs</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">324+</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">11%</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">1,800+</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">UIUC</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">₹30 lakhs</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">317+</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">20% (CS)</td>
+              <td style="padding: 0.75rem; border: 1px solid var(--glass-border);">3,500+</td>
+            </tr>
+          </table>
+          
+          <h3>Application Timeline for Fall 2027</h3>
+          <ul>
+            <li><strong>April 2026:</strong> Start GRE/TOEFL preparation</li>
+            <li><strong>July-August 2026:</strong> Take GRE and TOEFL</li>
+            <li><strong>September 2026:</strong> Finalize university list, request LORs</li>
+            <li><strong>October-December 2026:</strong> Submit applications (most deadlines in Dec)</li>
+            <li><strong>January-April 2027:</strong> Receive decisions</li>
+            <li><strong>April-May 2027:</strong> Accept offer, apply for visa</li>
+            <li><strong>August 2027:</strong> Program starts</li>
+          </ul>
+          
+          <h3>Total Cost Breakdown (2 Year MS Program)</h3>
+          <ul>
+            <li><strong>Tuition (2 years):</strong> ₹60-1,00,00,000</li>
+            <li><strong>Living Expenses:</strong> ₹20-30,00,000</li>
+            <li><strong>Books & Materials:</strong> ₹2-3,00,000</li>
+            <li><strong>Health Insurance:</strong> ₹3-4,00,000</li>
+            <li><strong>Visa & Travel:</strong> ₹2-3,00,000</li>
+            <li><strong>Total:</strong> ₹87-1,40,00,000</li>
+          </ul>
+          
+          <p style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(15,79,216,0.1)); border-radius: 12px;">
+            <strong>Ready to apply to top US universities?</strong> Our expert counsellors have helped 500+ students get admits to MIT, Stanford, CMU, and more. Book a free profile evaluation to assess your chances.
+          </p>
+        `;
+      }
+      
+      // Display in modal
+      const modal = document.createElement('div');
+      modal.className = 'modal';
+      modal.style.display = 'block';
+      modal.innerHTML = `
+        <div class="modal-content" style="max-width: 900px; max-height: 85vh; overflow-y: auto;">
+          <span class="modal-close" onclick="this.closest('.modal').remove()">×</span>
+          ${content}
+          <div style="margin-top: 2rem; text-align: center;">
+            <button onclick="openLeadForm('Study Abroad'); this.closest('.modal').remove();" class="btn btn-primary">
+              Book Free Consultation
+            </button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+    }
+    
+    // ----- SOCIAL SHARING -----
+    function shareOnFB() {
+      window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400');
+    }
+    
+    function shareOnTwitter() {
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Check out Maven Masters - Expert study abroad consultancy & academic writing services!') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400');
+    }
+    
+    function shareOnLI() {
+      window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400');
+    }
+    
+    function shareOnWA() {
+      window.open('https://wa.me/?text=' + encodeURIComponent('Check out Maven Masters - Expert study abroad consultancy & academic writing services! ' + window.location.href), '_blank');
+    }
+    
+    // ----- THEME & FAQ ACCORDION -----
     const toggle = document.getElementById('themeToggle');
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
     toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
     
     toggle.addEventListener('click', () => {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      toggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-      localStorage.setItem('theme', newTheme);
+      let html = document.documentElement;
+      let cur = html.getAttribute('data-theme');
+      let nxt = cur === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', nxt);
+      toggle.textContent = nxt === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', nxt);
     });
-
-    // FAQ Accordion with improved accessibility
-    const faqItems = document.querySelectorAll('.faq-item');
     
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      
-      question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        
-        // Close all other items
-        faqItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
-            otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          }
-        });
-        
-        // Toggle current item
-        if (isActive) {
-          item.classList.remove('active');
-          question.setAttribute('aria-expanded', 'false');
-        } else {
-          item.classList.add('active');
-          question.setAttribute('aria-expanded', 'true');
-        }
-      });
-      
-      // Keyboard support
-      question.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          question.click();
-        }
+    document.querySelectorAll('.faq-item .faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        let item = btn.closest('.faq-item');
+        let expanded = item.classList.contains('active');
+        btn.setAttribute('aria-expanded', !expanded);
+        item.classList.toggle('active');
       });
     });
-
-    // Smooth scrolling for anchor links
+    
+    // ----- SMOOTH SCROLLING -----
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#' && href.length > 1) {
+      anchor.addEventListener('click', function(e) {
+        let href = this.getAttribute('href');
+        if (href && href !== '#' && href.length > 1 && !href.includes('javascript')) {
           e.preventDefault();
-          const target = document.querySelector(href);
+          let target = document.querySelector(href);
           if (target) {
-            const headerOffset = 80;
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-            
+            let headerOffset = 80;
+            let elementPosition = target.getBoundingClientRect().top;
+            let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
             window.scrollTo({
               top: offsetPosition,
               behavior: 'smooth'
@@ -1242,51 +2651,16 @@ footer a:hover {
         }
       });
     });
-
-    // Add loading animation for external links
-    document.querySelectorAll('a[target="_blank"]').forEach(link => {
-      link.addEventListener('click', function() {
-        this.style.opacity = '0.6';
-        setTimeout(() => {
-          this.style.opacity = '1';
-        }, 300);
-      });
-    });
+    
+    // ----- CLOSE MODALS ON OUTSIDE CLICK -----
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+      }
+    };
+    
+    // ----- INITIALIZATION -----
+    updateDashboard();
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
