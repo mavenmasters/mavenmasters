@@ -1288,10 +1288,43 @@
     }
     
     /* ----- RESPONSIVE ----- */
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
+   @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  /* Logo responsive styles */
+  .logo-img {
+    height: 72px;
+    max-width: 120px;
+  }
+  
+  .brand-text h1 {
+    font-size: 1.25rem;
+  }
+  
+  .brand-text small {
+    font-size: 0.75rem;
+  }
+}
+```
+
+---
+
+## **STEP 4: Create Logo File**
+
+You need to create a logo file at this path:
+```
+assets/images/logo.svg
+```
+
+**File Structure:**
+```
+your-project/
+├── index.html  (your maven-masters-complete file renamed)
+└── assets/
+    └── images/
+        └── logo.svg  ← Place your logo here
       
       h1 { font-size: 2rem; }
       h2 { font-size: 1.75rem; }
