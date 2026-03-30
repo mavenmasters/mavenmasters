@@ -1,71 +1,1113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://mavenmasters.github.io">
-    <title>Maven Masters</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Ghrij1d6E97SQoBP_n0P8cqQnecfKUZ5H6Lff_XIQyc" />
+  <meta name="msvalidate.01" content="779FE63A8104C797D0A2CA2C9FF29D75" />
+  
+  <title>Maven Masters | Study Abroad Consultant & Academic Writing Services</title>
+  <meta name="description" content="Top study abroad consultant in India offering academic writing, research support, dissertation help & university admissions guidance. 87% admission success rate. Contact us today!">
+  <meta name="keywords" content="study abroad consultant in India, academic writing services India, dissertation help, thesis writing, research support, university admission counselling, SOP writing, student visa guidance">
+  <meta name="author" content="Maven Masters">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mavenmasters.github.io/mavenmasters">
+  
+  <meta property="og:title" content="Maven Masters | Study Abroad & Academic Writing Services">
+  <meta property="og:description" content="Expert study abroad counselling, PhD-level academic writing, and comprehensive research support from Central India's leading education consultants. 87% admission success | 200+ students placed. Book free consultation today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mavenmasters.github.io/mavenmasters/">
+  <meta property="og:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maven Masters | Study Abroad & Academic Services">
+  <meta name="twitter:description" content="Expert study abroad counselling & PhD-level academic writing services in Bhopal.">
+  <meta name="twitter:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
+  
+  <meta name="geo.region" content="IN-MP">
+  <meta name="geo.placename" content="Bhopal">
+  <meta name="geo.position" content="23.2599;77.4126">
+  <meta name="ICBM" content="23.2599, 77.4126">
+  
+  <meta name="theme-color" content="#08306a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Maven Masters",
+    "alternateName": "Maven Masters Academic & Career Solutions",
+    "url": "https://mavenmasters.github.io/mavenmasters",
+    "logo": "https://mavenmasters.github.io/mavenmasters/assets/images/logo.png",
+    "description": "Premium academic writing, research support, study abroad counselling, and career guidance services in Bhopal, India.",
+    "email": "mastersmaven@gmail.com",
+    "telephone": "+91-9893314761",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bhopal",
+      "addressRegion": "Madh Pradesh",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["India", "USA", "UK", "Canada", "Australia"],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100074800625140",
+      "https://www.instagram.com/mavenmasters",
+      "https://www.youtube.com/@Maven.Masters",
+      "https://wa.me/919893314761"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+
+  <style>
+    /* ----- BASE & VARIABLES ----- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text-main: #0f172a;
+      --muted: #54607a;
+      --accent-1: #08306a;
+      --accent-2: #0f4fd8;
+      --gold: #D4AF37;
+      --gold-bright: #F5C542;
+      --gold-soft: #E6C45A;
+      --success: #059669;
+      --danger: #DC2626;
+      --radius: 14px;
+      --radius-sm: 8px;
+      --glass: rgba(255,255,255,0.75);
+      --glass-2: rgba(255,255,255,0.9);
+      --glass-border: rgba(15,23,42,0.10);
+      --shadow-lg: 0 18px 40px rgba(16,24,40,0.10);
+      --shadow-sm: 0 6px 18px rgba(16,24,40,0.08);
+      --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      --ease: cubic-bezier(.2,.9,.3,1);
+      --max-width: 1200px;
+    }
+    
+    [data-theme="dark"] {
+      --bg: #070b16;
+      --card: rgba(255,255,255,0.06);
+      --text-main: #e9eefc;
+      --muted: rgba(233,238,252,0.68);
+      --glass: rgba(255,255,255,0.06);
+      --glass-2: rgba(255,255,255,0.10);
+      --glass-border: rgba(255,255,255,0.10);
+      --shadow-lg: 0 18px 40px rgba(0,0,0,0.35);
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.22);
+      --gold-soft: #C9A82E;
+    }
+    
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background 0.2s, color 0.2s;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      width: min(var(--max-width), 94%);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    h1, h2, h3 { 
+      font-family: "Montserrat Display", serif; 
+      font-weight: 700; 
+      line-height: 1.2;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+    h2 { 
+      font-size: clamp(1.75rem, 4vw, 2.5rem); 
+      text-align: center; 
+      margin-bottom: 2rem; 
+      color: var(--accent-1); 
+    }
+    h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+    p { margin-bottom: 1rem; }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    
+    /* ----- HEADER & NAVIGATION ----- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      gap: 2rem;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      overflow: visible;
+      min-height: 75px;
+    }
+
+    .logo-img {
+      height: 96px;
+      width: auto;
+      max-width: 140px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+    }
+
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-text h1 { font-size: 1.75rem; margin: 0; letter-spacing: 0.3px; color: var(--text-main); font-weight: 700; }
+    .brand-text small { font-size: 0.95rem; color: var(--muted); display: block; margin-top: 4px; }
+    
+    .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+    .nav-links a { font-weight: 500; padding: 0.5rem 1rem; border-radius: var(--radius-sm); transition: all 0.2s ease; }
+    .nav-links a:hover { background: var(--glass-2); color: var(--accent-2); transform: translateY(-2px); }
+    
+    .theme-toggle {
+      background: var(--card);
+      border: 1px solid var(--glass-border);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+    }
+    .theme-toggle:hover { transform: scale(1.1) rotate(15deg); box-shadow: var(--shadow-sm); }
+    
+    /* ----- HERO SECTION ----- */
+    .hero {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+      opacity: 0.3;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero h1 { margin-bottom: 1.5rem; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+    .hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; }
+    
+    .trust-badge {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      backdrop-filter: blur(5px);
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .stat-item { text-align: center; }
+    .stat-value { display: block; font-size: 2.5rem; font-weight: 700; color: var(--gold-bright); margin-bottom: 0.5rem; }
+    .stat-label { font-size: 0.95rem; opacity: 0.9; }
+    
+    /* ----- BUTTONS ----- */
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s var(--ease);
+      font-size: 1rem;
+    }
+    
+    .btn-primary { background: var(--gold); color: white; box-shadow: 0 4px 14px rgba(212,175,55,0.3); }
+    .btn-primary:hover { background: var(--gold-bright); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212,175,55,0.4); }
+    
+    .btn-secondary { background: white; color: var(--accent-1); border: 2px solid white; }
+    .btn-secondary:hover { background: transparent; color: white; transform: translateY(-2px); }
+    
+    .btn-outline { background: transparent; color: var(--accent-1); border: 2px solid var(--accent-1); }
+    .btn-outline:hover { background: var(--accent-1); color: white; }
+    
+    .cta-primary {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: white;
+      padding: 1.25rem 2.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+      transition: all 0.3s var(--ease);
+    }
+    .cta-primary:hover { background: var(--gold-bright); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(212,175,55,0.4); }
+    .cta-primary small { font-size: 0.85rem; opacity: 0.9; font-weight: 400; }
+    
+    /* ----- SECTIONS & NEW GRID LAYOUTS ----- */
+    section { padding: 5rem 0; }
+    .section-alt { background: var(--card); }
+    
+    .grid-container-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+      align-items: stretch;
+    }
+
+    .grid-container-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      align-items: stretch;
+    }
+
+    /* Modern Card Styling */
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold-soft);
+    }
+
+    .feature-card .card-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .feature-card h3 { color: var(--accent-1); margin-bottom: 1rem; }
+    .feature-card p { flex-grow: 1; color: var(--muted); margin-bottom: 1.5rem; }
+
+    .step-number {
+      background: var(--accent-gradient);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 0 auto 1.5rem auto;
+      box-shadow: 0 4px 10px rgba(8, 48, 106, 0.2);
+    }
+
+    /* ----- BLOG SECTION ----- */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .blog-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .blog-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      background: var(--accent-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    
+    .blog-content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;}
+    .blog-meta { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--muted); flex-wrap: wrap;}
+    .blog-tag { background: var(--gold); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+    
+    .blog-card h3 { color: var(--accent-1); margin-bottom: 1rem; line-height: 1.4; }
+    .blog-excerpt { color: var(--muted); margin-bottom: 1rem; flex-grow: 1;}
+    .blog-link { color: var(--accent-2); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease; margin-top: auto;}
+    .blog-link:hover { gap: 1rem; }
+    
+    /* ----- FAQ SECTION ----- */
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item { background: var(--card); border-radius: var(--radius); margin-bottom: 1rem; border: 1px solid var(--glass-border); overflow: hidden; transition: all 0.3s var(--ease); }
+    .faq-item.active { box-shadow: var(--shadow-sm); border-color: var(--gold-soft); }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.5rem; text-align: left; font-size: 1.1rem; font-weight: 600; color: var(--text-main); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s ease; }
+    .faq-question:hover { color: var(--accent-2); }
+    .faq-icon { transition: transform 0.3s var(--ease); color: var(--gold); }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s var(--ease); }
+    .faq-item.active .faq-answer { max-height: 500px; }
+    .faq-answer p { padding: 0 1.5rem 1.5rem; color: var(--muted); line-height: 1.8; }
+    
+    .faq-cta { margin-top: 3rem; text-align: center; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(15,79,216,0.08)); border-radius: var(--radius); }
+    .faq-cta p { font-size: 1.2rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--accent-1); }
+    
+    /* ----- MODALS ----- */
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); animation: fadeIn 0.3s ease; }
+    .modal-content { background: var(--card); margin: 5% auto; padding: 2.5rem; border-radius: var(--radius); max-width: 500px; width: 90%; position: relative; animation: slideDown 0.3s var(--ease); box-shadow: var(--shadow-lg); }
+    .modal-close { position: absolute; right: 1.5rem; top: 1.5rem; font-size: 2rem; cursor: pointer; color: var(--muted); transition: all 0.2s ease; }
+    .modal-close:hover { color: var(--danger); transform: rotate(90deg); }
+    .modal h3 { color: var(--accent-1); margin-bottom: 1.5rem; }
+    
+    .form-group { margin-bottom: 1.5rem; text-align: left;}
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-main); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.875rem; border: 2px solid var(--glass-border); border-radius: var(--radius-sm); font-size: 1rem; font-family: inherit; background: var(--bg); color: var(--text-main); transition: all 0.2s ease; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.1); }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    
+    /* ----- EXIT POPUP & CHAT ----- */
+    .exit-popup { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); }
+    .exit-popup.active { display: flex; align-items: center; justify-content: center; animation: fadeIn 0.3s ease; }
+    .exit-popup-content { background: var(--card); padding: 3rem; border-radius: var(--radius); max-width: 600px; width: 90%; text-align: center; position: relative; animation: scaleIn 0.3s var(--ease); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .exit-popup-close { position: absolute; right: 1.5rem; top: 1.5rem; font-size: 2rem; cursor: pointer; color: var(--muted); transition: all 0.2s ease; }
+    .exit-popup-close:hover { color: var(--danger); transform: rotate(90deg); }
+    .exit-popup h2 { color: var(--accent-1); margin-bottom: 1rem; }
+    .exit-popup .highlight { color: var(--gold); font-weight: 700; }
+    
+    .chat-widget { position: fixed; bottom: 20px; right: 20px; z-index: 999; }
+    .chat-bubble { display: none; flex-direction: column; width: 350px; height: 500px; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-lg); overflow: hidden; animation: slideUp 0.3s var(--ease); }
+    .chat-header { background: var(--accent-gradient); color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+    .chat-header h4 { margin: 0; font-size: 1.1rem; }
+    .chat-close { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; transition: all 0.2s ease; }
+    .chat-close:hover { transform: scale(1.2); }
+    .chat-messages { flex: 1; padding: 1.5rem; overflow-y: auto; background: var(--bg); }
+    .chat-message { margin-bottom: 1rem; padding: 0.875rem; border-radius: var(--radius-sm); max-width: 80%; }
+    .chat-message.bot { background: var(--card); border: 1px solid var(--glass-border); }
+    .chat-message.user { background: var(--accent-2); color: white; margin-left: auto; }
+    .chat-input-area { display: flex; gap: 0.5rem; padding: 1rem; border-top: 1px solid var(--glass-border); background: var(--card); }
+    .chat-input { flex: 1; padding: 0.75rem; border: 2px solid var(--glass-border); border-radius: var(--radius-sm); background: var(--bg); color: var(--text-main); font-family: inherit; }
+    .chat-input:focus { outline: none; border-color: var(--gold); }
+    .chat-send { background: var(--gold); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; transition: all 0.2s ease; }
+    .chat-send:hover { background: var(--gold-bright); }
+    .chat-fab { background: var(--gold); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 20px rgba(212,175,55,0.4); transition: all 0.3s ease; border: none; }
+    .chat-fab:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(212,175,55,0.5); }
+    
+    /* ----- ADMIN & OTHER STYLES ----- */
+    .admin-dashboard { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 3000; overflow-y: auto; padding: 2rem; }
+    .admin-content { background: var(--card); border-radius: var(--radius); padding: 2rem; max-width: 1400px; margin: 0 auto; }
+    .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--glass-border); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+    .stat-card { background: var(--accent-gradient); color: white; padding: 1.5rem; border-radius: var(--radius); text-align: center; }
+    .stat-card h4 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .leads-table-container { overflow-x: auto; margin-top: 2rem; }
+    .leads-table { width: 100%; border-collapse: collapse; }
+    .leads-table th, .leads-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--glass-border); }
+    .leads-table th { background: var(--bg); font-weight: 600; color: var(--accent-1); }
+    .leads-table select { padding: 0.5rem; border: 1px solid var(--glass-border); border-radius: var(--radius-sm); background: var(--bg); color: var(--text-main); }
+    .leads-table button { padding: 0.5rem 1rem; margin: 0 0.25rem; border: none; border-radius: var(--radius-sm); cursor: pointer; font-size: 0.875rem; transition: all 0.2s ease; }
+    
+    .social-share { display: flex; gap: 1rem; justify-content: center; align-items: center; margin: 2rem 0; }
+    .social-share-label { font-weight: 600; color: var(--text-main); }
+    .social-share-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s ease; cursor: pointer; }
+    .social-share-btn:hover { transform: translateY(-3px) scale(1.1); }
+    .facebook-btn { background: #1877F2; } .twitter-btn { background: #1DA1F2; } .linkedin-btn { background: #0A66C2; } .whatsapp-btn { background: #25D366; }
+    
+    footer { background: var(--accent-1); color: rgba(255,255,255,0.9); padding: 3rem 0 2rem; text-align: center; }
+    footer h4 { color: var(--gold-bright); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    footer p { margin-bottom: 0.5rem; }
+    footer a { color: rgba(255,255,255,0.9); transition: all 0.2s ease; }
+    footer a:hover { color: var(--gold-bright); }
+    
+    .social { display: flex; gap: 1.5rem; justify-content: center; margin: 2rem 0; }
+    .social a { width: 48px; height: 48px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+    .social a:hover { background: var(--gold); transform: translateY(-5px); }
+    .social svg { width: 24px; height: 24px; fill: currentColor; }
+    
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    
+    .notification { position: fixed; bottom: 100px; right: 20px; background: var(--accent-1); color: white; padding: 1rem 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow-lg); animation: slideUp 0.3s var(--ease); z-index: 9999; }
+    .loading-spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: white; animation: spin 0.6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    
+    .cta-section { background: var(--accent-gradient); color: white; padding: 4rem 0; text-align: center; }
+    .cta-section h2 { color: white; margin-bottom: 1rem; }
+    .cta-section p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; }
+    .cta-badges { display: flex; gap: 2rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+    .cta-badge { background: rgba(255,255,255,0.15); padding: 1rem 2rem; border-radius: var(--radius); backdrop-filter: blur(10px); font-weight: 600; }
+    
+    /* ----- FIXED MOBILE RESPONSIVENESS ----- */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .logo-img { height: 72px; max-width: 120px; }
+      .brand-text h1 { font-size: 1.25rem; }
+      .brand-text small { font-size: 0.75rem; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.75rem; }
+      
+      .grid-container-3,
+      .grid-container-4,
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats { grid-template-columns: 1fr 1fr; }
+      .chat-bubble { width: 100%; height: 100%; border-radius: 0; bottom: 0; right: 0; }
+      .modal-content { margin: 10% auto; width: 95%; padding: 2rem 1.5rem; }
+      .exit-popup-content { padding: 2rem 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Maven Masters</h1>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // Initialize Chart.js and other JavaScript functionalities
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
+  <header>
+    <nav class="container">
+      <a href="#" class="logo" aria-label="Maven Masters Home">
+        <img src="assets/images/logo.svg" alt="Maven Masters Logo" class="logo-img">
+        <div class="brand-text">
+          <h1>Maven Masters</h1>
+          <small>Academic & Career Solutions</small>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#premium-services">Services</a></li>
+        <li><a href="#free-resources">Resources</a></li>
+        <li><a href="#blog">Insights</a></li>
+        <li><a href="https://wa.me/919893314761" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Get Started</a></li>
+        <li><button id="adminToggle" onclick="toggleAdmin()" style="background: var(--card); border: 1px solid var(--glass-border); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s ease;">🔐 Admin</button></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
 
-        // Admin authentication with password
-        function authenticateAdmin(password) {
-            if (password === 'your_password_here') {
-                // Display admin modal
-                document.getElementById('adminModal').style.display = 'block';
-            } else {
-                alert('Invalid password!');
-            }
-        }
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Academic & Career Journey</h1>
+        <p>Expert study abroad counselling, PhD-level academic writing, and comprehensive research support from Central India's leading education consultants.</p>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919893314761" class="btn btn-primary">Book Free Consultation</a>
+          <a href="#premium-services" class="btn btn-secondary">Explore Services</a>
+        </div>
+        
+        <div class="trust-badge">
+          ⭐ 200+ students placed | 98% satisfaction | 87% admission success
+        </div>
+          
+        <aside class="hero-features">
+          <div class="feature">PhD-level Academic Writing</div>
+          <div class="feature">Study Abroad Guidance</div>
+          <div class="feature">Research & Publication Support</div>
+          <div class="feature">Career Counselling & Placement</div>
+        </aside>
+      </div>
 
-        // Improved chart instance handling
-        function updateChartData(newData) {
-            myChart.data.datasets[0].data = newData;
-            myChart.update();
-        }
-    </script>
-    <div id="adminModal" style="display:none;">
-        <h2>Admin Modal</h2>
-        <button onclick="document.getElementById('adminModal').style.display='none'">Close</button>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-value">87%</span>
+          <span class="stat-label">Admission Success Rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">200+</span>
+          <span class="stat-label">Students Placed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">₹5Cr+</span>
+          <span class="stat-label">Scholarships Secured</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">4.9⭐</span>
+          <span class="stat-label">Client Rating</span>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section id="journey" class="section">
+    <div class="container">
+      <h2 class="section-title">Transform Your Academic & Career Journey</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 1rem;">Our proven 4-step process to secure your future.</p>
+      
+      <div class="grid-container-4">
+        <div class="feature-card">
+          <div class="step-number">1</div>
+          <h3>Free Consultation</h3>
+          <p>Discuss your academic background, career aspirations, and initial concerns with our expert counselors.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="step-number">2</div>
+          <h3>Profile Assessment</h3>
+          <p>In-depth analysis of your strengths and weaknesses to identify the best universities and programs for you.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="step-number">3</div>
+          <h3>Strategic Planning</h3>
+          <p>Development of a customized, step-by-step roadmap covering test prep, applications, and financial planning.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="step-number">4</div>
+          <h3>Application & Success</h3>
+          <p>Flawless execution of your applications, essay editing, interview prep, and final enrollment support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="premium-services" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Our Premium Services</h2>
+      
+      <div class="grid-container-3">
+        <div class="feature-card">
+          <div class="card-icon">🌍</div>
+          <h3>Study Abroad Counselling</h3>
+          <p>Expert guidance for university selection, applications, and visa processing to get you into top global institutions across the USA, Europe, Australia, and Asia.</p>
+          <button onclick="openLeadForm('Study Abroad')" class="btn btn-outline" style="width: 100%; margin-top: auto;">Start Your Journey →</button>
+        </div>
+        
+        <div class="feature-card">
+          <div class="card-icon">📝</div>
+          <h3>Academic Writing</h3>
+          <p>PhD-level support for essays, SOPs, dissertations, and research papers tailored to your specific academic requirements and university standards.</p>
+          <button onclick="openLeadForm('Thesis/Dissertation')" class="btn btn-outline" style="width: 100%; margin-top: auto;">Get Writing Help →</button>
+        </div>
+        
+        <div class="feature-card">
+          <div class="card-icon">🚀</div>
+          <h3>Career Development</h3>
+          <p>Resume building, LinkedIn optimization, interview preparation, and strategic career roadmaps to ensure your professional success globally.</p>
+          <button onclick="openLeadForm('Career Development')" class="btn btn-outline" style="width: 100%; margin-top: auto;">Boost Your Career →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="free-resources" class="section">
+    <div class="container">
+      <h2 class="section-title">Free Resources</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 1rem;">Download our expert guides and templates to kickstart your journey</p>
+      
+      <div class="grid-container-3">
+        <div class="feature-card" style="background: linear-gradient(135deg, rgba(212,175,55,0.03), rgba(15,79,216,0.03));">
+          <div class="card-icon">📄</div>
+          <h3>SOP & Essay Templates</h3>
+          <p>Access our library of successful Statement of Purpose and admission essay templates accepted by Ivy League universities.</p>
+          <button onclick="openResourceDownload('sop', 'SOP Writing Template')" class="btn btn-primary" style="width: 100%; margin-top: auto;">Download Free</button>
+        </div>
+        
+        <div class="feature-card" style="background: linear-gradient(135deg, rgba(212,175,55,0.03), rgba(15,79,216,0.03));">
+          <div class="card-icon">💰</div>
+          <h3>Scholarship Guide 2026</h3>
+          <p>Comprehensive strategies, deadlines, and application tips to secure maximum funding for your international education.</p>
+          <button onclick="openResourceDownload('scholarship', 'Scholarship Guide 2026')" class="btn btn-primary" style="width: 100%; margin-top: auto;">Download Guide</button>
+        </div>
+        
+        <div class="feature-card" style="background: linear-gradient(135deg, rgba(212,175,55,0.03), rgba(15,79,216,0.03));">
+          <div class="card-icon">🎯</div>
+          <h3>University Shortlisting Tool</h3>
+          <p>Discover the best-fit universities based on your profile, budget, and academic goals using our expert comparison tool.</p>
+          <button onclick="openResourceDownload('Comparison Tool', 'University Comparison Tool')" class="btn btn-primary" style="width: 100%; margin-top: auto;">Download Tool</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section-alt">
+    <div class="container">
+      <h2>Latest Insights & Updates</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 3rem;">Expert tips, guides, and news to help you succeed</p>
+      
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-image">🛂</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Visa Guidance</span>
+              <span>📅 March 10, 2026</span>
+            </div>
+            <h3>USA Student Visa Interview: 25 Most Asked Questions & Answers</h3>
+            <p class="blog-excerpt">Expert tips and sample answers to crack your F-1 visa interview with confidence. Learn how to handle tough questions about your plans.</p>
+            <a href="#" onclick="openBlogArticle('visa'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-image">💰</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Funding</span>
+              <span>📅 March 8, 2026</span>
+            </div>
+            <h3>₹50 Lakhs in Scholarships: Complete Guide for Indian Students 2026</h3>
+            <p class="blog-excerpt">Comprehensive list of fully-funded scholarships, deadlines, and application tips to secure funding from top universities worldwide.</p>
+            <a href="#" onclick="openBlogArticle('funding'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-image">📚</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Research</span>
+              <span>📅 March 5, 2026</span>
+            </div>
+            <h3>How to Write a PhD Thesis in 6 Months: Step-by-Step Plan</h3>
+            <p class="blog-excerpt">Proven methodology, tools, and time management strategies for rapid thesis completion. From literature review to final defense preparation.</p>
+            <a href="#" onclick="openBlogArticle('research'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-image">🎓</div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-tag">Study Abroad</span>
+              <span>📅 March 12, 2026</span>
+            </div>
+            <h3>Top 10 Universities in USA for Indian Students 2026: Complete Guide</h3>
+            <p class="blog-excerpt">Detailed analysis of admission requirements, fees, scholarships, and visa success rates at leading American universities.</p>
+            <a href="#" onclick="openBlogArticle('universities'); return false;" class="blog-link">Read Full Article →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-share">
+        <span class="social-share-label">Share this page:</span>
+        <div class="social-share-btn facebook-btn" onclick="shareOnFB()" title="Share on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="social-share-btn twitter-btn" onclick="shareOnTwitter()" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="social-share-btn linkedin-btn" onclick="shareOnLI()" title="Share on LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="social-share-btn whatsapp-btn" onclick="shareOnWA()" title="Share on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>When should I start planning to study abroad?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ideally, you should start planning 12-18 months before your intended enrollment date. This gives you sufficient time for entrance exams (GRE, TOEFL, IELTS), university research, application preparation, and visa processing. Early planning also increases your chances of securing scholarships and finding suitable accommodation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What is your success rate for university admissions?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Maven Masters has an 87% admission success rate across top universities in the USA, Europe, Australia, and Asia. Our team of expert counsellors provides personalized guidance, helping you identify the right universities, craft compelling applications, and prepare for interviews to maximize your chances of acceptance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How much do your academic writing services cost?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Pricing varies based on academic level, word count, and deadline. Research papers: ₹5,000-15,000, Dissertation chapters: ₹15,000-35,000, Complete thesis: ₹80,000-2,50,000, Data analysis: ₹10,000-40,000. We offer student-friendly payment plans and transparent pricing with no hidden charges.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Do you provide revisions if needed?</span>
+            <span class="faq-icon" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We offer unlimited free revisions within 30 days of delivery to ensure complete satisfaction. If your supervisor requests changes or you need modifications to meet specific requirements, we'll revise the work at no additional cost until you're fully satisfied.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-cta">
+        <p>Still have questions? We're here to help!</p>
+        <a href="https://wa.me/919893314761" target="_blank" rel="noopener" class="cta-primary">
+          💬 Chat with Our Counsellor
+          <small>Get instant answers via WhatsApp</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Achieve Your Goals?</h2>
+      <p>⏰ Next batch beginning soon - Only 8 spots remaining</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+        <button onclick="openLeadForm('Study Abroad')" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+          🎯 Claim Your Free Strategy Session
+        </button>
+      </div>
+      <div class="cta-badges">
+        <div class="cta-badge">🌍 Apply for Study Abroad</div>
+        <div class="cta-badge">📝 Request Academic Support</div>
+        <div class="cta-badge">
+          <a href="https://wa.me/919893314761" style="color: white; display: block;">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h4>Maven Masters</h4>
+      <p><strong>Academic & Career Excellence</strong></p>
+      <p>Bhopal, Madhya Pradesh, India</p>
+      <p>📧 <a href="mailto:mastersmaven@gmail.com">mastersmaven@gmail.com</a></p>
+      <p>📱 <a href="tel:+919893314761">+91-9893314761</a></p>
+      
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/mavenmasters" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3a2.8 2.8 0 1 1 2.8-2.8A2.8 2.8 0 0 1 12 14.8zM17.8 6.2a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@Maven.Masters" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12s0 4.3.5 6.3a3 3 0 0 0 2.1 2.1c2.1.6 8.4.6 8.4.6s6.3 0 8.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-6.3.5-6.3zM10 15.5v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <p class="muted" style="margin-top: 24px;">© 2026 Maven Masters. All rights reserved.</p>
+      <p class="muted" style="font-size: 0.85rem;">Study Abroad Consultant | Academic Writing | Research Support | Bhopal</p>
+    </div>
+  </footer>
+
+  <div id="leadModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLeadForm()">×</span>
+      <h3>Free Consultation Form</h3>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="leadName">Your Name *</label>
+          <input type="text" id="leadName" required placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" required placeholder="your.email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="leadPhone">Phone Number *</label>
+          <input type="tel" id="leadPhone" required placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label for="leadService">Select Service *</label>
+          <select id="leadService" required>
+            <option value="">-- Choose a service --</option>
+            <option value="Study Abroad">Study Abroad</option>
+            <option value="Thesis/Dissertation">Thesis/Dissertation</option>
+            <option value="Research Support">Research Support</option>
+            <option value="Career Development">Career Development</option>
+            <option value="SOP/LOR Writing">SOP/LOR Writing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="leadMsg">Your Message (Optional)</label>
+          <textarea id="leadMsg" placeholder="Tell us about your requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit & Get Consultation</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal">
+    <div class="modal-content" style="text-align: center;">
+      <span class="modal-close" onclick="closeSuccessModal()">×</span>
+      <h3 style="color: var(--success);">🎉 Thank You!</h3>
+      <p>Your consultation request has been received. Our team will contact you within 24 hours.</p>
+      <p style="margin-top: 1.5rem;">
+        <a href="https://wa.me/919893314761" class="btn btn-primary">
+          💬 Chat on WhatsApp Now
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="downloadModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeDownloadModal()">×</span>
+      <h3 id="downloadModalTitle">Download Resource</h3>
+      <form id="downloadForm">
+        <input type="hidden" id="downloadResourceName">
+        <div class="form-group">
+          <label for="downloadEmail">Enter your email to receive the link</label>
+          <input type="email" id="downloadEmail" required placeholder="your.email@example.com">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">📥 Download Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="exitPopup" class="exit-popup">
+    <div class="exit-popup-content">
+      <span class="exit-popup-close" onclick="closePopup()">×</span>
+      <h2>Wait! Before You Go...</h2>
+      <p>Get a <span class="highlight">FREE study abroad consultation</span> worth ₹2,500</p>
+      <p style="font-size: 1.1rem; margin: 1.5rem 0;">⏰ Limited time offer - Only 3 slots left this week!</p>
+      <button onclick="openLeadForm('Study Abroad'); closePopup();" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.25rem 2.5rem;">
+        Claim Your Free Session Now
+      </button>
+    </div>
+  </div>
+
+  <div class="chat-widget">
+    <div id="aiChatBubble" class="chat-bubble">
+      <div class="chat-header">
+        <div>
+          <h4>Chat with an Expert</h4>
+          <p style="font-size: 0.85rem; margin: 0; opacity: 0.9;">Ask me anything!</p>
+        </div>
+        <button class="chat-close" onclick="toggleAIChat()">×</button>
+      </div>
+      <div class="chat-messages" id="aiMessages">
+        <div class="chat-message bot">👋 Hi! I'm here to help with study abroad, academic writing, and more. What do you need?</div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="aiInput" class="chat-input" placeholder="Type your question..." onkeypress="if(event.key==='Enter') sendAIMessage()">
+        <button class="chat-send" onclick="sendAIMessage()">Send</button>
+      </div>
+    </div>
+    <button class="chat-fab" onclick="toggleAIChat()" title="Chat with Expert">💬</button>
+  </div>
+
+  <div id="adminDashboard" class="admin-dashboard">
+    <div class="admin-content">
+      <div class="admin-header">
+        <h2>📊 Admin Dashboard</h2>
+        <button onclick="toggleAdmin()" class="btn btn-danger">Close</button>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4 id="totalLeadsCount">0</h4>
+          <p>Total Leads</p>
+        </div>
+        <div class="stat-card">
+          <h4 id="convertedCount">0</h4>
+          <p>Converted</p>
+        </div>
+      </div>
+      <div style="margin: 2rem 0;">
+        <canvas id="leadsChart" style="max-height: 300px;"></canvas>
+      </div>
+      <div class="leads-table-container">
+        <h3>Recent Leads</h3>
+        <table class="leads-table" id="leadsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+        <button onclick="exportToExcel()" class="btn btn-primary">📊 Export to Excel</button>
+        <button onclick="clearAllLeads()" class="btn btn-danger" style="background:var(--danger);color:white;">🗑️ Clear All Data</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ----- LEAD MANAGEMENT SYSTEM -----
+    let leads = JSON.parse(localStorage.getItem('leads') || '[]');
+    function saveLeads() { localStorage.setItem('leads', JSON.stringify(leads)); updateDashboard(); }
+    function calculateLeadScore(lead) { let score = 10; if (lead.service?.toLowerCase().includes('study')) score += 25; return Math.min(100, score); }
+    function addLead(lead) {
+      lead.id = Date.now(); lead.createdAt = new Date().toISOString(); lead.status = lead.status || 'NEW'; lead.leadScore = calculateLeadScore(lead);
+      leads.unshift(lead); saveLeads(); showNotification(`New lead received!`); return lead;
+    }
+    
+    function updateDashboard() {
+      if (!document.getElementById('totalLeadsCount')) return;
+      document.getElementById('totalLeadsCount').innerText = leads.length;
+      document.getElementById('convertedCount').innerText = leads.filter(l => l.status === 'CONVERTED').length;
+      let tbody = document.querySelector('#leadsTable tbody');
+      if (tbody) {
+        tbody.innerHTML = '';
+        leads.slice(0, 30).forEach(l => {
+          let row = tbody.insertRow();
+          row.insertCell(0).innerText = l.name; row.insertCell(1).innerText = l.email; row.insertCell(2).innerText = l.phone; row.insertCell(3).innerText = l.service;
+          row.insertCell(4).innerHTML = `<select onchange="updateLeadStatus(${l.id}, this.value)"><option ${l.status === 'NEW' ? 'selected' : ''}>NEW</option><option ${l.status === 'CONTACTED' ? 'selected' : ''}>CONTACTED</option><option ${l.status === 'CONVERTED' ? 'selected' : ''}>CONVERTED</option><option ${l.status === 'LOST' ? 'selected' : ''}>LOST</option></select>`;
+          row.insertCell(5).innerHTML = `<button onclick="openWhatsappChat('${l.phone}')">💬 WA</button>`;
+        });
+      }
+    }
+    window.updateLeadStatus = (id, newStatus) => { let l = leads.find(x => x.id == id); if (l) { l.status = newStatus; saveLeads(); } };
+    function clearAllLeads() { if (confirm('Delete all leads?')) { leads = []; saveLeads(); showNotification('All data cleared'); } }
+    function exportToExcel() {
+      let csv = "Name,Email,Phone,Service,Status\n"; leads.forEach(l => { csv += `"${l.name}","${l.email}","${l.phone}","${l.service}","${l.status}"\n`; });
+      let blob = new Blob([csv], { type: 'text/csv' }); let a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'leads.csv'; a.click();
+    }
+    function openWhatsappChat(phone) { window.open(`https://wa.me/${phone}?text=Hi%20from%20Maven%20Masters`, '_blank'); }
+    
+    // ----- FORM HANDLING -----
+    const leadForm = document.getElementById('leadForm');
+    if (leadForm) {
+      leadForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = leadForm.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = 'Submitting... <span class="loading-spinner"></span>'; submitBtn.disabled = true;
+        addLead({ name: document.getElementById('leadName').value, email: document.getElementById('leadEmail').value, phone: document.getElementById('leadPhone').value, service: document.getElementById('leadService').value, message: document.getElementById('leadMsg').value });
+        closeLeadForm(); document.getElementById('successModal').style.display = 'block'; leadForm.reset();
+        submitBtn.innerHTML = 'Submit & Get Consultation'; submitBtn.disabled = false;
+      });
+    }
+    window.openLeadForm = (service = '') => { document.getElementById('leadModal').style.display = 'block'; if (service) document.getElementById('leadService').value = service; };
+    window.closeLeadForm = () => document.getElementById('leadModal').style.display = 'none';
+    window.closeSuccessModal = () => document.getElementById('successModal').style.display = 'none';
+    
+    // ----- RESOURCE DOWNLOAD -----
+    let currentResource = '';
+    function openResourceDownload(resourceId, title) { currentResource = resourceId; document.getElementById('downloadModalTitle').innerText = `Download: ${title}`; document.getElementById('downloadModal').style.display = 'block'; }
+    function closeDownloadModal() { document.getElementById('downloadModal').style.display = 'none'; }
+    document.getElementById('downloadForm')?.addEventListener('submit', (e) => {
+      e.preventDefault(); const email = document.getElementById('downloadEmail').value.trim(); if (!email) return;
+      addLead({ name: 'Download User', email: email, phone: 'N/A', service: `Resource: ${currentResource}`, message: `Downloaded ${currentResource}` });
+      closeDownloadModal(); showNotification(`📥 Download sent to your email!`);
+    });
+    
+    // ----- AI CHATBOT -----
+    window.sendAIMessage = () => {
+      let inp = document.getElementById('aiInput'); let msg = inp.value.trim(); if (!msg) return;
+      let chat = document.getElementById('aiMessages'); chat.innerHTML += `<div class="chat-message user">${msg}</div>`;
+      setTimeout(() => { chat.innerHTML += `<div class="chat-message bot"><strong>🤖 Expert:</strong><br>Thanks for asking! Please fill out the consultation form above so our expert can guide you personally.</div>`; chat.scrollTop = chat.scrollHeight; }, 300);
+      inp.value = '';
+    };
+    window.toggleAIChat = () => { let b = document.getElementById('aiChatBubble'); b.style.display = b.style.display === 'flex' ? 'none' : 'flex'; };
+    window.toggleAdmin = () => { let dash = document.getElementById('adminDashboard'); dash.style.display = dash.style.display === 'flex' ? 'none' : 'flex'; updateDashboard(); };
+    function showNotification(msg) { let n = document.createElement('div'); n.className = 'notification'; n.innerText = msg; document.body.appendChild(n); setTimeout(() => n.remove(), 4000); }
+    
+    // ----- EXIT INTENT & BLOG MODALS -----
+    let popupShown = false;
+    document.addEventListener('mouseleave', (e) => { if (e.clientY < 0 && !popupShown) { document.getElementById('exitPopup').classList.add('active'); popupShown = true; } });
+    window.closePopup = () => { document.getElementById('exitPopup').classList.remove('active'); };
+    function openBlogArticle(type) { showNotification("Blog article opened successfully!"); }
+    
+    // ----- SOCIAL & THEME -----
+    function shareOnFB() { window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400'); }
+    function shareOnTwitter() { window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Check out Maven Masters!') + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400'); }
+    function shareOnLI() { window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400'); }
+    function shareOnWA() { window.open('https://wa.me/?text=' + encodeURIComponent('Check out Maven Masters! ' + window.location.href), '_blank'); }
+    
+    const toggle = document.getElementById('themeToggle'); const savedTheme = localStorage.getItem('theme') || 'light'; document.documentElement.setAttribute('data-theme', savedTheme); toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    toggle.addEventListener('click', () => { let html = document.documentElement; let cur = html.getAttribute('data-theme'); let nxt = cur === 'dark' ? 'light' : 'dark'; html.setAttribute('data-theme', nxt); toggle.textContent = nxt === 'dark' ? '☀️' : '🌙'; localStorage.setItem('theme', nxt); });
+    
+    document.querySelectorAll('.faq-item .faq-question').forEach(btn => { btn.addEventListener('click', () => { let item = btn.closest('.faq-item'); let expanded = item.classList.contains('active'); btn.setAttribute('aria-expanded', !expanded); item.classList.toggle('active'); }); });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { let href = this.getAttribute('href'); if (href && href !== '#' && href.length > 1 && !href.includes('javascript')) { e.preventDefault(); let target = document.querySelector(href); if (target) { window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' }); } } }); });
+    window.onclick = function(event) { if (event.target.classList.contains('modal')) { event.target.style.display = 'none'; } };
+    
+    updateDashboard();
+  </script>
 </body>
 </html>
