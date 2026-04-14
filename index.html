@@ -1156,11 +1156,16 @@
     });
     
     document.querySelector('.logo').addEventListener('click', (e) => {
-      e.preventDefault(); tapCount++; if(tapTimer) clearTimeout(tapTimer);
-      tapTimer = setTimeout(() => tapCount=0, 500);
-      if(tapCount===3) { tapCount=0; showAdminDashboard(); }
-      return false;
-    });
+  tapCount++;
+  if(tapTimer) clearTimeout(tapTimer);
+  tapTimer = setTimeout(() => tapCount = 0, 500);
+  
+  if (tapCount === 3) {
+    e.preventDefault();   
+    tapCount = 0;
+    showAdminDashboard();
+  }
+  });
     
     // Lead management
     let leads = JSON.parse(localStorage.getItem('leads')||'[]');
