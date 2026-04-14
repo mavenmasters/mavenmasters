@@ -528,7 +528,53 @@
     }
     .social-share-btn:hover { transform: translateY(-3px) scale(1.1); }
     .facebook-btn { background: #1877F2; } .twitter-btn { background: #1DA1F2; } .linkedin-btn { background: #0A66C2; } .whatsapp-btn { background: #25D366; }
+    /* Blog Modal Styles */
+    .blog-modal {
+      display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%;
+      overflow: auto; background-color: rgba(0,0,0,0.8); animation: fadeIn 0.3s ease;
+    }
+    .blog-modal-content {
+      background-color: var(--card); margin: 2% auto; padding: 0; width: 90%; max-width: 900px;
+      border-radius: var(--radius); box-shadow: var(--shadow-lg); animation: slideIn 0.4s ease;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .blog-modal-header {
+      background: var(--accent-gradient); color: white; padding: 2rem;
+      border-radius: var(--radius) var(--radius) 0 0; position: sticky; top: 0; z-index: 10;
+    }
+    .blog-modal-header h2 { margin: 0; font-size: 1.8rem; color: white; }
+    .blog-close {
+      position: absolute; right: 1.5rem; top: 1.5rem; color: white; font-size: 2rem; font-weight: bold;
+      cursor: pointer; background: rgba(255,255,255,0.2); width: 40px; height: 40px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; border: none; transition: transform 0.2s;
+    }
+    .blog-close:hover { transform: rotate(90deg); background: rgba(255,255,255,0.3); }
+    .blog-modal-body { padding: 2rem; line-height: 1.8; color: var(--text-main); }
+    .blog-modal-body h1 { font-size: 2rem; margin-bottom: 1rem; color: var(--accent-1); }
+    .blog-modal-body h2 { font-size: 1.6rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--accent-1); }
+    .blog-category {
+      display: inline-block; background: var(--gold); color: white; padding: 0.5rem 1rem;
+      border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem;
+    }
+    .blog-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--glass-border); }
+    .highlight-box { background: var(--glass); border-left: 4px solid var(--accent-1); padding: 1.5rem; margin: 1.5rem 0; border-radius: var(--radius-sm); }
+    .cta-box { background: var(--accent-gradient); color: white; padding: 2rem; border-radius: var(--radius); text-align: center; margin: 2rem 0; }
+    .cta-box h3 { color: white !important; margin-top: 0; }
+    .cta-btn {
+      background: var(--gold); color: white; padding: 1rem 2rem; border: none; border-radius: var(--radius-sm);
+      font-weight: 600; cursor: pointer; font-size: 1rem; margin-top: 1rem; transition: all 0.3s;
+    }
+    .cta-btn:hover { background: var(--gold-bright); transform: translateY(-2px); }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
     
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .logo-img { height: 60px; }
+      .brand-text h1 { font-size: 1.5rem; }
+      .brand-text small { font-size: 0.75rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
     /* Mobile */
     @media (max-width: 768px) {
       .nav-links { display: none; }
@@ -551,12 +597,14 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="#About-Maven-Masters">About Maven Masters</a></li>
-        <li><a href="#premium-services">Services</a></li>
-        <li><a href="#free-resources">Resources</a></li>
-        <li><a href="#blog">Insights</a></li>
-        <li><a href="https://wa.me/919893314761" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Get Started</a></li>
-      </ul>
+  <li><a href="#About-Maven-Masters">About</a></li>
+  <li><a href="#premium-services">Services</a></li>
+  <li><a href="#free-resources">Resources</a></li>
+  <li><a href="#blog">Insights</a></li>
+  <li><a href="#daily-tips">Daily Tips</a></li>
+  <li><a href="#faq">FAQ</a></li>
+  <li><a href="https://wa.me/919893314761" class="btn btn-primary" style="padding: 0.5rem 1.2rem;">Get Started</a></li>
+</ul>
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
     </nav>
   </header>
@@ -710,91 +758,15 @@
     </div>
   </section>
 
-  <!-- BLOG / INSIGHTS (PREMIUM ICONS) -->
+ <!-- FEATURED BLOG / INSIGHTS -->
   <section id="blog" class="section-alt">
     <div class="container">
       <h2>Latest Insights & Updates</h2>
       <div class="blog-grid">
-        <!-- Card 1: Visa -->
-        <div class="blog-card">
-          <div class="blog-top">
-            <div class="icon-box">
-              <svg viewBox="0 0 64 64">
-                <defs><linearGradient id="gradVisa" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f4fd8"/><stop offset="100%" stop-color="#FFD700"/></linearGradient></defs>
-                <rect x="18" y="12" width="28" height="40" rx="6" fill="url(#gradVisa)" opacity="0.2"/>
-                <circle cx="32" cy="32" r="10" fill="url(#gradVisa)"/>
-                <circle cx="32" cy="32" r="4" fill="white"/>
-                <circle cx="48" cy="16" r="2.5" fill="#FFD700"><animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/></circle>
-              </svg>
-            </div>
-          </div>
-          <div class="blog-content">
-            <span class="blog-tag">Visa</span>
-            <h3>USA F-1 Visa Interview Q&A</h3>
-            <p>Expert tips to crack your visa interview.</p>
-            <a href="#" onclick="openBlogArticle('visa');return false;">Read more →</a>
-          </div>
-        </div>
-        <!-- Card 2: Funding -->
-        <div class="blog-card">
-          <div class="blog-top">
-            <div class="icon-box">
-              <svg viewBox="0 0 64 64">
-                <defs><linearGradient id="gradFunding" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#0f4fd8"/></linearGradient></defs>
-                <circle cx="32" cy="32" r="26" fill="url(#gradFunding)" opacity="0.15"/>
-                <path d="M20 30 L32 22 L44 30 L32 38 Z" fill="url(#gradFunding)"/>
-                <rect x="26" y="38" width="12" height="6" rx="2" fill="url(#gradFunding)"/>
-                <circle cx="48" cy="20" r="2" fill="#FFD700"><animate attributeName="opacity" values="1;0;1" dur="1.4s" repeatCount="indefinite"/></circle>
-              </svg>
-            </div>
-          </div>
-          <div class="blog-content">
-            <span class="blog-tag">Funding</span>
-            <h3>₹50 Lakhs Scholarships Guide</h3>
-            <p>Complete list for Indian students.</p>
-            <a href="#" onclick="openBlogArticle('funding');return false;">Read more →</a>
-          </div>
-        </div>
-        <!-- Card 3: Research -->
-        <div class="blog-card">
-          <div class="blog-top">
-            <div class="icon-box">
-              <svg viewBox="0 0 64 64">
-                <defs><linearGradient id="gradResearch" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f4fd8"/><stop offset="100%" stop-color="#FFD700"/></linearGradient></defs>
-                <rect x="14" y="12" width="36" height="40" rx="4" fill="url(#gradResearch)" opacity="0.2"/>
-                <line x1="22" y1="22" x2="42" y2="22" stroke="url(#gradResearch)" stroke-width="3"/>
-                <line x1="22" y1="30" x2="36" y2="30" stroke="url(#gradResearch)" stroke-width="3"/>
-                <line x1="22" y1="38" x2="32" y2="38" stroke="url(#gradResearch)" stroke-width="3"/>
-                <circle cx="50" cy="18" r="2" fill="#FFD700"><animate attributeName="opacity" values="1;0;1" dur="1.6s" repeatCount="indefinite"/></circle>
-              </svg>
-            </div>
-          </div>
-          <div class="blog-content">
-            <span class="blog-tag">Research</span>
-            <h3>PhD Thesis in 6 Months</h3>
-            <p>Step-by-step plan for rapid completion.</p>
-            <a href="#" onclick="openBlogArticle('research');return false;">Read more →</a>
-          </div>
-        </div>
-        <!-- Card 4: Study Abroad -->
-        <div class="blog-card">
-          <div class="blog-top">
-            <div class="icon-box">
-              <svg viewBox="0 0 64 64">
-                <defs><linearGradient id="gradUni" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#0f4fd8"/></linearGradient></defs>
-                <path d="M10 26 L32 14 L54 26 L32 38 Z" fill="url(#gradUni)"/>
-                <rect x="22" y="38" width="20" height="8" rx="2" fill="url(#gradUni)"/>
-                <circle cx="48" cy="20" r="2" fill="#FFD700"><animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/></circle>
-              </svg>
-            </div>
-          </div>
-          <div class="blog-content">
-            <span class="blog-tag">Study Abroad</span>
-            <h3>Top 10 US Universities 2026</h3>
-            <p>Admission requirements & fees.</p>
-            <a href="#" onclick="openBlogArticle('uni');return false;">Read more →</a>
-          </div>
-        </div>
+        <div class="blog-card"><div class="blog-top"><div class="icon-box"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="20" stroke="#0f4fd8" stroke-width="3" fill="none"/></svg></div></div><div class="blog-content"><span class="blog-tag">Visa</span><h3>USA F-1 Visa Interview Q&A</h3><p>Expert tips to crack your visa interview.</p><a href="#" onclick="openBlogArticle('visa');return false;">Read more →</a></div></div>
+        <div class="blog-card"><div class="blog-top"><div class="icon-box"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="#FFD700" opacity="0.15"/></svg></div></div><div class="blog-content"><span class="blog-tag">Funding</span><h3>₹50 Lakhs Scholarships Guide</h3><p>Complete list for Indian students.</p><a href="#" onclick="openBlogArticle('scholarships');return false;">Read more →</a></div></div>
+        <div class="blog-card"><div class="blog-top"><div class="icon-box"><svg viewBox="0 0 64 64"><rect x="14" y="12" width="36" height="40" rx="4" fill="#0f4fd8" opacity="0.2"/></svg></div></div><div class="blog-content"><span class="blog-tag">Research</span><h3>PhD Thesis in 6 Months</h3><p>Step-by-step plan for rapid completion.</p><a href="#" onclick="openBlogArticle('thesis');return false;">Read more →</a></div></div>
+        <div class="blog-card"><div class="blog-top"><div class="icon-box"><svg viewBox="0 0 64 64"><path d="M10 26 L32 14 L54 26 L32 38 Z" fill="#0f4fd8"/></svg></div></div><div class="blog-content"><span class="blog-tag">Study Abroad</span><h3>Top 10 US Universities 2026</h3><p>Admission requirements & fees.</p><a href="#" onclick="openBlogArticle('universities');return false;">Read more →</a></div></div>
       </div>
       <div class="social-share" style="display:flex; gap:1rem; justify-content:center; margin:3rem 0 0;">
         <span>Share:</span>
@@ -803,6 +775,15 @@
         <div class="social-share-btn linkedin-btn" onclick="shareOnLI()"><i class="fab fa-linkedin-in"></i></div>
         <div class="social-share-btn whatsapp-btn" onclick="shareOnWA()"><i class="fab fa-whatsapp"></i></div>
       </div>
+    </div>
+  </section>
+
+  <!-- AUTO BLOG GENERATOR SECTION (DAILY TIPS) -->
+  <section id="daily-tips" class="section">
+    <div class="container">
+      <h2>Daily Study Abroad Tips </h2>
+      <p class="muted" style="text-align:center; margin-bottom:2rem;">Fresh insights </p>
+      <div id="autoBlogContainer" class="blog-grid"></div>
     </div>
   </section>
 
@@ -1014,7 +995,112 @@
     </div>
   </div>
 
-  <script>
+<!-- BLOG MODAL -->
+<div id="blogModal" class="blog-modal">
+  <div class="blog-modal-content">
+    <div class="blog-modal-header">
+      <button class="blog-close" onclick="closeBlogModal()">&times;</button>
+      <h2 id="blogModalTitle">Blog Article</h2>
+    </div>
+    <div class="blog-modal-body" id="blogModalBody"></div>
+  </div>
+</div>
+
+<script>
+  // ---------- PREMIUM BLOG ARTICLES ----------
+  const blogArticles = {
+    'visa': {
+      category: 'VISA',
+      title: 'USA F-1 Visa Interview Q&A',
+      content: `<span class="blog-category">VISA</span><h1>USA F-1 Visa Interview Q&A</h1><div class="blog-meta">April 2026 · 8 min read</div><p>The F-1 visa interview is crucial. Prepare with our expert Q&A.</p><h2>Top Questions</h2><ul><li>Why USA?</li><li>Why this university?</li><li>Funding plan?</li></ul><div class="cta-box"><h3>Need visa coaching?</h3><button class="cta-btn" onclick="openLeadForm('Visa Guidance');closeBlogModal();">Book Free Consultation</button></div>`
+    },
+    'scholarships': {
+      category: 'FUNDING',
+      title: '₹50 Lakhs Scholarships Guide',
+      content: `<span class="blog-category">FUNDING</span><h1>₹50 Lakhs Scholarships Guide</h1><div class="blog-meta">April 2026 · 10 min read</div><p>Complete list of scholarships for Indian students.</p><div class="highlight-box"><strong>Fulbright-Nehru:</strong> Full funding ≈ ₹45-60 lakhs</div><div class="cta-box"><h3>Get Scholarship Help</h3><button class="cta-btn" onclick="openLeadForm('Scholarship Guidance');closeBlogModal();">Start Now</button></div>`
+    },
+    'thesis': {
+      category: 'RESEARCH',
+      title: 'PhD Thesis in 6 Months',
+      content: `<span class="blog-category">RESEARCH</span><h1>PhD Thesis in 6 Months</h1><div class="blog-meta">April 2026 · 12 min read</div><p>Step-by-step plan for rapid thesis completion.</p><div class="cta-box"><h3>Expert Thesis Support</h3><button class="cta-btn" onclick="openLeadForm('Thesis Help');closeBlogModal();">Get Assistance</button></div>`
+    },
+    'universities': {
+      category: 'STUDY ABROAD',
+      title: 'Top 10 US Universities 2026',
+      content: `<span class="blog-category">STUDY ABROAD</span><h1>Top 10 US Universities 2026</h1><div class="blog-meta">April 2026 · 15 min read</div><p>Admission requirements & fees for Indian students.</p><div class="cta-box"><h3>Expert Admission Guidance</h3><button class="cta-btn" onclick="openLeadForm('Study Abroad');closeBlogModal();">Book Consultation</button></div>`
+    }
+  };
+
+  function openBlogArticle(topic) {
+    const modal = document.getElementById('blogModal');
+    const title = document.getElementById('blogModalTitle');
+    const body = document.getElementById('blogModalBody');
+    const article = blogArticles[topic.toLowerCase()];
+    if (article) {
+      title.textContent = article.title;
+      body.innerHTML = article.content;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeBlogModal() {
+    document.getElementById('blogModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+ // ---------- AUTO BLOG GENERATOR (DAILY TIPS) ----------
+    const autoKeywords = [
+      "F1 Visa Interview Tips 2026",
+      "Study Abroad Scholarships India",
+      "Top Universities USA 2026",
+      "IELTS Preparation Tips",
+      "How to Write SOP",
+      "Student Visa Rejection Reasons",
+      "MBA Abroad Guide",
+      "PhD Admission Process"
+    ];
+
+    function generateAutoContent(keyword) {
+      return `
+        <span class="blog-category" style="background:var(--success);">Daily Tip</span>
+        <h1>${keyword}</h1>
+        <div class="blog-meta">${new Date().toLocaleDateString('en-IN', {year:'numeric', month:'long', day:'numeric'})} · Daily Insight</div>
+        <p><strong>${keyword}</strong> is one of the most searched topics among students planning to study abroad. Understanding this topic thoroughly can significantly boost your chances of success.</p>
+        <h2>Why It Matters</h2>
+        <p>Every year, thousands of Indian students face challenges related to ${keyword.toLowerCase()}. With the right preparation and expert guidance, you can navigate this process smoothly.</p>
+        <h3>Key Strategies</h3>
+        <ul><li>Start early — at least 6-12 months in advance.</li><li>Research specific requirements for your target country/university.</li><li>Seek professional advice to avoid common mistakes.</li></ul>
+        <div class="highlight-box"><strong>Pro Tip:</strong> Maven Masters offers free resources and consultations to help you master ${keyword}.</div>
+        <div class="cta-box"><h3>Want personalized help?</h3><button class="cta-btn" onclick="openLeadForm('Study Abroad');closeBlogModal();">Talk to an Expert</button></div>
+      `;
+    }
+
+    function openAutoBlogModal(keyword) {
+      const modal = document.getElementById('blogModal');
+      document.getElementById('blogModalTitle').textContent = keyword;
+      document.getElementById('blogModalBody').innerHTML = generateAutoContent(keyword);
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function renderAutoBlogs() {
+      const container = document.getElementById('autoBlogContainer');
+      if (!container) return;
+      const today = new Date().getDate();
+      let html = '';
+      for (let i = 0; i < 3; i++) {
+        const keyword = autoKeywords[(today + i) % autoKeywords.length];
+        const tag = keyword.includes('Visa') ? 'Visa' : (keyword.includes('Scholarship') ? 'Funding' : 'Study Tip');
+        html += `<div class="blog-card"><div class="blog-top"><div class="icon-box"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="20" stroke="#0f4fd8" stroke-width="3" fill="none"/></svg></div></div><div class="blog-content"><span class="blog-tag" style="background:var(--success);">${tag}</span><h3>${keyword}</h3><p>Daily updated insights — click to read full article.</p><a href="#" onclick="openAutoBlogModal('${keyword}');return false;">Read more →</a></div></div>`;
+      }
+      container.innerHTML = html;
+    }
+
+    function closeBlogModal() {
+      document.getElementById('blogModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
     // ---------- SECURE ADMIN ACCESS ----------
     let adminAuthenticated = false;
     let tapCount = 0, tapTimer = null;
@@ -1090,7 +1176,6 @@
     let popupShown=false;
     document.addEventListener('mouseleave',(e)=>{ if(e.clientY<0 && !popupShown){ document.getElementById('exitPopup').style.display='flex'; popupShown=true; } });
     window.closePopup=()=> document.getElementById('exitPopup').style.display='none';
-    window.openBlogArticle=(t)=>showNotification('Blog article opened');
     function showNotification(m){ let n=document.createElement('div'); n.className='notification'; n.style.cssText='position:fixed;bottom:100px;right:20px;background:#08306a;color:white;padding:1rem;border-radius:8px;z-index:9999'; n.innerText=m; document.body.appendChild(n); setTimeout(()=>n.remove(),4000); }
     
     // Theme & FAQ
@@ -1105,7 +1190,23 @@
     window.shareOnLI=()=>window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href));
     window.shareOnWA=()=>window.open('https://wa.me/?text='+encodeURIComponent('Check Maven Masters '+location.href));
     
+ // Modal click outside & escape
+    window.onclick = (e) => {
+      if (e.target == document.getElementById('blogModal')) closeBlogModal();
+      if (e.target == document.getElementById('leadModal')) closeLeadForm();
+      if (e.target == document.getElementById('downloadModal')) closeDownloadModal();
+      if (e.target == document.getElementById('successModal')) closeSuccessModal();
+    };
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeBlogModal(); closeLeadForm(); closeDownloadModal(); closeSuccessModal(); } });
+    
+    // Init
+    renderAutoBlogs();
     updateDashboard();
+    setInterval(renderAutoBlogs, 86400000);
+    
+    window.openBlogArticle = openBlogArticle;
+    window.closeBlogModal = closeBlogModal;
+    window.openAutoBlogModal = openAutoBlogModal;
   </script>
 </body>
 </html>
