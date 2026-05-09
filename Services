@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Ghrij1d6E97SQoBP_n0P8cqQnecfKUZ5H6Lff_XIQyc" />
+  <meta name="msvalidate.01" content="779FE63A8104C797D0A2CA2C9FF29D75" />
+
+  <title>All Services | Academic Writing, Study Abroad & Career Counselling | Maven Masters</title>
+  <meta name="description" content="Maven Masters offers expert academic writing, PhD thesis, study abroad counselling, career guidance, resume building, and SOP writing. Trusted by 500+ students across India.">
+  <meta name="keywords" content="Maven Masters services, academic writing India, study abroad consultant, career counselling, PhD thesis help, SOP writing, Bhopal">
+  <meta name="author" content="Maven Masters">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mavenmasters.github.io/mavenmasters/services.html">
+
+  <link rel="alternate" href="https://mavenmasters.github.io/mavenmasters/services.html" hreflang="en" />
+  <link rel="alternate" href="https://mavenmasters.github.io/mavenmasters/hi/services.html" hreflang="hi" />
+  <link rel="alternate" href="https://mavenmasters.github.io/mavenmasters/services.html" hreflang="x-default" />
+
+  <meta property="og:title" content="All Services | Maven Masters">
+  <meta property="og:description" content="Academic writing, study abroad, career counselling – everything you need to succeed globally. Trusted by 500+ students.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mavenmasters.github.io/mavenmasters/services.html">
+  <meta property="og:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="All Services | Maven Masters">
+  <meta name="twitter:description" content="Academic writing, study abroad, career counselling – all under one roof.">
+  <meta name="twitter:image" content="https://mavenmasters.github.io/mavenmasters/assets/images/og-image.jpg">
+
+  <meta name="geo.region" content="IN-MP">
+  <meta name="geo.placename" content="Bhopal">
+  <meta name="geo.position" content="23.2599;77.4126">
+  <meta name="ICBM" content="23.2599, 77.4126">
+  <meta name="theme-color" content="#08306a">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Maven Masters",
+    "url": "https://mavenmasters.github.io/mavenmasters/",
+    "logo": "https://mavenmasters.github.io/mavenmasters/assets/images/logo.svg",
+    "telephone": "+91-9893314761",
+    "email": "mastersmaven@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bhopal", "addressRegion": "Madhya Pradesh", "addressCountry": "IN" },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100074800625140",
+      "https://www.instagram.com/mavenmasters",
+      "https://www.youtube.com/@Maven.Masters"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Maven Masters Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Academic Writing & PhD Thesis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Study Abroad Counselling" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Career Counselling & Resume Writing" } }
+      ]
+    }
+  }
+  </script>
+  <script id="dynamicBlogSchema" type="application/ld+json"></script>
+
+  <style>
+    /* ===== COMPLETE DESIGN SYSTEM ===== */
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --bg:#f9fafc;--card:#ffffff;--text-main:#0b1120;--muted:#5b687c;
+      --accent-1:#0a2540;--accent-2:#1e4bd2;--gold:#D4AF37;--gold-bright:#F5C542;
+      --gold-soft:#E6C45A;--danger:#e53e3e;--radius:20px;--radius-sm:12px;
+      --glass:rgba(255,255,255,0.8);--glass-2:rgba(255,255,255,0.95);
+      --glass-border:rgba(11,17,32,0.08);--shadow-sm:0 4px 12px rgba(0,0,0,0.04);
+      --shadow-md:0 12px 28px rgba(0,0,0,0.08);--shadow-lg:0 24px 48px -12px rgba(0,0,0,0.18);
+      --accent-gradient:linear-gradient(145deg,#0a2540 0%,#1e4bd2 100%);
+      --gold-gradient:linear-gradient(135deg,#D4AF37 0%,#F5C542 100%);
+      --ease:cubic-bezier(0.23,1,0.32,1);--max-width:1280px;
+      --font-heading:'Poppins','Montserrat',sans-serif;--font-body:'Inter',system-ui,sans-serif;
+    }
+    [data-theme="dark"]{--bg:#030712;--card:rgba(255,255,255,0.03);--text-main:#f1f5f9;--muted:#94a3b8;--glass:rgba(255,255,255,0.03);--glass-border:rgba(255,255,255,0.08);--shadow-sm:0 4px 12px rgba(0,0,0,0.5);--shadow-md:0 12px 28px rgba(0,0,0,0.6);--shadow-lg:0 24px 48px -12px rgba(0,0,0,0.8);--gold-soft:#C9A82E;}
+    body{font-family:var(--font-body);background:var(--bg);color:var(--text-main);line-height:1.6;transition:background .2s,color .2s;overflow-x:hidden;}
+    .container{width:min(var(--max-width),94%);margin:0 auto;padding:0 1rem;}
+    h1,h2,h3{font-family:var(--font-heading);font-weight:700;line-height:1.2;}
+    h1{font-size:clamp(2rem,5vw,3.5rem);}
+    h2{font-size:clamp(1.75rem,4vw,2.5rem);text-align:center;margin-bottom:2rem;color:var(--accent-1);}
+    h3{font-size:clamp(1.1rem,2.5vw,1.4rem);}
+    p{margin-bottom:1rem;}
+    a{color:inherit;text-decoration:none;transition:all .2s ease;}
+    .muted{color:var(--muted);font-size:.95rem;}
+    section{padding:5rem 0;}
+    .section-alt{background:var(--card);}
+
+    /* Progress */
+    .progress-container{position:fixed;top:0;left:0;width:100%;height:4px;background:transparent;z-index:1001;pointer-events:none;}
+    .progress-bar{height:4px;background:var(--gold);width:0%;transition:width .1s ease;box-shadow:0 0 10px rgba(212,175,55,0.5);}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.7);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.05);}
+    [data-theme="dark"] header{background:rgba(3,7,18,0.7);border-bottom:1px solid rgba(255,255,255,0.05);}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;gap:1.5rem;flex-wrap:wrap;}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;cursor:pointer;flex-shrink:0;}
+    .logo-img{height:72px;width:auto;max-width:120px;object-fit:contain;display:block;filter:drop-shadow(0 6px 12px rgba(0,0,0,0.15));}
+    .brand-text{display:flex;flex-direction:column;white-space:nowrap;}
+    .brand-text h1{font-size:1.75rem;margin:0;letter-spacing:.3px;color:var(--text-main);font-weight:700;line-height:1.2;}
+    .brand-text small{font-size:.9rem;color:var(--muted);display:block;margin-top:2px;}
+    .nav-links{display:flex;gap:1.2rem;align-items:center;list-style:none;flex-wrap:wrap;}
+    .nav-links li{white-space:nowrap;}
+    .nav-links a{font-weight:500;padding:.5rem 1rem;border-radius:40px;transition:all .2s;}
+    .nav-links a:hover,.nav-links a.active{background:var(--accent-gradient);color:white;}
+    .theme-toggle{background:var(--card);border:1px solid var(--glass-border);padding:.5rem .75rem;border-radius:var(--radius-sm);cursor:pointer;font-size:1.2rem;transition:all .2s ease;flex-shrink:0;}
+    .theme-toggle:hover{transform:scale(1.1) rotate(15deg);}
+    .menu-toggle{display:none;background:none;border:1px solid var(--glass-border);border-radius:8px;padding:.4rem .7rem;cursor:pointer;font-size:1.4rem;}
+    @media(max-width:768px){.menu-toggle{display:block;}.nav-links{display:none;}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;right:0;background:var(--card);backdrop-filter:blur(20px);border-radius:0 0 var(--radius) var(--radius);padding:1rem;box-shadow:var(--shadow-md);z-index:200;width:100%;gap:.5rem;}}
+
+    /* Hero */
+    .hero{background:var(--accent-gradient);color:white;padding:5rem 0 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');opacity:.3;}
+    .hero-inner{position:relative;z-index:1;text-align:center;max-width:800px;margin:0 auto;}
+    .hero-inner h1{color:white;margin-bottom:1.5rem;text-shadow:0 2px 10px rgba(0,0,0,0.2);}
+    .hero-inner p{font-size:1.2rem;opacity:.95;margin-bottom:2.5rem;}
+    .hero-cta-box{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:3rem;}
+    .btn-hero-primary{background:var(--gold);color:white;padding:1rem 2.5rem;border-radius:60px;font-weight:700;font-size:1.1rem;box-shadow:0 8px 20px rgba(212,175,55,0.3);transition:all .3s;display:inline-block;}
+    .btn-hero-primary:hover{background:var(--gold-bright);transform:translateY(-3px);box-shadow:0 12px 28px rgba(212,175,55,0.4);}
+    .btn-hero-secondary{background:rgba(255,255,255,0.15);color:white;padding:1rem 2rem;border-radius:60px;font-weight:600;font-size:1rem;border:2px solid rgba(255,255,255,0.3);backdrop-filter:blur(5px);transition:all .3s;display:inline-block;}
+    .btn-hero-secondary:hover{background:rgba(255,255,255,0.25);transform:translateY(-3px);}
+    .slot-badge{background:rgba(255,255,255,0.15);padding:.5rem 1.2rem;border-radius:40px;font-size:.9rem;font-weight:600;backdrop-filter:blur(5px);border:1px solid rgba(255,255,255,0.2);}
+
+    /* Stats bar */
+    .stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:var(--radius);padding:2rem;border:1px solid rgba(255,255,255,0.2);margin-top:2rem;}
+    .stat-bar-item{text-align:center;}
+    .stat-bar-value{font-size:2rem;font-weight:700;color:var(--gold-bright);font-family:var(--font-heading);}
+    .stat-bar-label{font-size:.9rem;opacity:.9;margin-top:.25rem;}
+
+    /* Buttons */
+    .btn{display:inline-block;padding:.875rem 2rem;border-radius:var(--radius);font-weight:600;text-align:center;cursor:pointer;border:none;transition:all .3s var(--ease);font-size:1rem;}
+    .btn-primary{background:var(--gold);color:white;box-shadow:0 4px 14px rgba(212,175,55,0.3);}
+    .btn-primary:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,175,55,0.4);}
+    .btn-outline{background:transparent;color:var(--accent-1);border:2px solid var(--accent-1);}
+    .btn-outline:hover{background:var(--accent-1);color:white;}
+    .btn-danger{background:var(--danger);color:white;}
+
+    /* Service Cards (featured) */
+    .service-card{background:var(--card);border:1px solid var(--glass-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .4s var(--ease);display:flex;flex-direction:column;position:relative;}
+    .service-card:hover{transform:translateY(-12px);box-shadow:var(--shadow-lg);border-color:transparent;}
+    .service-card-header{padding:2.5rem 2rem 1.5rem;text-align:center;position:relative;}
+    .service-card-icon{font-size:4rem;margin-bottom:1rem;display:block;transition:transform .3s;}
+    .service-card:hover .service-card-icon{transform:scale(1.1);}
+    .service-card-title{font-size:1.4rem;color:var(--accent-1);margin-bottom:.75rem;font-family:var(--font-heading);}
+    .service-card-desc{color:var(--muted);font-size:.95rem;line-height:1.6;}
+    .service-card-strip{height:5px;background:var(--gold-gradient);}
+    .service-card-body{padding:1.5rem 2rem;flex-grow:1;}
+    .service-card-features{list-style:none;margin-bottom:1.5rem;}
+    .service-card-features li{padding:.4rem 0;color:var(--muted);font-size:.9rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid var(--glass-border);}
+    .service-card-features li:last-child{border-bottom:none;}
+    .service-card-features li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;}
+    .service-card-footer{padding:0 2rem 2rem;text-align:center;}
+    .service-card-price{font-size:1.2rem;font-weight:700;color:var(--accent-2);margin-bottom:1rem;}
+
+    /* Feature mini cards */
+    .feature-card{background:var(--card);border:1px solid var(--glass-border);border-radius:var(--radius);padding:2rem 1.5rem;box-shadow:var(--shadow-sm);transition:all .4s var(--ease);text-align:center;position:relative;overflow:hidden;}
+    .feature-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:var(--gold-gradient);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);}
+    .feature-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);}
+    .feature-card:hover::before{transform:scaleX(1);}
+    .feature-card .card-icon{font-size:2.5rem;margin-bottom:1rem;}
+    .feature-card h3{color:var(--accent-1);margin-bottom:.5rem;font-size:1.05rem;}
+    .feature-card p{color:var(--muted);font-size:.85rem;margin:0;}
+
+    /* Grids */
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem;}
+    .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:2rem;}
+    .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:2rem;margin-top:2rem;}
+
+    /* Comparison Table */
+    .comparison-table-wrap{overflow-x:auto;margin-top:2rem;}
+    .comparison-table{width:100%;border-collapse:collapse;font-size:.95rem;}
+    .comparison-table th{background:var(--accent-gradient);color:white;padding:1rem;text-align:left;font-family:var(--font-heading);}
+    .comparison-table th:first-child{border-radius:var(--radius-sm) 0 0 0;}
+    .comparison-table th:last-child{border-radius:0 var(--radius-sm) 0 0;}
+    .comparison-table td{padding:1rem;border-bottom:1px solid var(--glass-border);color:var(--text-main);}
+    .comparison-table tr:hover td{background:rgba(212,175,55,0.04);}
+    .comparison-table tr:last-child td:first-child{border-radius:0 0 0 var(--radius-sm);}
+    .comparison-table tr:last-child td:last-child{border-radius:0 0 var(--radius-sm) 0;}
+    .check-yes{color:#22c55e;font-size:1.2rem;}
+    .check-no{color:#ef4444;font-size:1.2rem;}
+
+    /* Blog/Resource Cards */
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2rem;}
+    .blog-card{background:var(--card);border-radius:var(--radius);padding:2rem;border:1px solid var(--glass-border);box-shadow:var(--shadow-sm);transition:all .3s var(--ease);display:flex;flex-direction:column;gap:.75rem;}
+    .blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold-soft);}
+    .blog-tag{display:inline-block;background:var(--gold-soft);color:var(--accent-1);padding:.2rem .8rem;border-radius:20px;font-size:.7rem;font-weight:700;}
+    .blog-card h3{color:var(--accent-1);font-size:1rem;}
+    .blog-card p{color:var(--muted);font-size:.88rem;flex-grow:1;margin:0;}
+    .blog-card a{color:var(--accent-2);font-weight:600;font-size:.88rem;}
+
+    /* Offer / Why items */
+    .offer-item{background:var(--card);border-radius:var(--radius-sm);padding:1.5rem;margin-bottom:1rem;border-left:4px solid var(--gold);box-shadow:var(--shadow-sm);}
+    .offer-item h4{color:var(--accent-1);margin-bottom:.5rem;font-size:1.05rem;}
+    .offer-item p{margin:0;color:var(--muted);}
+
+    /* Testimonials */
+    .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem;}
+    .testimonial-card{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow-md);border:1px solid var(--glass-border);transition:all .3s var(--ease);}
+    .testimonial-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold-soft);}
+    .testimonial-quote{font-size:2rem;color:var(--gold);opacity:.3;line-height:1;margin-bottom:1rem;}
+    .testimonial-text{font-size:.95rem;line-height:1.7;font-style:italic;color:var(--text-main);margin-bottom:1.5rem;}
+    .testimonial-author{display:flex;align-items:center;gap:1rem;margin-bottom:.75rem;}
+    .author-avatar{width:44px;height:44px;border-radius:50%;background:var(--accent-gradient);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem;flex-shrink:0;}
+    .author-info h4{font-size:.95rem;margin-bottom:.15rem;color:var(--accent-1);}
+    .author-info p{font-size:.82rem;color:var(--muted);margin:0;}
+    .testimonial-rating{color:var(--gold);font-size:1rem;letter-spacing:2px;}
+
+    /* FAQ */
+    .faq-item{background:var(--card);border-radius:var(--radius);margin-bottom:1rem;border:1px solid var(--glass-border);overflow:hidden;}
+    .faq-question{width:100%;background:none;border:none;padding:1.5rem;text-align:left;font-size:1rem;font-weight:600;color:var(--text-main);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--font-body);}
+    .faq-question:hover{background:rgba(212,175,55,0.05);}
+    .faq-icon{transition:transform .3s;flex-shrink:0;color:var(--gold);}
+    .faq-item.active .faq-icon{transform:rotate(180deg);}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+    .faq-item.active .faq-answer{max-height:500px;}
+    .faq-answer p{padding:0 1.5rem 1.5rem;color:var(--muted);}
+
+    /* Daily tip */
+    .daily-tip-box{background:linear-gradient(135deg,rgba(212,175,55,0.1),rgba(30,75,210,0.08));border:1px solid var(--gold-soft);border-radius:var(--radius);padding:2rem;text-align:center;margin-top:2rem;}
+    .daily-tip-box .tip-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:.5rem;}
+    .daily-tip-box p{color:var(--text-main);font-size:1.05rem;line-height:1.7;margin:0;}
+
+    /* CTA */
+    .cta-section{background:var(--accent-gradient);color:white;padding:4rem 0;text-align:center;}
+    .cta-section h2{color:white;}
+    .cta-section p{font-size:1.15rem;margin-bottom:2rem;opacity:.95;}
+
+    /* Footer */
+    footer{background:var(--accent-1);color:rgba(255,255,255,0.9);padding:4rem 0 2rem;}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2.5rem;margin-bottom:3rem;}
+    .footer-col h4{color:var(--gold-bright);font-size:1.1rem;margin-bottom:1.25rem;}
+    .footer-col ul{list-style:none;}
+    .footer-col li{margin-bottom:.6rem;}
+    .footer-col a{color:rgba(255,255,255,0.8);font-size:.9rem;}
+    .footer-col a:hover{color:var(--gold-bright);padding-left:5px;}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:2rem;text-align:center;}
+    .footer-bottom p{margin-bottom:.5rem;color:rgba(255,255,255,0.7);font-size:.9rem;}
+    .footer-bottom a{color:var(--gold-bright);}
+    .social{display:flex;gap:1.5rem;justify-content:center;margin:1.5rem 0;}
+    .social a{width:42px;height:42px;background:rgba(255,255,255,0.1);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:all .3s;}
+    .social a:hover{background:var(--gold);transform:translateY(-5px);}
+
+    /* WhatsApp */
+    .whatsapp-float{position:fixed;bottom:105px;right:26px;background:#25D366;color:white;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:998;transition:all .3s;animation:pulse-wa 2s infinite;}
+    .whatsapp-float:hover{transform:scale(1.1);background:#20b859;}
+    @keyframes pulse-wa{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7);}70%{box-shadow:0 0 0 15px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+
+    /* Chat Widget */
+    .chat-widget{position:fixed;bottom:25px;right:25px;z-index:9999;}
+    .chat-fab{width:70px;height:70px;background:var(--gold);color:#08306a;border:3px solid white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.2rem;cursor:pointer;box-shadow:0 10px 30px rgba(212,175,55,0.6);transition:all .25s ease;animation:soft-pulse 2.2s infinite;position:relative;}
+    .chat-fab:hover{transform:scale(1.08);background:var(--gold-bright);animation:none;}
+    @keyframes soft-pulse{0%{box-shadow:0 10px 30px rgba(212,175,55,0.6),0 0 0 0 rgba(212,175,55,0.5);}70%{box-shadow:0 10px 30px rgba(212,175,55,0.7),0 0 0 18px rgba(212,175,55,0);}100%{box-shadow:0 10px 30px rgba(212,175,55,0.6),0 0 0 0 rgba(212,175,55,0);}}
+    .chat-fab .fab-label{position:absolute;right:80px;background:var(--accent-1);color:white;padding:8px 16px;border-radius:30px;font-size:.9rem;font-weight:600;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,0.15);pointer-events:none;opacity:.9;}
+    @media(max-width:480px){.chat-fab .fab-label{display:none;}}
+    .chat-fab .fab-icon,.chat-fab .fab-close{position:absolute;transition:opacity .2s;}
+    .chat-fab .fab-close{display:none;font-size:2rem;}
+    .chat-widget.active .chat-fab{background:var(--accent-2);color:white;border-color:var(--gold);animation:none;}
+    .chat-widget.active .chat-fab .fab-icon{display:none;}
+    .chat-widget.active .chat-fab .fab-close{display:inline;}
+    .enhanced-chat{position:absolute;bottom:90px;right:0;width:360px;max-width:calc(100vw - 50px);background:var(--card);border-radius:20px;box-shadow:0 25px 50px -12px rgba(0,0,0,0.3);border:1px solid var(--glass-border);overflow:hidden;animation:slideUp .25s ease;display:flex;flex-direction:column;z-index:9998;}
+    @keyframes slideUp{from{opacity:0;transform:translateY(15px);}to{opacity:1;transform:translateY(0);}}
+    .chat-header{background:var(--accent-gradient);color:white;padding:1rem 1.25rem;display:flex;justify-content:space-between;align-items:center;}
+    .chat-header-left{display:flex;align-items:center;gap:12px;}
+    .chat-avatar{width:40px;height:40px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;}
+    .chat-header h4{margin:0;font-size:1.1rem;color:white;}
+    .online-status{font-size:.75rem;opacity:.9;}
+    .chat-close-btn{background:rgba(255,255,255,0.15);border:none;color:white;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;}
+    .chat-messages{padding:1.25rem;height:280px;overflow-y:auto;display:flex;flex-direction:column;gap:12px;background:var(--bg);}
+    .chat-message{display:flex;align-items:flex-start;gap:8px;animation:messageIn .3s ease;}
+    @keyframes messageIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+    .chat-message.user{flex-direction:row-reverse;}
+    .msg-avatar{width:32px;height:32px;background:var(--gold);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+    .chat-message.user .msg-avatar{background:var(--accent-2);}
+    .msg-bubble{background:white;padding:10px 14px;border-radius:18px;border-top-left-radius:4px;max-width:80%;box-shadow:var(--shadow-sm);color:var(--text-main);font-size:.9rem;line-height:1.5;}
+    .chat-message.user .msg-bubble{background:var(--accent-2);color:white;border-top-left-radius:18px;border-top-right-radius:4px;}
+    .typing-indicator{display:flex;align-items:center;gap:4px;padding:10px 14px;background:white;border-radius:18px;width:fit-content;box-shadow:var(--shadow-sm);}
+    .typing-indicator span{width:8px;height:8px;background:var(--muted);border-radius:50%;animation:typing 1.4s infinite;}
+    .typing-indicator span:nth-child(2){animation-delay:.2s;}.typing-indicator span:nth-child(3){animation-delay:.4s;}
+    @keyframes typing{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-8px);}}
+    .quick-replies{padding:.75rem 1.25rem;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--glass-border);background:var(--bg);}
+    .quick-reply-btn{background:var(--glass);border:1px solid var(--glass-border);color:var(--text-main);padding:8px 14px;border-radius:20px;font-size:.8rem;cursor:pointer;transition:all .2s;font-weight:500;white-space:nowrap;}
+    .quick-reply-btn:hover{background:var(--gold);color:white;border-color:var(--gold);transform:translateY(-2px);}
+    .chat-input-area{display:flex;padding:.75rem 1.25rem;gap:8px;border-top:1px solid var(--glass-border);background:var(--card);}
+    .chat-input{flex:1;padding:12px 16px;border:1px solid var(--glass-border);border-radius:30px;font-size:.9rem;background:var(--bg);color:var(--text-main);outline:none;font-family:var(--font-body);}
+    .chat-input:focus{border-color:var(--accent-2);}
+    .chat-send{width:44px;height:44px;background:var(--gold);color:white;border:none;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+    .chat-send:hover{background:var(--gold-bright);transform:scale(1.05);}
+    .chat-footer{padding:.5rem;text-align:center;font-size:.7rem;color:var(--muted);border-top:1px solid var(--glass-border);}
+
+    /* Modals */
+    .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);align-items:center;justify-content:center;}
+    .modal-content{background:var(--card);margin:auto;padding:2rem;border-radius:var(--radius);max-width:500px;width:90%;position:relative;box-shadow:var(--shadow-lg);border:1px solid rgba(255,215,0,0.3);animation:modalFadeIn .3s ease;}
+    @keyframes modalFadeIn{from{opacity:0;transform:translateY(-30px);}to{opacity:1;transform:translateY(0);}}
+    .modal-content h3{font-size:1.8rem;background:var(--accent-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:1.5rem;text-align:center;}
+    .modal-close{position:absolute;right:1.2rem;top:1rem;font-size:2rem;cursor:pointer;color:var(--muted);transition:all .2s;line-height:1;}
+    .modal-close:hover{color:var(--danger);transform:rotate(90deg);}
+    .form-group{margin-bottom:1.25rem;}
+    .form-group label{display:block;font-weight:600;margin-bottom:.4rem;color:var(--text-main);font-size:.9rem;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:.8rem 1rem;border:1px solid var(--glass-border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text-main);font-family:var(--font-body);font-size:1rem;transition:all .3s ease;}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,0.2);}
+    .form-group textarea{resize:vertical;min-height:80px;}
+    .modal-content .btn-primary{width:100%;background:var(--gold-gradient);border:none;padding:1rem;font-size:1.1rem;font-weight:700;border-radius:60px;cursor:pointer;transition:all .3s;color:white;box-shadow:0 4px 12px rgba(212,175,55,0.3);}
+    .modal-content .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(212,175,55,0.4);}
+    .blog-modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.8);}
+    .blog-modal-content{background-color:var(--card);margin:2% auto;padding:0;width:90%;max-width:900px;border-radius:var(--radius);box-shadow:var(--shadow-lg);max-height:90vh;overflow-y:auto;}
+    .blog-modal-header{background:var(--accent-gradient);color:white;padding:2rem;border-radius:var(--radius) var(--radius) 0 0;position:sticky;top:0;z-index:10;}
+    .blog-modal-header h2{margin:0;font-size:1.8rem;color:white;}
+    .blog-close{position:absolute;right:1.5rem;top:1.5rem;color:white;font-size:2rem;cursor:pointer;background:rgba(255,255,255,0.2);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:none;transition:transform .2s;}
+    .blog-close:hover{transform:rotate(90deg);background:rgba(255,255,255,0.3);}
+    .blog-modal-body{padding:2rem;line-height:1.8;color:var(--text-main);}
+    .exit-popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:10000;align-items:center;justify-content:center;}
+    .exit-popup-content{background:var(--card);padding:2.5rem;border-radius:var(--radius);max-width:450px;text-align:center;position:relative;box-shadow:var(--shadow-lg);width:90%;}
+    .exit-popup-close{position:absolute;right:1rem;top:1rem;font-size:2rem;cursor:pointer;color:var(--muted);}
+    .countdown-timer{font-size:1.5rem;font-weight:700;color:var(--accent-2);margin:1rem 0;}
+    .admin-dashboard{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:3000;overflow-y:auto;padding:2rem;}
+    .admin-content{background:var(--card);border-radius:var(--radius);padding:2rem;max-width:1400px;margin:0 auto;}
+    .admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;}
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-bottom:1.5rem;}
+    .stat-card{background:var(--bg);padding:1.5rem;border-radius:var(--radius-sm);text-align:center;border:1px solid var(--glass-border);}
+    .stat-card h4{font-size:2rem;color:var(--accent-2);}
+    .leads-table-container{overflow-x:auto;}
+    .leads-table{width:100%;border-collapse:collapse;font-size:.9rem;}
+    .leads-table th{background:var(--accent-gradient);color:white;padding:.75rem;text-align:left;}
+    .leads-table td{padding:.75rem;border-bottom:1px solid var(--glass-border);}
+
+    @media(max-width:768px){.grid-3,.grid-2{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr 1fr;}section{padding:3.5rem 0;}.stats-bar{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:480px){.modal-content{padding:1.5rem;}.footer-grid{grid-template-columns:1fr;}.stats-bar{grid-template-columns:1fr 1fr;}}
+  </style>
+</head>
+<body>
+  <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo" id="secretAdminLogo" aria-label="Maven Masters Home">
+        <img src="assets/images/logo.svg" alt="Maven Masters Logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <h1>Maven Masters</h1>
+          <small>Academic & Career Solutions</small>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#About-Maven-Masters">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="study-abroad.html">Study Abroad</a></li>
+        <li><a href="career-counselling.html">Careers</a></li>
+        <li><a href="academic-writing.html">Academic Writing</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <h1>Everything You Need to Succeed Globally</h1>
+        <p>Academic writing, study abroad counselling, career guidance, and more – all under one expert roof. Trusted by 500+ students across India.</p>
+        <div class="hero-cta-box">
+          <a href="https://wa.me/919893314761?text=Hi%20Maven%20Masters%2C%20I%20want%20to%20know%20more%20about%20your%20services." class="btn-hero-primary">Get Free Consultation →</a>
+          <button onclick="openLeadForm('General Inquiry')" class="btn-hero-secondary">Explore Services ↓</button>
+        </div>
+        <span class="slot-badge"><i class="fas fa-fire"></i> Limited slots available – Book now</span>
+        <div class="stats-bar">
+          <div class="stat-bar-item"><div class="stat-bar-value">500+</div><div class="stat-bar-label">Projects Completed</div></div>
+          <div class="stat-bar-item"><div class="stat-bar-value">200+</div><div class="stat-bar-label">Students Placed Abroad</div></div>
+          <div class="stat-bar-item"><div class="stat-bar-value">87%</div><div class="stat-bar-label">Admission Success Rate</div></div>
+          <div class="stat-bar-item"><div class="stat-bar-value">4.9⭐</div><div class="stat-bar-label">Client Rating</div></div>
+          <div class="stat-bar-item"><div class="stat-bar-value">₹5Cr+</div><div class="stat-bar-label">Scholarships Secured</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN SERVICES ===== -->
+  <section id="premium-services" class="section">
+    <div class="container">
+      <h2>Our Premium Services</h2>
+      <p class="muted" style="text-align:center; margin-bottom:.5rem;">Three pillars of excellence – crafted to transform your academic and career journey</p>
+      <div class="grid-3">
+
+        <!-- Academic Writing -->
+        <div class="service-card">
+          <div class="service-card-strip"></div>
+          <div class="service-card-header">
+            <span class="service-card-icon">📚</span>
+            <h3 class="service-card-title">Academic Writing</h3>
+            <p class="service-card-desc">PhD-level research support, thesis writing, data analysis, and editing by domain experts with Scopus-published credentials.</p>
+          </div>
+          <div class="service-card-body">
+            <ul class="service-card-features">
+              <li>PhD Thesis & Dissertation (All chapters)</li>
+              <li>Research Paper & Journal Articles</li>
+              <li>Data Analysis – SPSS, R, Python, STATA</li>
+              <li>SOP & Admission Essay Writing</li>
+              <li>Literature Review & Editing</li>
+              <li>Turnitin Plagiarism Report (&lt;10%)</li>
+              <li>Unlimited Revisions (30 days)</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-card-price">Starting from ₹3,500</div>
+            <a href="academic-writing.html" class="btn btn-primary" style="width:100%;display:block;">Explore Academic Writing →</a>
+          </div>
+        </div>
+
+        <!-- Study Abroad -->
+        <div class="service-card">
+          <div class="service-card-strip"></div>
+          <div class="service-card-header">
+            <span class="service-card-icon">✈️</span>
+            <h3 class="service-card-title">Study Abroad</h3>
+            <p class="service-card-desc">End-to-end guidance for top universities across USA, UK, Canada, Australia, and Europe with 87% admission success rate.</p>
+          </div>
+          <div class="service-card-body">
+            <ul class="service-card-features">
+              <li>University Shortlisting & Selection</li>
+              <li>SOP & Application Management</li>
+              <li>F-1, Tier 4, SDS, Subclass 500 Visa</li>
+              <li>Scholarship & Education Loan Help</li>
+              <li>IELTS / GRE / GMAT Test Prep</li>
+              <li>Pre-Departure & Accommodation</li>
+              <li>15+ Countries Covered</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-card-price">Free Profile Evaluation</div>
+            <a href="study-abroad.html" class="btn btn-primary" style="width:100%;display:block;">Explore Study Abroad →</a>
+          </div>
+        </div>
+
+        <!-- Career Counselling -->
+        <div class="service-card">
+          <div class="service-card-strip"></div>
+          <div class="service-card-header">
+            <span class="service-card-icon">💼</span>
+            <h3 class="service-card-title">Career Counselling</h3>
+            <p class="service-card-desc">Expert resume writing, LinkedIn optimization, mock interviews, and career roadmapping to land your dream role with a 35% avg salary hike.</p>
+          </div>
+          <div class="service-card-body">
+            <ul class="service-card-features">
+              <li>ATS-Friendly Resume & Cover Letter</li>
+              <li>LinkedIn Profile Makeover</li>
+              <li>Mock Interview & Salary Negotiation</li>
+              <li>Personalized Career Roadmap</li>
+              <li>Internship & Placement Support</li>
+              <li>Skill Gap Analysis & Upskilling</li>
+              <li>Lifelong Follow-up Support</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-card-price">Starting from ₹1,500</div>
+            <a href="career-counselling.html" class="btn btn-primary" style="width:100%;display:block;">Explore Career Services →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK SUB-SERVICES ===== -->
+  <section id="sub-services" class="section-alt">
+    <div class="container">
+      <h2>Specialised Add-On Services</h2>
+      <p class="muted" style="text-align:center; margin-bottom:.5rem;">Precision support for every specific academic and career need</p>
+      <div class="grid-4">
+        <div class="feature-card">
+          <div class="card-icon">📊</div>
+          <h3>Data Analysis</h3>
+          <p>SPSS, R, Python, STATA, AMOS – full statistical analysis with interpretation and write-up.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">✍️</div>
+          <h3>SOP Writing</h3>
+          <p>Compelling, personalised statements of purpose that get you admitted to top programs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">📝</div>
+          <h3>Literature Review</h3>
+          <p>Systematic literature reviews, research gap analysis, and annotated bibliographies.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🎤</div>
+          <h3>Mock Interviews</h3>
+          <p>Visa, job, and PhD viva mock interviews with detailed feedback and coaching.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🔗</div>
+          <h3>LinkedIn Makeover</h3>
+          <p>Keyword-rich profile rewrite and content strategy to attract top recruiters 40x more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">💸</div>
+          <h3>Scholarship Hunt</h3>
+          <p>Identify and apply for merit, need-based, and country-specific scholarships worth lakhs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🖊️</div>
+          <h3>Editing & Proofreading</h3>
+          <p>Grammar, structure, clarity, and citation formatting (APA, MLA, Harvard, IEEE).</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🗺️</div>
+          <h3>Career Roadmap</h3>
+          <p>Personalised step-by-step plan based on your skills, goals, and market demand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE COMPARISON TABLE ===== -->
+  <section id="comparison" class="section">
+    <div class="container">
+      <h2>How We Compare</h2>
+      <p class="muted" style="text-align:center; margin-bottom:.5rem;">What makes Maven Masters the right choice</p>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Maven Masters</th>
+              <th>Typical Agencies</th>
+              <th>Freelancers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>PhD-Level Expert Writers</td><td><span class="check-yes">✔</span></td><td><span class="check-no">✗</span></td><td>Variable</td></tr>
+            <tr><td>Plagiarism Report (Turnitin)</td><td><span class="check-yes">✔ Included</span></td><td>Extra Cost</td><td><span class="check-no">✗</span></td></tr>
+            <tr><td>Unlimited Revisions (30 days)</td><td><span class="check-yes">✔</span></td><td>Limited (2–3)</td><td><span class="check-no">✗</span></td></tr>
+            <tr><td>Study Abroad + Academic + Career</td><td><span class="check-yes">✔ All-in-One</span></td><td>Specialized only</td><td>Specialized only</td></tr>
+            <tr><td>NDA & Confidentiality Guaranteed</td><td><span class="check-yes">✔</span></td><td>Partial</td><td><span class="check-no">✗</span></td></tr>
+            <tr><td>Direct Expert Communication</td><td><span class="check-yes">✔ WhatsApp</span></td><td>Account Manager</td><td>Variable</td></tr>
+            <tr><td>On-Time Delivery Guarantee</td><td><span class="check-yes">✔</span></td><td>Partial</td><td>Variable</td></tr>
+            <tr><td>Student-Friendly Pricing & EMI</td><td><span class="check-yes">✔</span></td><td><span class="check-no">✗</span></td><td>Variable</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FREE RESOURCES / BLOG ===== -->
+  <section id="free-resources" class="section-alt">
+    <div class="container">
+      <h2>Free Resources & Guides</h2>
+      <p class="muted" style="text-align:center; margin-bottom:.5rem;">Expert insights to help you succeed – completely free</p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <span class="blog-tag">Study Abroad</span>
+          <h3>USA F-1 Visa Interview Q&A 2026</h3>
+          <p>Top questions asked at US consulates and how to answer them confidently. Pass your visa interview on the first attempt.</p>
+          <a href="#" onclick="openBlogArticle('visa');return false;">Read Full Guide →</a>
+        </div>
+        <div class="blog-card">
+          <span class="blog-tag">Scholarships</span>
+          <h3>₹50 Lakhs Scholarships for Indian Students</h3>
+          <p>Comprehensive list of fully-funded and partial scholarships available for Indian students in 2026 across USA, UK, Canada, and Europe.</p>
+          <a href="#" onclick="openBlogArticle('scholarships');return false;">Read Full Guide →</a>
+        </div>
+        <div class="blog-card">
+          <span class="blog-tag">Academic Writing</span>
+          <h3>PhD Thesis Completion in 6 Months</h3>
+          <p>Structured month-by-month strategy for completing your PhD thesis from proposal to submission with expert guidance.</p>
+          <a href="#" onclick="openBlogArticle('thesis');return false;">Read Full Guide →</a>
+        </div>
+        <div class="blog-card">
+          <span class="blog-tag">Career</span>
+          <h3>ATS Resume Writing Guide 2026</h3>
+          <p>How to write an ATS-optimised resume that gets shortlisted. Keywords, formatting, quantification, and tailoring for each role.</p>
+          <a href="#" onclick="openBlogArticle('resume');return false;">Read Full Guide →</a>
+        </div>
+        <div class="blog-card">
+          <span class="blog-tag">Study Abroad</span>
+          <h3>Top 10 US Universities for Indian Students</h3>
+          <p>Rankings, admission requirements, tuition costs, and scholarship availability for Indian students at top US universities.</p>
+          <a href="#" onclick="openBlogArticle('universities');return false;">Read Full Guide →</a>
+        </div>
+        <div class="blog-card">
+          <span class="blog-tag">Academic</span>
+          <h3>SPSS vs R vs Python: Which for Your Thesis?</h3>
+          <p>Comparing the three most popular statistical tools for research. Which one should you choose based on your research design?</p>
+          <a href="#" onclick="openBlogArticle('stats');return false;">Read Full Guide →</a>
+        </div>
+      </div>
+
+      <!-- Daily Tip Box -->
+      <div class="daily-tip-box" id="dailyTipBox">
+        <div class="tip-label">💡 Daily Academic Tip</div>
+        <p id="dailyTipText">Loading today's tip...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY MAVEN MASTERS ===== -->
+  <section id="why-maven" class="section">
+    <div class="container">
+      <h2>Why 500+ Students Trust Maven Masters</h2>
+      <div class="grid-2">
+        <div>
+          <div class="offer-item"><h4>🏆 Proven Track Record</h4><p>87% study abroad admission success rate. 500+ academic projects delivered. 150+ career placements facilitated. ₹5Cr+ in scholarships secured for students.</p></div>
+          <div class="offer-item"><h4>🎓 Expert Team</h4><p>Our consultants are PhD holders, former international students, and industry professionals with 10+ years of real-world experience in their domains.</p></div>
+          <div class="offer-item"><h4>🤝 End-to-End Support</h4><p>We don't just advise – we work alongside you from first consultation to final delivery, with ongoing support even after project completion.</p></div>
+        </div>
+        <div>
+          <div class="offer-item"><h4>🔒 Privacy & Confidentiality</h4><p>Strict NDA signed for all projects. Encrypted communications. Your data is never sold, shared, or used for any purpose beyond serving you.</p></div>
+          <div class="offer-item"><h4>💰 Transparent Pricing</h4><p>No hidden charges. No surprise fees. All pricing discussed upfront with student-friendly EMI/installment options available for larger projects.</p></div>
+          <div class="offer-item"><h4>⚡ Fast & Reliable</h4><p>Responses within 2 hours. Urgent turnarounds available (3–5 days). We respect your deadlines as much as you do – on-time delivery guaranteed.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section-alt">
+    <div class="container">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"Maven Masters is a one-stop solution. They handled my SOP, visa prep, and scholarship applications. Got into NYU with $40,000 scholarship. Truly life-changing!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PS</div>
+            <div class="author-info"><h4>Priya S.</h4><p>NYU, USA – Study Abroad</p></div>
+          </div>
+          <div class="testimonial-rating">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"My PhD dissertation was stuck for months. Maven Masters' expert helped me complete Chapter 3 (data analysis) in just 5 days with zero plagiarism. Outstanding!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div class="author-info"><h4>Dr. Rajesh K.</h4><p>University of Toronto – Academic Writing</p></div>
+          </div>
+          <div class="testimonial-rating">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"The resume and LinkedIn makeover was worth every rupee. Got 3 MNC interview calls in 2 weeks and landed Deloitte with a 42% salary hike. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div class="author-info"><h4>Rahul S.</h4><p>Deloitte – Career Counselling</p></div>
+          </div>
+          <div class="testimonial-rating">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false"><span>What services does Maven Masters offer?</span><span class="faq-icon">▼</span></button>
+        <div class="faq-answer"><p>Maven Masters offers three core service areas: (1) Academic Writing – PhD thesis, research papers, data analysis (SPSS/R/Python), SOP writing, literature reviews, and editing; (2) Study Abroad – university shortlisting, application management, visa guidance, scholarship support for USA, UK, Canada, Australia, and Europe; (3) Career Counselling – ATS resume writing, LinkedIn makeover, mock interviews, career roadmapping, and placement support.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false"><span>Are consultations really free?</span><span class="faq-icon">▼</span></button>
+        <div class="faq-answer"><p>Yes! Initial consultations are completely free with no obligation. For study abroad, we offer a free profile evaluation and university shortlist (worth ₹2,500). For academic writing, we provide a free sample. For career counselling, we offer a free 30-minute career review session. Book yours today via WhatsApp or the form on this page.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false"><span>How do I get started?</span><span class="faq-icon">▼</span></button>
+        <div class="faq-answer"><p>Getting started is simple: (1) Click any "Get Free Consultation" button or WhatsApp us at +91-9893314761; (2) Tell us your requirements, timeline, and goals; (3) We'll assign the right expert and share a detailed proposal within 24 hours; (4) Upon confirmation, we begin work immediately. No lengthy onboarding – just results.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false"><span>Do you work with students outside India?</span><span class="faq-icon">▼</span></button>
+        <div class="faq-answer"><p>Absolutely! We serve clients worldwide – Indian students in USA, UK, Canada, Australia, Europe, Middle East, and Southeast Asia. All our services are delivered digitally via WhatsApp, email, and video calls. International payments accepted through bank transfer, UPI, and major payment gateways.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false"><span>What payment methods do you accept?</span><span class="faq-icon">▼</span></button>
+        <div class="faq-answer"><p>We accept UPI (GPay, PhonePe, Paytm), bank transfer (NEFT/RTGS/IMPS), and international wire transfers. Installment payments are available for larger projects (thesis, complete study abroad packages). We never ask for full payment upfront – work begins after a reasonable advance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Your Academic & Career Journey?</h2>
+      <p>Join 500+ successful students. Get your free consultation today – no obligation, no hidden charges.</p>
+      <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+        <button onclick="openLeadForm('General Inquiry')" class="btn btn-primary" style="font-size:1.1rem;padding:1rem 2.5rem;">Get Free Consultation →</button>
+        <a href="https://wa.me/919893314761?text=Hi%20Maven%20Masters%2C%20I%20want%20to%20know%20more%20about%20your%20services." class="btn" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:1rem 2rem;" target="_blank">💬 Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Maven Masters</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#About-Maven-Masters">About Us</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Academic Writing</h4>
+          <ul>
+            <li><a href="academic-writing.html">PhD Thesis Help</a></li>
+            <li><a href="academic-writing.html#academic-services">Research Papers</a></li>
+            <li><a href="academic-writing.html#academic-services">Data Analysis</a></li>
+            <li><a href="academic-writing.html#academic-services">SOP Writing</a></li>
+            <li><a href="academic-writing.html#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Study Abroad</h4>
+          <ul>
+            <li><a href="study-abroad.html">Study Abroad Home</a></li>
+            <li><a href="study-abroad.html#destinations">Destinations</a></li>
+            <li><a href="study-abroad.html#study-abroad-services">Visa Guidance</a></li>
+            <li><a href="study-abroad.html#study-abroad-services">Scholarships</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:mastersmaven@gmail.com">mastersmaven@gmail.com</a></li>
+            <li><a href="tel:+919893314761">+91-9893314761</a></li>
+            <li><a href="https://wa.me/919893314761" target="_blank">WhatsApp Us</a></li>
+            <li>Bhopal, Madhya Pradesh, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100074800625140" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" fill="white"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="https://www.instagram.com/mavenmasters" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" fill="white"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3a2.8 2.8 0 1 1 2.8-2.8 2.8 2.8 0 0 1-2.8 2.8zM17.8 6.2a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/></svg></a>
+        <a href="https://www.youtube.com/@Maven.Masters" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" fill="white"><path d="M23 12s0-4.3-.5-6.3a3 3 0 0 0-2.1-2.1C18.3 3 12 3 12 3s-6.3 0-8.4.6A3 3 0 0 0 1.5 5.7C1 7.7 1 12 1 12s0 4.3.5 6.3a3 3 0 0 0 2.1 2.1c2.1.6 8.4.6 8.4.6s6.3 0 8.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-6.3.5-6.3zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+      </div>
+      <div class="footer-bottom">
+        <p>📧 <a href="mailto:mastersmaven@gmail.com">mastersmaven@gmail.com</a> | 📱 <a href="tel:+919893314761">+91-9893314761</a></p>
+        <p>Bhopal, Madhya Pradesh, India</p>
+        <p>© 2026 Maven Masters. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+  <div id="leadModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLeadForm()">×</span>
+      <h3>🎓 Free Consultation</h3>
+      <form id="leadForm">
+        <div class="form-group"><label>Full Name *</label><input type="text" id="leadName" placeholder="Your name" required></div>
+        <div class="form-group"><label>Email *</label><input type="email" id="leadEmail" placeholder="your@email.com" required></div>
+        <div class="form-group"><label>Phone / WhatsApp *</label><input type="tel" id="leadPhone" placeholder="+91 XXXXX XXXXX" required></div>
+        <div class="form-group"><label>Service Required *</label>
+          <select id="leadService">
+            <option value="Academic Writing">Academic Writing / Thesis</option>
+            <option value="Study Abroad">Study Abroad</option>
+            <option value="Career Counselling">Career Counselling</option>
+            <option value="SOP Writing">SOP Writing</option>
+            <option value="Resume Writing">Resume Writing</option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Visa Guidance">Visa Guidance</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group"><label>How Can We Help You?</label><textarea id="leadMsg" placeholder="Brief description of your requirement, deadline, and any specific details..."></textarea></div>
+        <button type="submit" class="btn btn-primary">Get Free Consultation →</button>
+      </form>
+    </div>
+  </div>
+  <div id="successModal" class="modal" style="display:none;">
+    <div class="modal-content" style="text-align:center;">
+      <span class="modal-close" onclick="closeSuccessModal()">×</span>
+      <h3>🎉 Thank You!</h3>
+      <p style="color:var(--muted);margin-bottom:1.5rem;">We've received your enquiry! Our expert will contact you within 24 hours with a tailored plan.</p>
+      <a href="https://wa.me/919893314761?text=Hi%20Maven%20Masters%2C%20I%20just%20submitted%20an%20enquiry%20on%20your%20website." class="btn btn-primary" target="_blank">💬 Chat on WhatsApp for Faster Response</a>
+    </div>
+  </div>
+  <div id="downloadModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeDownloadModal()">×</span>
+      <h3 id="downloadModalTitle">Download Resource</h3>
+      <form id="downloadForm">
+        <div class="form-group"><label>Your Email *</label><input type="email" id="downloadEmail" placeholder="Send download link to email" required></div>
+        <button type="submit" class="btn btn-primary">Send Download Link →</button>
+      </form>
+    </div>
+  </div>
+  <div id="blogModal" class="blog-modal" style="display:none;">
+    <div class="blog-modal-content">
+      <div class="blog-modal-header">
+        <button class="blog-close" onclick="closeBlogModal()">×</button>
+        <h2 id="blogModalTitle">Article</h2>
+      </div>
+      <div class="blog-modal-body" id="blogModalBody"></div>
+    </div>
+  </div>
+  <div id="exitPopup" class="exit-popup" style="display:none;">
+    <div class="exit-popup-content">
+      <span class="exit-popup-close" onclick="closePopup()">×</span>
+      <h2>🎓 Wait – Before You Go!</h2>
+      <p>Get a <strong>free consultation</strong> worth ₹2,500 – absolutely free for the next 15 minutes.</p>
+      <div class="countdown-timer" id="exitCountdown">Offer expires in: 15:00</div>
+      <button onclick="openLeadForm('General Inquiry');closePopup();" class="btn btn-primary">Claim Free Consultation →</button>
+      <p class="muted" style="margin-top:1rem;">No credit card. No commitment.</p>
+    </div>
+  </div>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <div id="aiChatBubble" class="enhanced-chat" style="display:none;">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-avatar">🎓</span>
+          <div><h4>Maven Assistant</h4><span class="online-status">● Online – Ask us anything</span></div>
+        </div>
+        <button class="chat-close-btn" onclick="toggleAIChat()">✕</button>
+      </div>
+      <div class="chat-messages" id="aiMessages">
+        <div class="chat-message bot">
+          <span class="msg-avatar">🎓</span>
+          <div class="msg-bubble">👋 Welcome to Maven Masters! Ask me about our academic writing, study abroad, or career services. How can I help you today?</div>
+        </div>
+      </div>
+      <div class="quick-replies">
+        <button class="quick-reply-btn" data-query="academic writing services">📚 Academic Help</button>
+        <button class="quick-reply-btn" data-query="study abroad guidance">✈️ Study Abroad</button>
+        <button class="quick-reply-btn" data-query="career counselling services">💼 Career Help</button>
+        <button class="quick-reply-btn" data-query="pricing and cost">💰 Pricing</button>
+      </div>
+      <div class="chat-input-area">
+        <input id="aiInput" class="chat-input" placeholder="Ask about any service..." autocomplete="off" onkeypress="if(event.key==='Enter')sendAIMessage()">
+        <button class="chat-send" onclick="sendAIMessage()">➤</button>
+      </div>
+      <div class="chat-footer">⚡ Powered by Maven Masters</div>
+    </div>
+    <button class="chat-fab" onclick="toggleAIChat()" aria-label="Open Maven assistant">
+      <span class="fab-label">Ask Maven AI</span>
+      <span class="fab-icon">💬</span>
+      <span class="fab-close" style="display:none;">✕</span>
+    </button>
+  </div>
+  <a href="https://wa.me/919893314761?text=Hi%20Maven%20Masters%2C%20I%20want%20to%20know%20more%20about%20your%20services." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Admin Dashboard -->
+  <div id="adminDashboard" class="admin-dashboard" style="display:none;">
+    <div class="admin-content">
+      <div class="admin-header">
+        <h2>📊 Maven Masters – Admin Dashboard</h2>
+        <button onclick="document.getElementById('adminDashboard').style.display='none'" class="btn btn-outline">Close ✕</button>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card"><h4 id="totalLeadsCount">0</h4><p>Total Leads</p></div>
+        <div class="stat-card"><h4 id="convertedCount">0</h4><p>Converted</p></div>
+        <div class="stat-card"><h4 id="newCount">0</h4><p>New Today</p></div>
+        <div class="stat-card"><h4 id="convRateCount">0%</h4><p>Conversion Rate</p></div>
+      </div>
+      <div style="margin-bottom:1rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <button onclick="exportToExcel()" class="btn btn-primary">📥 Export CSV</button>
+        <button onclick="clearAllLeads()" class="btn btn-danger">🗑 Clear All Leads</button>
+      </div>
+      <div class="leads-table-container">
+        <table class="leads-table" id="leadsTable">
+          <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Service</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== PROGRESS BAR =====
+    window.onscroll=function(){const w=document.body.scrollTop||document.documentElement.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;document.getElementById("progressBar").style.width=(w/h*100)+"%";};
+
+    // ===== MOBILE MENU =====
+    document.getElementById('menuToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+
+    // ===== THEME =====
+    const themeToggle=document.getElementById('themeToggle'),savedTheme=localStorage.getItem('theme')||'light';
+    document.documentElement.setAttribute('data-theme',savedTheme);themeToggle.textContent=savedTheme==='dark'?'☀️':'🌙';
+    themeToggle.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme'),n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);themeToggle.textContent=n==='dark'?'☀️':'🌙';localStorage.setItem('theme',n);});
+
+    // ===== FAQ =====
+    document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-item'),isOpen=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));if(!isOpen)item.classList.add('active');btn.setAttribute('aria-expanded',!isOpen);});});
+
+    // ===== LEAD MANAGEMENT =====
+    let leads=JSON.parse(localStorage.getItem('maven_leads')||'[]');
+    function saveLeads(){localStorage.setItem('maven_leads',JSON.stringify(leads));updateDashboard();}
+    function addLead(l){l.id=Date.now();l.createdAt=new Date().toISOString();l.status='NEW';leads.unshift(l);saveLeads();showNotification('✅ Enquiry received! We\'ll contact you shortly.');}
+    function updateDashboard(){
+      const tot=document.getElementById('totalLeadsCount'),conv=document.getElementById('convertedCount'),n=document.getElementById('newCount'),rate=document.getElementById('convRateCount');
+      if(tot)tot.innerText=leads.length;
+      if(conv)conv.innerText=leads.filter(l=>l.status==='CONVERTED').length;
+      if(n){const td=new Date().toDateString();n.innerText=leads.filter(l=>new Date(l.createdAt).toDateString()===td).length;}
+      if(rate)rate.innerText=leads.length?Math.round(leads.filter(l=>l.status==='CONVERTED').length/leads.length*100)+'%':'0%';
+      const tbody=document.querySelector('#leadsTable tbody');if(!tbody)return;tbody.innerHTML='';
+      leads.slice(0,100).forEach(l=>{const r=tbody.insertRow();r.insertCell(0).innerText=l.name||'';r.insertCell(1).innerText=l.email||'';r.insertCell(2).innerText=l.phone||'';r.insertCell(3).innerText=l.service||'';r.insertCell(4).innerText=l.createdAt?new Date(l.createdAt).toLocaleDateString('en-IN'):'';r.insertCell(5).innerHTML=`<select onchange="updateLeadStatus(${l.id},this.value)" style="border-radius:6px;padding:4px 8px;border:1px solid var(--glass-border);background:var(--bg);color:var(--text-main)"><option ${l.status==='NEW'?'selected':''}>NEW</option><option ${l.status==='CONTACTED'?'selected':''}>CONTACTED</option><option ${l.status==='CONVERTED'?'selected':''}>CONVERTED</option></select>`;r.insertCell(6).innerHTML=`<a href="https://wa.me/${l.phone}?text=Hi%20${encodeURIComponent(l.name||'')}%2C%20this%20is%20Maven%20Masters." target="_blank" class="btn btn-primary" style="padding:.3rem .8rem;font-size:.8rem;">💬 WA</a>`;});
+    }
+    window.updateLeadStatus=(id,val)=>{const l=leads.find(x=>x.id==id);if(l){l.status=val;saveLeads();}};
+    window.clearAllLeads=()=>{if(confirm('Delete all leads? This cannot be undone.')){leads=[];saveLeads();}};
+    window.exportToExcel=()=>{let csv="Name,Email,Phone,Service,Date,Status\n";leads.forEach(l=>csv+=`"${l.name}","${l.email}","${l.phone}","${l.service}","${l.createdAt}","${l.status}"\n`);const b=new Blob([csv],{type:'text/csv'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='maven_all_leads.csv';a.click();};
+
+    // ===== MODALS =====
+    window.openLeadForm=(s)=>{document.getElementById('leadModal').style.display='flex';if(s){const sel=document.getElementById('leadService');for(let o of sel.options){if(o.value===s||o.text.toLowerCase().includes(s.toLowerCase())){sel.value=o.value;break;}}}};
+    window.closeLeadForm=()=>document.getElementById('leadModal').style.display='none';
+    window.closeSuccessModal=()=>document.getElementById('successModal').style.display='none';
+    window.closeDownloadModal=()=>document.getElementById('downloadModal').style.display='none';
+    window.closeBlogModal=()=>{document.getElementById('blogModal').style.display='none';document.body.style.overflow='auto';};
+    document.getElementById('leadForm').addEventListener('submit',(e)=>{e.preventDefault();addLead({name:document.getElementById('leadName').value,email:document.getElementById('leadEmail').value,phone:document.getElementById('leadPhone').value,service:document.getElementById('leadService').value,message:document.getElementById('leadMsg').value});closeLeadForm();document.getElementById('successModal').style.display='flex';e.target.reset();});
+    let currentResource='';
+    window.openResourceDownload=(id,title)=>{currentResource=id;document.getElementById('downloadModalTitle').innerText='Download: '+title;document.getElementById('downloadModal').style.display='flex';};
+    document.getElementById('downloadForm').addEventListener('submit',(e)=>{e.preventDefault();addLead({name:'Download',email:document.getElementById('downloadEmail').value,phone:'N/A',service:'Resource: '+currentResource});closeDownloadModal();showNotification('📥 Download link sent to your email!');e.target.reset();});
+    window.onclick=(e)=>{if(e.target===document.getElementById('leadModal'))closeLeadForm();if(e.target===document.getElementById('successModal'))closeSuccessModal();if(e.target===document.getElementById('downloadModal'))closeDownloadModal();if(e.target===document.getElementById('blogModal'))closeBlogModal();if(e.target===document.getElementById('exitPopup'))closePopup();};
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){closeLeadForm();closeSuccessModal();closeDownloadModal();closeBlogModal();closePopup();}});
+
+    // ===== NOTIFICATIONS =====
+    function showNotification(msg){const n=document.createElement('div');n.style.cssText='position:fixed;bottom:110px;right:20px;background:var(--accent-1);color:white;padding:1rem 1.5rem;border-radius:12px;z-index:9999;font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,0.2);animation:slideUp .3s ease;max-width:300px;';n.innerText=msg;document.body.appendChild(n);setTimeout(()=>n.remove(),4500);}
+
+    // ===== EXIT POPUP =====
+    let popupShown=false,exitTimer;
+    function startExitCountdown(){let time=15*60;const d=document.getElementById('exitCountdown');exitTimer=setInterval(()=>{const m=Math.floor(time/60),s=time%60;if(d)d.textContent=`Offer expires in: ${m}:${s.toString().padStart(2,'0')}`;if(--time<0){clearInterval(exitTimer);if(d)d.textContent='Last chance!';}},1000);}
+    document.addEventListener('mouseleave',(e)=>{if(e.clientY<0&&!popupShown){document.getElementById('exitPopup').style.display='flex';popupShown=true;startExitCountdown();}});
+    window.closePopup=()=>{document.getElementById('exitPopup').style.display='none';clearInterval(exitTimer);};
+
+    // ===== ADMIN =====
+    let adminAuthenticated=false,tapCount=0,tapTimer=null;
+    const ADMIN_PASSWORD="MavenMaster2026";
+    function showAdminDashboard(){const dash=document.getElementById('adminDashboard');if(dash.style.display==='flex'){dash.style.display='none';return;}if(!adminAuthenticated){const pwd=prompt("🔐 Admin Access Required:\nEnter password:");if(pwd===ADMIN_PASSWORD){adminAuthenticated=true;dash.style.display='flex';updateDashboard();showNotification('✅ Admin access granted.');}else if(pwd!==null)alert("❌ Invalid password.");}else{dash.style.display='flex';updateDashboard();}}
+    window.toggleAdmin=showAdminDashboard;
+    document.addEventListener('keydown',(e)=>{if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='A'||e.key==='a')){e.preventDefault();showAdminDashboard();}});
+    document.getElementById('secretAdminLogo').addEventListener('click',(e)=>{tapCount++;if(tapTimer)clearTimeout(tapTimer);tapTimer=setTimeout(()=>tapCount=0,600);if(tapCount===3){e.preventDefault();showAdminDashboard();}});
+
+    // ===== DAILY TIP =====
+    const tips=[
+      "Start your thesis with the methodology chapter – it anchors your entire research narrative.",
+      "For F-1 visa: always explain your post-graduation India plans clearly. Visa officers look for strong home-country ties.",
+      "Quantify every achievement on your resume: 'Increased sales by 35%' beats 'Managed sales team' every time.",
+      "Apply to 3 reach, 4 match, and 3 safety universities for optimal study abroad outcomes.",
+      "LinkedIn keyword tip: Include your target job title 3 times in your profile – headline, about section, and experience.",
+      "IELTS tip: Paraphrase the question in your writing intro – never copy it word for word.",
+      "Scholarship applications need a strong personal statement. Focus on impact, not just achievements.",
+      "Use the STAR method (Situation, Task, Action, Result) for every behavioral interview answer.",
+      "GRE vocab tip: Learn 10 words per day in context, not in isolation – retention is 3x better.",
+      "Thesis data analysis: Always report effect sizes alongside p-values – journals require it.",
+      "Canada study permit: Show strong financial ties AND proof of funds for the full duration of study.",
+      "ATS tip: Avoid tables, columns, or graphics in your Word resume – ATS systems can't parse them.",
+      "Germany blocked account: You need €11,208 for a 12-month student visa. Apply 3 months in advance.",
+      "SOP tip: Show career progression logic – where you've been, where you are, where this degree takes you.",
+      "UK Student Route visa: Bank statements must show uninterrupted funds for 28 consecutive days.",
+    ];
+    const tipEl=document.getElementById('dailyTipText');
+    if(tipEl){const dayOfYear=Math.floor((Date.now()-new Date(new Date().getFullYear(),0,0))/(1000*60*60*24));tipEl.textContent=tips[dayOfYear%tips.length];}
+
+    // ===== CHATBOT =====
+    const kb=[
+      {q:"academic writing",a:"📚 Our Academic Writing services include: PhD thesis & dissertation, research papers, data analysis (SPSS/R/Python/STATA), SOP writing, literature reviews, and professional editing. All work is plagiarism-free with Turnitin reports. Starting from ₹3,500."},
+      {q:"thesis",a:"📖 Thesis/dissertation support: topic selection, proposal, literature review, methodology, data analysis, results, discussion, and final editing. 500+ projects completed! Turnitin report included. Unlimited revisions."},
+      {q:"study abroad",a:"✈️ Study Abroad services: university shortlisting, SOP/application management, visa guidance (F-1, Tier 4, SDS, Subclass 500), scholarships, IELTS/GRE prep. 87% admission success rate. 200+ students placed in 15+ countries."},
+      {q:"career",a:"💼 Career services: ATS resume writing (starting ₹2,500), LinkedIn makeover (from ₹1,500), mock interviews, career roadmap, placement support. 150+ placements, 35% avg salary hike, 4.9★ rating."},
+      {q:"price",a:"💰 Pricing: Resume from ₹2,500 | LinkedIn ₹1,500 | SOP ₹3,500 | Data analysis ₹10,000+ | Research paper ₹5,000+ | Dissertation chapter ₹15,000+ | Study abroad consultation FREE. EMI available!"},
+      {q:"free",a:"🎁 Free services: Profile evaluation (study abroad) | 30-min career review | Academic writing sample. All completely free, no obligation. Click any 'Free Consultation' button or WhatsApp +91-9893314761!"},
+      {q:"contact",a:"📞 Maven Masters: WhatsApp/Call +91-9893314761 | Email: mastersmaven@gmail.com | Bhopal, MP. Response within 2 hours! Open 7 days a week."},
+      {q:"consultation",a:"🎁 Opening the free consultation form for you!"},
+      {q:"sop",a:"✍️ SOP Writing: Personalized, compelling statements of purpose for each university. Starting from ₹3,500. PhD-level writers. Unlimited revisions. 3–5 day delivery. Have helped students get into MIT, LSE, UofT, and more."},
+      {q:"visa",a:"🛂 Visa guidance for F-1 (USA), Tier 4 (UK), SDS (Canada), Subclass 500 (Australia). Complete documentation support, financial guidance, and mock visa interviews. Very high success rate."},
+      {q:"scholarship",a:"💰 Scholarship support: We've helped students secure ₹5Cr+ in scholarships! Merit-based, need-based, country-specific. Free scholarship search included with study abroad package."},
+      {q:"hello",a:"👋 Hello! Welcome to Maven Masters. I can help with academic writing, study abroad, or career counselling. What are you looking for today?"},
+      {q:"hi",a:"👋 Hi there! How can Maven Masters help you today? Ask about our academic, study abroad, or career services!"},
+      {q:"default",a:"🤔 I'm not sure about that specific query. Try asking about 'academic writing', 'study abroad', 'career services', or 'pricing'. Or say 'consultation' to book a free session!"}
+    ];
+    function getBotResponse(msg){const m=msg.toLowerCase().trim();if(m.includes('consultation')||m.includes('book')||m.includes('talk to')){openLeadForm('General Inquiry');return '📋 Opening the free consultation form! Our expert will contact you within 24 hours.';}if(m.includes('thank'))return "You're very welcome! 😊 Best of luck with your journey!";let best=null,score=0;for(const item of kb){if(item.q==='default')continue;const kws=item.q.split(/\s+/);let s=0;for(const kw of kws)if(m.includes(kw))s+=kw.length;if(m.includes(item.q.toLowerCase()))s+=20;if(s>score){score=s;best=item;}}if(score>=2)return best.a;return kb.find(i=>i.q==='default').a;}
+    function escapeHtml(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+    window.sendAIMessage=function(){const inp=document.getElementById('aiInput'),message=inp.value.trim();if(!message)return;const c=document.getElementById('aiMessages');c.innerHTML+=`<div class="chat-message user"><span class="msg-avatar">👤</span><div class="msg-bubble">${escapeHtml(message)}</div></div>`;inp.value='';c.scrollTop=c.scrollHeight;const t=document.createElement('div');t.className='chat-message bot';t.id='typingIndicator';t.innerHTML='<span class="msg-avatar">🎓</span><div class="typing-indicator"><span></span><span></span><span></span></div>';c.appendChild(t);c.scrollTop=c.scrollHeight;setTimeout(()=>{const i=document.getElementById('typingIndicator');if(i)i.remove();c.innerHTML+=`<div class="chat-message bot"><span class="msg-avatar">🎓</span><div class="msg-bubble">${getBotResponse(message)}</div></div>`;c.scrollTop=c.scrollHeight;},900+Math.random()*600);};
+    window.toggleAIChat=function(){const b=document.getElementById('aiChatBubble'),w=document.querySelector('.chat-widget'),fi=document.querySelector('.chat-fab .fab-icon'),fc=document.querySelector('.chat-fab .fab-close');if(b.style.display==='none'||b.style.display===''){b.style.display='flex';w.classList.add('active');if(fi)fi.style.display='none';if(fc)fc.style.display='inline';setTimeout(()=>document.getElementById('aiInput').focus(),100);}else{b.style.display='none';w.classList.remove('active');if(fi)fi.style.display='inline';if(fc)fc.style.display='none';}};
+    document.querySelectorAll('.quick-reply-btn').forEach(btn=>btn.addEventListener('click',function(){document.getElementById('aiInput').value=this.dataset.query;sendAIMessage();}));
+
+    // ===== BLOG ARTICLES =====
+    const blogArticles={
+      visa:{title:'USA F-1 Visa Interview Q&A 2026',content:'<h2>Top F-1 Visa Interview Questions & Answers</h2><p>Preparing for your F-1 visa interview is crucial. Here are the most common questions with expert-recommended answers:</p><h3>1. Why do you want to study in the USA?</h3><p>Be specific about your program, university, and career goals. Reference faculty, research opportunities, or program rankings.</p><h3>2. Why did you choose this university?</h3><p>Mention specific faculty members, lab facilities, program curriculum, and rankings relevant to your field.</p><h3>3. Who is funding your education?</h3><p>Be clear and confident about funding sources – savings, bank loans, scholarships, or family support. Have all financial documents ready.</p><h3>4. What are your plans after graduation?</h3><p>Emphasize returning to India and applying your US degree to career growth. Mention specific job prospects or family ties in India.</p><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>💡 Maven Masters Tip:</strong> Our mock visa interviews simulate real consular officer scenarios. 90%+ of our students pass their F-1 visa interview on the first attempt!</div><button onclick="openLeadForm(\'Visa Guidance\');closeBlogModal();" class="btn btn-primary">Get Visa Guidance →</button>'},
+      scholarships:{title:'₹50 Lakhs Scholarships for Indian Students 2026',content:'<h2>Best Scholarships for Indian Students Abroad</h2><p>Scholarships can dramatically reduce your education costs. Here are the top options:</p><h3>🇺🇸 USA Scholarships</h3><ul style="margin-left:1.5rem;margin-bottom:1.5rem;"><li style="margin-bottom:.5rem;">Fulbright-Nehru Master\'s Fellowship – Fully funded</li><li style="margin-bottom:.5rem;">Inlaks Foundation Scholarship – Up to $100,000</li><li style="margin-bottom:.5rem;">STEM fellowships at Cornell, Purdue, UMass – $20,000–40,000/yr</li></ul><h3>🇬🇧 UK Scholarships</h3><ul style="margin-left:1.5rem;margin-bottom:1.5rem;"><li style="margin-bottom:.5rem;">Chevening Scholarship – Fully funded 1-year Masters</li><li style="margin-bottom:.5rem;">Commonwealth Scholarship – Fully funded</li><li style="margin-bottom:.5rem;">University merit awards – 25–100% tuition waiver</li></ul><h3>🇨🇦 Canada Scholarships</h3><ul style="margin-left:1.5rem;margin-bottom:1.5rem;"><li style="margin-bottom:.5rem;">Vanier Canada Graduate Scholarships – CAD 50,000/yr</li><li style="margin-bottom:.5rem;">Ontario Trillium Scholarship – CAD 40,000/yr</li></ul><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>💰 Maven Masters has helped students secure ₹5Cr+ in scholarships. Let us find yours!</strong></div><button onclick="openLeadForm(\'Scholarships\');closeBlogModal();" class="btn btn-primary">Find My Scholarships →</button>'},
+      thesis:{title:'PhD Thesis Completion in 6 Months',content:'<h2>Strategic PhD Thesis Completion Plan</h2><p>Whether you\'re starting from scratch or stuck midway, here\'s a structured 6-month plan:</p><h3>Month 1–2: Foundation & Literature</h3><p>Finalize research questions and theoretical framework. Complete systematic literature review. Get supervisor approval on proposal.</p><h3>Month 3: Methodology & Data Collection</h3><p>Finalize research design, data collection tools (surveys, interviews, experiments), and IRB approval if needed.</p><h3>Month 4: Data Analysis</h3><p>Run statistical analysis (SPSS/R/Python) or qualitative coding. Aim to complete all analyses before writing.</p><h3>Month 5: Writing</h3><p>Write methodology, results, and discussion chapters. Target 15–20 pages per chapter. Avoid perfectionism – write first, edit later.</p><h3>Month 6: Final Review & Submission</h3><p>Run Turnitin check, format according to university guidelines, final proofreading, and submission.</p><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>📚 Maven Masters provides expert support for every phase. 500+ dissertations delivered!</strong></div><button onclick="openLeadForm(\'Thesis/Dissertation\');closeBlogModal();" class="btn btn-primary">Get Thesis Help →</button>'},
+      resume:{title:'ATS Resume Writing Guide 2026',content:'<h2>How to Write an ATS-Optimised Resume</h2><p>95% of Fortune 500 companies use ATS to filter resumes before a human sees them. Here\'s how to beat it:</p><h3>1. Use Standard Section Headings</h3><p>Stick to: Work Experience, Education, Skills, Certifications. Avoid creative headers like "My Journey" – ATS won\'t recognize them.</p><h3>2. Keyword Optimization</h3><p>Mirror the exact keywords from the job description. If the JD says "project management", don\'t write "project coordination".</p><h3>3. Quantify Everything</h3><p>Use numbers: "Increased revenue by ₹50L", "Managed team of 12", "Reduced processing time by 40%". Numbers stand out to both ATS and humans.</p><h3>4. Clean Formatting</h3><p>Avoid tables, columns, graphics, and unusual fonts in Word format. Use standard margins (0.5"–1") and simple bullet points.</p><h3>5. File Format</h3><p>Submit as .docx unless PDF is specifically requested. Some ATS systems parse Word better than PDF.</p><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>📄 90% of Maven Masters resumes get shortlisted within 2 weeks. Upgrade yours today!</strong></div><button onclick="openLeadForm(\'Resume Writing\');closeBlogModal();" class="btn btn-primary">Get ATS Resume →</button>'},
+      universities:{title:'Top 10 US Universities for Indian Students 2026',content:'<h2>Best US Universities for Indian Students</h2><table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem;"><thead><tr style="background:var(--accent-gradient);color:white;"><th style="padding:.75rem;text-align:left">University</th><th style="padding:.75rem;text-align:left">Known For</th><th style="padding:.75rem;text-align:left">Avg Cost/Year</th><th style="padding:.75rem;text-align:left">Scholarships</th></tr></thead><tbody><tr style="border-bottom:1px solid var(--glass-border);"><td style="padding:.75rem">MIT</td><td>STEM, Engineering, CS</td><td>₹50–65L</td><td>Strong for PhD</td></tr><tr style="border-bottom:1px solid var(--glass-border);"><td style="padding:.75rem">Stanford</td><td>CS, AI, Business</td><td>₹55–70L</td><td>Strong for PhD</td></tr><tr style="border-bottom:1px solid var(--glass-border);"><td style="padding:.75rem">Georgia Tech</td><td>Engineering, CS</td><td>₹25–35L</td><td>OMS CS $10K</td></tr><tr style="border-bottom:1px solid var(--glass-border);"><td style="padding:.75rem">Carnegie Mellon</td><td>CS, Robotics, AI</td><td>₹45–60L</td><td>Research funding</td></tr><tr style="border-bottom:1px solid var(--glass-border);"><td style="padding:.75rem">Cornell</td><td>Engineering, Business</td><td>₹40–55L</td><td>Moderate</td></tr><tr><td style="padding:.75rem">Purdue</td><td>Engineering, STEM</td><td>₹25–40L</td><td>Strong TA/RA</td></tr></tbody></table><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>🎓 Maven Masters can shortlist the best universities for YOUR specific profile. Free evaluation!</strong></div><button onclick="openLeadForm(\'University Selection\');closeBlogModal();" class="btn btn-primary">Get My Shortlist →</button>'},
+      stats:{title:'SPSS vs R vs Python: Which for Your Thesis?',content:'<h2>Choosing the Right Statistical Tool for Your Research</h2><p>This is one of the most common questions we get from PhD and Masters students. Here\'s a clear comparison:</p><h3>📊 SPSS</h3><p><strong>Best for:</strong> Business, social sciences, psychology, management research. Point-and-click interface – no coding required. Excellent for descriptive stats, t-tests, ANOVA, regression, factor analysis, and reliability testing (Cronbach\'s alpha).</p><h3>🔵 R</h3><p><strong>Best for:</strong> Statistics, biostatistics, econometrics, advanced data science. Free and open-source. Extremely powerful for custom analyses, advanced modelling (SEM, multilevel), and publication-quality visualizations.</p><h3>🐍 Python</h3><p><strong>Best for:</strong> Computer science, engineering, big data, machine learning, NLP. Most versatile. Libraries: pandas, scipy, sklearn, seaborn. Best if your research involves large datasets or ML models.</p><h3>🏆 Our Recommendation</h3><p><strong>Management/Social Science thesis:</strong> SPSS | <strong>Economics/Biostats:</strong> R | <strong>CS/Engineering/ML:</strong> Python. Not sure? Maven Masters experts will choose the right tool for your data!</p><div style="background:rgba(212,175,55,0.1);padding:1.5rem;border-radius:12px;margin:2rem 0;border-left:4px solid var(--gold);"><strong>📊 We perform data analysis in ALL three tools with full interpretation and write-up!</strong></div><button onclick="openLeadForm(\'Data Analysis\');closeBlogModal();" class="btn btn-primary">Get Data Analysis Help →</button>'}
+    };
+    window.openBlogArticle=function(topic){const modal=document.getElementById('blogModal'),article=blogArticles[topic.toLowerCase()];if(article){document.getElementById('blogModalTitle').textContent=article.title;document.getElementById('blogModalBody').innerHTML=article.content;modal.style.display='block';document.body.style.overflow='hidden';}};
+
+    // ===== INIT =====
+    updateDashboard();
+  </script>
+</body>
+</html>
