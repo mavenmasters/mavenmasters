@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maven Masters - Query Forms</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #f4f7fc; color: #333; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #1a3b5d; margin-bottom: 0.5rem; }
+        p.subtitle { text-align: center; color: #5c6b7a; margin-bottom: 2rem; }
+        .tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; border-bottom: 2px solid #e0e6ed; }
+        .tab-btn { flex: 1; padding: 0.8rem 0.5rem; border: none; background: transparent; cursor: pointer; font-size: 0.95rem; font-weight: 600; color: #5c6b7a; border-bottom: 3px solid transparent; transition: all 0.2s; }
+        .tab-btn.active { color: #1a3b5d; border-bottom-color: #1a3b5d; }
+        .form-section { display: none; animation: fade 0.3s ease; }
+        .form-section.active { display: block; }
+        @keyframes fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 1.2rem; }
+        label { display: block; font-weight: 600; margin-bottom: 0.3rem; color: #1a3b5d; }
+        input, select, textarea { width: 100%; padding: 0.75rem; border: 1px solid #ccd6e0; border-radius: 8px; font-size: 1rem; transition: border 0.2s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #1a3b5d; box-shadow: 0 0 0 3px rgba(26,59,93,0.1); }
+        textarea { resize: vertical; min-height: 100px; }
+        button[type="submit"] { width: 100%; padding: 1rem; background: #1a3b5d; color: white; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-top: 0.5rem; transition: background 0.2s; }
+        button[type="submit"]:hover { background: #0f2a43; }
+        .message { margin-top: 1rem; text-align: center; padding: 0.5rem; border-radius: 8px; display: none; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        hr { margin: 2rem 0; border: 0; height: 1px; background: #e0e6ed; }
+        .instructions { background: #f0f5ff; padding: 1rem; border-radius: 8px; font-size: 0.9rem; margin-bottom: 1.5rem; }
+        .instructions strong { color: #1a3b5d; }
+        .tab-icon { margin-right: 0.3rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Maven Masters</h1>
+        <p class="subtitle">Select a service to get started</p>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="academic">📚 Academic Writing</button>
+            <button class="tab-btn" data-tab="study">🌍 Study Abroad</button>
+            <button class="tab-btn" data-tab="careers">💼 Careers</button>
+            <button class="tab-btn" data-tab="general">🏢 General Services</button>
+        </div>
+
+        <!-- Academic Writing Form -->
+        <div class="form-section active" id="academic">
+            <form id="academicForm" data-form-name="Academic Writing">
+                <div class="form-group"><label>Full Name</label><input type="text" name="fullName" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div>
+                <div class="form-group"><label>Service Required</label>
+                    <select name="service" required>
+                        <option value="">--Select--</option>
+                        <option>PhD Thesis & Dissertation</option>
+                        <option>Research Paper & Journals</option>
+                        <option>Data Analysis</option>
+                        <option>SOP & Admission Essays</option>
+                        <option>Literature Review</option>
+                        <option>Editing & Proofreading</option>
+                    </select></div>
+                <div class="form-group"><label>Academic Level</label>
+                    <select name="academicLevel">
+                        <option value="">--Select--</option>
+                        <option>Undergraduate</option>
+                        <option>Masters</option>
+                        <option>PhD</option>
+                    </select></div>
+                <div class="form-group"><label>Subject/Discipline</label><input type="text" name="subject"></div>
+                <div class="form-group"><label>Project Details</label><textarea name="projectDetails" placeholder="Describe your requirements, word count, deadline..."></textarea></div>
+                <div class="form-group"><label>Plagiarism Report Required?</label>
+                    <select name="plagiarism">
+                        <option value="">--Select--</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select></div>
+                <div class="form-group"><label>How did you hear about us?</label><input type="text" name="reference"></div>
+                <button type="submit">Submit Query</button>
+            </form>
+        </div>
+
+        <!-- Study Abroad Form -->
+        <div class="form-section" id="study">
+            <form id="studyForm" data-form-name="Study Abroad">
+                <div class="form-group"><label>Full Name</label><input type="text" name="fullName" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div>
+                <div class="form-group"><label>Service Required</label>
+                    <select name="service" required>
+                        <option value="">--Select--</option>
+                        <option>University Selection</option>
+                        <option>SOP & Application</option>
+                        <option>Visa Assistance</option>
+                        <option>Scholarship Guidance</option>
+                        <option>Pre-Departure & Accommodation</option>
+                        <option>Test Prep - IELTS/GRE</option>
+                    </select></div>
+                <div class="form-group"><label>Preferred Country</label>
+                    <select name="country">
+                        <option value="">--Select--</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                        <option>Australia</option>
+                        <option>Germany</option>
+                        <option>Ireland</option>
+                        <option>Other</option>
+                    </select></div>
+                <div class="form-group"><label>Current Education Level</label><input type="text" name="education"></div>
+                <div class="form-group"><label>Target Degree</label>
+                    <select name="degree">
+                        <option value="">--Select--</option>
+                        <option>Bachelors</option>
+                        <option>Masters</option>
+                        <option>PhD</option>
+                        <option>MBA</option>
+                        <option>Other</option>
+                    </select></div>
+                <div class="form-group"><label>Test Scores (if any)</label><input type="text" name="testScores" placeholder="IELTS/GRE/GMAT etc."></div>
+                <div class="form-group"><label>Preferred Intake</label>
+                    <select name="intake">
+                        <option value="">--Select--</option>
+                        <option>Fall 2026</option>
+                        <option>Spring 2027</option>
+                        <option>Fall 2027</option>
+                        <option>Other</option>
+                    </select></div>
+                <button type="submit">Submit Query</button>
+            </form>
+        </div>
+
+        <!-- Careers Form -->
+        <div class="form-section" id="careers">
+            <form id="careersForm" data-form-name="Careers">
+                <div class="form-group"><label>Full Name</label><input type="text" name="fullName" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div>
+                <div class="form-group"><label>Service Required</label>
+                    <select name="service" required>
+                        <option value="">--Select--</option>
+                        <option>Resume & Cover Letter</option>
+                        <option>LinkedIn Makeover</option>
+                        <option>Interview Preparation</option>
+                        <option>Career Roadmap</option>
+                        <option>Internship & Placement Assistance</option>
+                        <option>Skill Gap Analysis</option>
+                    </select></div>
+                <div class="form-group"><label>Current Employment Status</label>
+                    <select name="employment">
+                        <option value="">--Select--</option>
+                        <option>Student</option>
+                        <option>Employed</option>
+                        <option>Unemployed</option>
+                    </select></div>
+                <div class="form-group"><label>Industry/Domain</label><input type="text" name="industry"></div>
+                <div class="form-group"><label>Years of Experience</label><input type="text" name="experience"></div>
+                <div class="form-group"><label>Target Role/Company</label><input type="text" name="targetRole"></div>
+                <div class="form-group"><label>LinkedIn Profile URL</label><input type="url" name="linkedin"></div>
+                <div class="form-group"><label>Upload Resume</label><input type="file" name="resume" style="padding:0.5rem 0;"></div>
+                <button type="submit">Submit Query</button>
+            </form>
+        </div>
+
+        <!-- General Services Form -->
+        <div class="form-section" id="general">
+            <form id="generalForm" data-form-name="General Services">
+                <div class="form-group"><label>Full Name</label><input type="text" name="fullName" required></div>
+                <div class="form-group"><label>Email Address</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div>
+                <div class="form-group"><label>Category of Interest</label>
+                    <select name="category">
+                        <option value="">--Select--</option>
+                        <option>Study Abroad</option>
+                        <option>Academic Writing</option>
+                        <option>Careers</option>
+                        <option>Other</option>
+                    </select></div>
+                <div class="form-group"><label>Brief Description of Your Query</label><textarea name="description"></textarea></div>
+                <div class="form-group"><label>How did you hear about us?</label><input type="text" name="reference"></div>
+                <button type="submit">Submit Query</button>
+            </form>
+        </div>
+
+    <script>
+        // ⚠️ REPLACE the URL below with your deployed Google Apps Script web app URL
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzAzKrxJefM4jtd_NvQ-rv0ZHesSw0YyOlpZjWJxEgE3Dba3oeIA078vmqDK8B9O9kQdw/exec";
+
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.querySelectorAll('.form-section').forEach(s => s.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+                document.getElementById('msgBox').style.display = 'none';
+            });
+        });
+
+        // Common submit handler
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formName = form.getAttribute('data-form-name');
+                const formData = new FormData(form);
+                // Add form type identifier
+                formData.append('formType', formName);
+                formData.append('timestamp', new Date().toLocaleString());
+
+                const msgBox = document.getElementById('msgBox');
+                msgBox.style.display = 'none';
+                msgBox.className = 'message';
+
+                try {
+                    const response = await fetch(SCRIPT_URL, {
+                        method: 'POST',
+                        body: formData
+                    });
+                    if (response.ok) {
+                        msgBox.textContent = "✅ Thank you! Your query has been submitted.";
+                        msgBox.classList.add('success');
+                        form.reset();
+                    } else {
+                        throw new Error('Server error');
+                    }
+                } catch (err) {
+                    msgBox.textContent = "❌ Submission failed. Please try again or email us directly.";
+                    msgBox.classList.add('error');
+                }
+                msgBox.style.display = 'block';
+                msgBox.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
