@@ -37,8 +37,8 @@
         /* Logo + Title header */
         .logo-header {
             display: flex;
-            align-items: center;          /* vertical centering */
-            justify-content: center;      /* horizontal centering */
+            align-items: center;
+            justify-content: center;
             gap: 1.2rem;
             margin-bottom: 0.6rem;
             flex-wrap: wrap;
@@ -46,7 +46,7 @@
         }
 
         .logo-header img {
-            height: 3.2rem;               /* matches the H1 font-size exactly */
+            height: 3.2rem;
             width: auto;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
             transition: transform 0.3s ease;
@@ -80,6 +80,7 @@
             font-weight: 500;
         }
 
+        /* Tab buttons */
         .tabs {
             display: flex;
             flex-wrap: wrap;
@@ -102,6 +103,10 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
         }
 
         .tab-btn::after {
@@ -135,6 +140,17 @@
             transform: scale(0.96);
         }
 
+        /* Glass icon styling */
+        .tab-icon {
+            display: inline-flex;
+            align-items: center;
+        }
+        .tab-icon svg {
+            width: 1.4em;
+            height: 1.4em;
+        }
+
+        /* Form sections */
         .form-section {
             display: none;
             animation: fade 0.3s ease;
@@ -280,7 +296,7 @@
                 font-size: 2.4rem;
             }
             .logo-header img {
-                height: 2.4rem;   /* matches smaller title on mobile */
+                height: 2.4rem;
             }
             .tab-btn {
                 font-size: 0.8rem;
@@ -294,7 +310,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Logo perfectly aligned with text, same height -->
         <div class="logo-header">
             <img src="https://raw.githubusercontent.com/mavenmasters/mavenmasters/main/assets/images/logo.svg" 
                  alt="Maven Masters Logo">
@@ -303,10 +318,86 @@
         <p class="subtitle">Select a service to get started</p>
 
         <div class="tabs">
-            <button class="tab-btn active" data-tab="academic">📚 Academic Writing</button>
-            <button class="tab-btn" data-tab="study">🌍 Study Abroad</button>
-            <button class="tab-btn" data-tab="careers">💼 Careers</button>
-            <button class="tab-btn" data-tab="general">🏢 General Services</button>
+            <button class="tab-btn active" data-tab="academic">
+                <span class="tab-icon">
+                    <!-- Glass Academic Icon (Book) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <defs>
+                            <filter id="glassShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+                            </filter>
+                            <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.5)" stroke-width="1" filter="url(#glassShadow)"/>
+                        <path d="M12,4 C10,2 6,3 4,5 L4,21 C6,19 10,18 12,20 C14,18 18,19 20,21 L20,5 C18,3 14,2 12,4 Z" fill="#1a3b5d" fill-opacity="0.9"/>
+                    </svg>
+                </span>
+                Academic Writing
+            </button>
+            <button class="tab-btn" data-tab="study">
+                <span class="tab-icon">
+                    <!-- Glass Study Abroad Icon (Globe) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <defs>
+                            <filter id="glassShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+                            </filter>
+                            <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.5)" stroke-width="1" filter="url(#glassShadow)"/>
+                        <circle cx="12" cy="12" r="7" fill="none" stroke="#1a3b5d" stroke-width="1.8"/>
+                        <ellipse cx="12" cy="12" rx="3" ry="7" fill="none" stroke="#1a3b5d" stroke-width="1.8"/>
+                        <line x1="5" y1="12" x2="19" y2="12" stroke="#1a3b5d" stroke-width="1.8"/>
+                    </svg>
+                </span>
+                Study Abroad
+            </button>
+            <button class="tab-btn" data-tab="careers">
+                <span class="tab-icon">
+                    <!-- Glass Careers Icon (Briefcase) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <defs>
+                            <filter id="glassShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+                            </filter>
+                            <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.5)" stroke-width="1" filter="url(#glassShadow)"/>
+                        <path d="M4,8 L20,8 L20,20 C20,20.5 19.5,21 19,21 L5,21 C4.5,21 4,20.5 4,20 L4,8 Z" fill="#1a3b5d" fill-opacity="0.9"/>
+                        <path d="M8,8 L8,5 C8,4.5 8.5,4 9,4 L15,4 C15.5,4 16,4.5 16,5 L16,8" fill="none" stroke="#1a3b5d" stroke-width="1.5"/>
+                    </svg>
+                </span>
+                Careers
+            </button>
+            <button class="tab-btn" data-tab="general">
+                <span class="tab-icon">
+                    <!-- Glass General Services Icon (Gear) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <defs>
+                            <filter id="glassShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+                            </filter>
+                            <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.5)" stroke-width="1" filter="url(#glassShadow)"/>
+                        <circle cx="12" cy="12" r="6" fill="none" stroke="#1a3b5d" stroke-width="2.5" stroke-dasharray="3 3"/>
+                        <circle cx="12" cy="12" r="3" fill="#1a3b5d" fill-opacity="0.9"/>
+                    </svg>
+                </span>
+                General Services
+            </button>
         </div>
 
         <!-- Academic Writing Form -->
