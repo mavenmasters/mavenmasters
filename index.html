@@ -867,88 +867,71 @@
 
   <!-- Blog / Insights (retained for engagement) -->
   <section id="blog" class="section-alt">
-   <!-- Funding Card -->
-<div class="blog-card">
-  <div class="blog-top">
-    <div class="icon-box">
-      <svg viewBox="0 0 64 64" width="64" height="64">
-        <defs>
-          <linearGradient id="gradMoney2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#FFD700"/>
-            <stop offset="100%" stop-color="#0f4fd8"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="18" fill="none" stroke="url(#gradMoney2)" stroke-width="3"/>
-        <text x="32" y="40" font-size="24" text-anchor="middle" fill="url(#gradMoney2)" font-weight="bold">₹</text>
-        <circle cx="50" cy="18" r="2" fill="#FFD700">
-          <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
+    <div class="container">
+      <h2>Latest Insights</h2>
+      <div class="blog-grid grid-container-3">
+        <!-- Blog card 1 -->
+        <div class="blog-card">
+          <div class="blog-top">
+            <div class="icon-box">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <defs><linearGradient id="gradVisa" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f4fd8"/><stop offset="100%" stop-color="#D4AF37"/></linearGradient></defs>
+                <rect x="18" y="14" width="28" height="36" rx="4" fill="none" stroke="url(#gradVisa)" stroke-width="3"/>
+                <rect x="22" y="22" width="20" height="3" fill="url(#gradVisa)"/>
+                <rect x="22" y="30" width="14" height="3" fill="url(#gradVisa)"/>
+                <circle cx="48" cy="16" r="2" fill="#D4AF37"><animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Visa</span>
+            <h3>USA F-1 Visa Q&A</h3>
+            <p>Expert tips to crack your interview.</p>
+            <a href="#" onclick="openBlogArticle('visa');return false;">Read more →</a>
+          </div>
+        </div>
+        <!-- Blog card 2 -->
+        <div class="blog-card">
+          <div class="blog-top">
+            <div class="icon-box">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <defs><linearGradient id="gradMoney" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#0f4fd8"/></linearGradient></defs>
+                <circle cx="32" cy="32" r="18" fill="none" stroke="url(#gradMoney)" stroke-width="3"/>
+                <text x="32" y="40" font-size="24" text-anchor="middle" fill="url(#gradMoney)" font-weight="bold">₹</text>
+                <circle cx="50" cy="18" r="2" fill="#D4AF37"><animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Funding</span>
+            <h3>₹50 Lakhs Scholarships Guide</h3>
+            <p>Complete list for Indian students.</p>
+            <a href="#" onclick="openBlogArticle('scholarships');return false;">Read more →</a>
+          </div>
+        </div>
+        <!-- Blog card 3 -->
+        <div class="blog-card">
+          <div class="blog-top">
+            <div class="icon-box">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <defs><linearGradient id="gradResearch" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f4fd8"/><stop offset="100%" stop-color="#D4AF37"/></linearGradient></defs>
+                <path d="M20 16 L44 16 L48 20 L48 48 L16 48 L16 20 Z" fill="none" stroke="url(#gradResearch)" stroke-width="3"/>
+                <line x1="24" y1="28" x2="40" y2="28" stroke="url(#gradResearch)" stroke-width="2"/>
+                <line x1="24" y1="36" x2="36" y2="36" stroke="url(#gradResearch)" stroke-width="2"/>
+                <circle cx="52" cy="16" r="2" fill="#D4AF37"><animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Research</span>
+            <h3>PhD Thesis in 6 Months</h3>
+            <p>Step-by-step plan for rapid completion.</p>
+            <a href="#" onclick="openBlogArticle('thesis');return false;">Read more →</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="blog-content">
-    <span class="blog-tag" style="background:#D4AF37;">Funding</span>
-    <h3>Study Abroad Scholarships 2026</h3>
-    <p>Click to read full insight.</p>
-    <a href="#" onclick="openBlogArticle('funding2026');return false;">Read more →</a>
-  </div>
-</div>
-
-<!-- Visa Card -->
-<div class="blog-card">
-  <div class="blog-top">
-    <div class="icon-box">
-      <svg viewBox="0 0 64 64" width="64" height="64">
-        <defs>
-          <linearGradient id="gradVisa2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#0f4fd8"/>
-            <stop offset="100%" stop-color="#FFD700"/>
-          </linearGradient>
-        </defs>
-        <rect x="18" y="14" width="28" height="36" rx="4" fill="none" stroke="url(#gradVisa2)" stroke-width="3"/>
-        <rect x="22" y="22" width="20" height="3" fill="url(#gradVisa2)"/>
-        <rect x="22" y="30" width="14" height="3" fill="url(#gradVisa2)"/>
-        <circle cx="48" cy="16" r="2" fill="#FFD700">
-          <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-  </div>
-  <div class="blog-content">
-    <span class="blog-tag" style="background:var(--success);">Visa</span>
-    <h3>USA F1 Visa Process</h3>
-    <p>Click to read full insight.</p>
-    <a href="#" onclick="openBlogArticle('visaf1');return false;">Read more →</a>
-  </div>
-</div>
-
-<!-- Study Tip Card -->
-<div class="blog-card">
-  <div class="blog-top">
-    <div class="icon-box">
-      <svg viewBox="0 0 64 64" width="64" height="64">
-        <defs>
-          <linearGradient id="gradTip" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#0f4fd8"/>
-            <stop offset="100%" stop-color="#D4AF37"/>
-          </linearGradient>
-        </defs>
-        <path d="M20 16 L44 16 L48 20 L48 48 L16 48 L16 20 Z" fill="none" stroke="url(#gradTip)" stroke-width="3"/>
-        <line x1="24" y1="28" x2="40" y2="28" stroke="url(#gradTip)" stroke-width="2"/>
-        <line x1="24" y1="36" x2="36" y2="36" stroke="url(#gradTip)" stroke-width="2"/>
-        <circle cx="52" cy="16" r="2" fill="#D4AF37">
-          <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-  </div>
-  <div class="blog-content">
-    <span class="blog-tag" style="background:var(--accent-2);">Study Tip</span>
-    <h3>IELTS Preparation Tips</h3>
-    <p>Click to read full insight.</p>
-    <a href="#" onclick="openBlogArticle('ieltstips');return false;">Read more →</a>
-  </div>
-</div>  </section>
+  </section>
 
   <!-- Auto Blog / Daily Tips -->
   <section id="daily-tips" class="section">
@@ -1194,150 +1177,7 @@
       'thesis': {
         title: 'PhD Thesis in 6 Months',
         content: '<h1>PhD Thesis in 6 Months</h1><p>Step-by-step plan for rapid completion.</p><button class="btn btn-primary" onclick="openLeadForm(\'Thesis\');closeBlogModal();">Get Thesis Support</button>'
-    'funding2026': {
-  category: 'FUNDING',
-  title: 'Study Abroad Scholarships 2026 – Complete Guide',
-  content: `
-    <span class="blog-category">FUNDING</span>
-    <h1>Study Abroad Scholarships 2026 – Complete Guide</h1>
-    <div class="blog-meta">Updated May 2026 · 10 min read</div>
-    
-    <h2>Top Scholarships for Indian Students</h2>
-    <p>Securing funding is often the biggest hurdle. Here are the best scholarships available for Indian students in 2026, covering both merit‑based and need‑based opportunities.</p>
-
-    <h3>1. Fulbright‑Nehru Master’s Fellowships</h3>
-    <ul>
-      <li><strong>Amount:</strong> Full tuition, living expenses, airfare – approx. ₹45–60 lakhs</li>
-      <li><strong>Eligibility:</strong> Indian citizens, at least 3 years of work experience, applying for a Master’s in the US</li>
-      <li><strong>Deadline:</strong> Typically July each year</li>
-    </ul>
-
-    <h3>2. Inlaks Shivdasani Foundation Scholarships</h3>
-    <ul>
-      <li><strong>Amount:</strong> Up to US$100,000 (₹83+ lakhs) for tuition & living costs</li>
-      <li><strong>Eligibility:</strong> Indian residents under 30, admitted to a top‑ranked university abroad</li>
-      <li><strong>Deadline:</strong> April annually</li>
-    </ul>
-
-    <h3>3. GREAT Scholarships (UK)</h3>
-    <ul>
-      <li><strong>Amount:</strong> Minimum £10,000 (≈₹10.5 lakhs) towards tuition fees</li>
-      <li><strong>Eligibility:</strong> Indian students enrolling in a participating UK university</li>
-    </ul>
-
-    <h3>4. Australia Awards Scholarships</h3>
-    <ul>
-      <li><strong>Amount:</strong> Full tuition, return air travel, living allowance</li>
-      <li><strong>Eligibility:</strong> Minimum 2 years of work experience; preference for development‑related fields</li>
-    </ul>
-
-    <h2>How Maven Masters Helps</h2>
-    <p>Our team crafts standout scholarship essays, identifies hidden funding sources, and prepares you for scholarship interviews. We’ve helped students secure over <strong>₹5 crores</strong> in scholarships so far.</p>
-    
-    <div class="cta-box">
-      <h3>Ready to Fund Your Dream?</h3>
-      <button class="cta-btn" onclick="openLeadForm('Scholarship Guidance');closeBlogModal();">Book Free Scholarship Consultation</button>
-    </div>
-  `
-},
-'visaf1': {
-  category: 'VISA',
-  title: 'USA F1 Visa Process – Step by Step (2026)',
-  content: `
-    <span class="blog-category">VISA</span>
-    <h1>USA F1 Visa Process – Step by Step (2026)</h1>
-    <div class="blog-meta">Updated May 2026 · 8 min read</div>
-
-    <h2>1. Get Your I‑20</h2>
-    <p>After accepting an admission offer, pay the SEVIS I‑901 fee ($350) and receive the I‑20 form from your university.</p>
-
-    <h2>2. Complete the DS‑160</h2>
-    <p>Fill the online non‑immigrant visa application form at <a href="https://ceac.state.gov/genniv/" target="_blank" rel="noopener">ceac.state.gov</a>. Keep the barcode confirmation page.</p>
-
-    <h2>3. Pay the Visa Fee</h2>
-    <p>The F1 visa application fee is currently $185 (around ₹15,400). Pay it via NEFT / mobile wallet / Axis Bank.</p>
-
-    <h2>4. Schedule Biometrics & Interview</h2>
-    <p>Use the <a href="https://cgifederal.secure.force.com/" target="_blank" rel="noopener">US Visa Service Desk</a> to book two appointments: one for fingerprints and photo, and a second for the visa interview.</p>
-
-    <h2>5. Prepare for the Interview</h2>
-    <ul>
-      <li>Why this university?</li>
-      <li>How will you fund your education?</li>
-      <li>What are your post‑graduation plans? (Emphasise returning to India)</li>
-    </ul>
-
-    <h2>6. Attend the Interview</h2>
-    <p>Carry all documents: passport, I‑20, DS‑160 confirmation, SEVIS receipt, financial proofs, academic transcripts. Be confident and concise.</p>
-
-    <h2>Common Rejection Reasons & How We Help</h2>
-    <ul>
-      <li>Insufficient financial proof → We guide you on documentation</li>
-      <li>Weak ties to home country → Mock interview training</li>
-      <li>Poor university choice justification → SOP & university selection support</li>
-    </ul>
-
-    <div class="highlight-box">
-      <strong>Maven Masters Success:</strong> 87% of our students receive F1 visa approval on the first attempt.
-    </div>
-
-    <div class="cta-box">
-      <h3>Need Visa Coaching?</h3>
-      <button class="cta-btn" onclick="openLeadForm('Visa Guidance');closeBlogModal();">Book Free Mock Interview</button>
-    </div>
-  `
-},
-'ieltstips': {
-  category: 'STUDY TIP',
-  title: 'IELTS Preparation Tips – Score 7.5+ in 30 Days',
-  content: `
-    <span class="blog-category">STUDY TIP</span>
-    <h1>IELTS Preparation Tips – Score 7.5+ in 30 Days</h1>
-    <div class="blog-meta">Updated May 2026 · 7 min read</div>
-
-    <h2>Understanding the Test Format</h2>
-    <p>IELTS Academic has 4 modules: Listening (30 mins), Reading (60 mins), Writing (60 mins), Speaking (11‑14 mins). Know the question types before you start.</p>
-
-    <h2>Week‑by‑Week Study Plan</h2>
-    <h3>Week 1: Diagnostic & Foundation</h3>
-    <ul>
-      <li>Take a full‑length mock test to identify weaknesses.</li>
-      <li>Review grammar fundamentals and build academic vocabulary (30 new words/day).</li>
-    </ul>
-    <h3>Week 2: Skill Building</h3>
-    <ul>
-      <li>Listening: Practise with BBC News, podcasts; work on spelling.</li>
-      <li>Reading: Skim/scan techniques, True/False/Not Given strategies.</li>
-    </ul>
-    <h3>Week 3: Writing & Speaking Mastery</h3>
-    <ul>
-      <li>Writing Task 1: Learn to describe graphs/processes in 150 words.</li>
-      <li>Task 2: Structure essays (intro, body paragraphs, conclusion).</li>
-      <li>Speaking: Record yourself; use cue cards from Cambridge books.</li>
-    </ul>
-    <h3>Week 4: Full‑Length Mocks & Review</h3>
-    <ul>
-      <li>Take 3‑4 complete tests under timed conditions.</li>
-      <li>Analyse mistakes and revise weak areas.</li>
-    </ul>
-
-    <h2>Free Resources</h2>
-    <ul>
-      <li><a href="https://www.ielts.org/" target="_blank">Official IELTS Website</a></li>
-      <li>Cambridge IELTS books 15‑18</li>
-      <li>Maven Masters’ free practice materials (download via <a href="./#free-resources">Resources</a>)</li>
-    </ul>
-
-    <div class="highlight-box">
-      <strong>Pro Tip:</strong> Most universities require a minimum overall band of 6.5, with no section below 6.0. Aim for 7.5 to strengthen your application.
-    </div>
-
-    <div class="cta-box">
-      <h3>Struggling with IELTS?</h3>
-      <button class="cta-btn" onclick="openLeadForm('IELTS Coaching');closeBlogModal();">Get Free Study Plan</button>
-    </div>
-}
-    }
+      }
     };
 
     window.openBlogArticle = function(topic) {
