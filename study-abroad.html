@@ -381,6 +381,74 @@
     /* Hamburger for mobile */
     .menu-toggle { display: none; background: none; border: 1px solid var(--glass-border); border-radius: 8px; padding: 0.4rem 0.7rem; cursor: pointer; font-size: 1.4rem; }
     @media (max-width: 768px) { .menu-toggle { display: block; } .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 0; background: var(--card); backdrop-filter: blur(20px); border-radius: 0 0 var(--radius) var(--radius); padding: 1rem; box-shadow: var(--shadow-md); z-index: 200; width: 100%; gap: 0.5rem; } header { position: sticky; } }
+
+    /* ============================================================
+       Destinations marquee strip  (copied from index.html)
+       ============================================================ */
+    .trust-strip {
+      background: var(--accent-1);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 1.05rem 0;
+      overflow: hidden;
+    }
+    [data-theme="dark"] .trust-strip {
+      background: #0b1424;
+      border-color: rgba(255,255,255,0.06);
+    }
+    .marquee {
+      display: flex;
+      overflow: hidden;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+              mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    }
+    .marquee__inner {
+      display: flex;
+      width: max-content;
+      animation: mm-marquee 34s linear infinite;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+    .marquee__track {
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      padding-right: 3.5rem;
+      margin: 0;
+      list-style: none;
+      flex-shrink: 0;
+    }
+    .marquee__track li {
+      color: rgba(255,255,255,0.75);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: color 0.25s ease;
+    }
+    .marquee__track li:hover { color: var(--gold-bright); }
+    .marquee:hover .marquee__inner,
+    .marquee:focus-within .marquee__inner { animation-play-state: paused; }
+    @keyframes mm-marquee {
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(-50%, 0, 0); }
+    }
+    @media (max-width: 640px) {
+      .marquee__track { gap: 2.25rem; padding-right: 2.25rem; }
+      .marquee__track li { font-size: 0.75rem; letter-spacing: 0.1em; }
+      .marquee__inner { animation-duration: 24s; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .marquee { -webkit-mask-image: none; mask-image: none; justify-content: center; }
+      .marquee__inner { animation: none; width: auto; }
+      .marquee__track { flex-wrap: wrap; justify-content: center; gap: 0.6rem 2rem; padding-right: 0; }
+      .marquee__track[aria-hidden="true"] { display: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -450,6 +518,43 @@
       </div>
     </div>
   </section>
+
+  <!-- Destinations marquee: seamless loop, pauses on hover/focus,
+       and falls back to a static row when reduced motion is requested. -->
+  <div class="trust-strip">
+    <div class="marquee" role="region" aria-label="Countries we counsel for">
+      <div class="marquee__inner">
+        <ul class="marquee__track">
+          <li>USA</li>
+          <li>UK</li>
+          <li>Canada</li>
+          <li>Australia</li>
+          <li>Germany</li>
+          <li>Ireland</li>
+          <li>New Zealand</li>
+          <li>Netherlands</li>
+          <li>France</li>
+          <li>Sweden</li>
+          <li>Italy</li>
+          <li>Singapore</li>
+        </ul>
+        <ul class="marquee__track" aria-hidden="true">
+          <li>USA</li>
+          <li>UK</li>
+          <li>Canada</li>
+          <li>Australia</li>
+          <li>Germany</li>
+          <li>Ireland</li>
+          <li>New Zealand</li>
+          <li>Netherlands</li>
+          <li>France</li>
+          <li>Sweden</li>
+          <li>Italy</li>
+          <li>Singapore</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== STUDY ABROAD SERVICES ===== -->
   <section id="study-abroad-services" class="section-alt">
